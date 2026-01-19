@@ -212,6 +212,35 @@ toggleTableHistory.addEventListener("click", () => {
     div.style.display = "none";
     toggleTableHistory.textContent = "▼";
   }
+    document.getElementById("roll-table-custom").addEventListener("click", () => {
+  const select = document.getElementById("table-select");
+  const tableName = select.value;
+  if (!tableName) return alert("Veuillez sélectionner une table.");
+
+  const table = tables[tableName];
+  const x = parseInt(document.getElementById("custom-dice-count").value, 10);
+  const y = parseInt(document.getElementById("custom-dice-type").value, 10);
+
+  // Lancer XdY
+  let rollTotal = 0;
+  for (let i = 0; i < x; i++) {
+    rollTotal += Math.floor(Math.random() * y) + 1;
+  }
+
+  // Déterminer l'index dans la table
+  const index = rollTotal > table.length ? table.length - 1 : rollTotal - 1;
+  const resultText = table[index];
+
+  // Affichage résultat
+  const container = document.getElementById("table-result");
+  container.innerHTML = `<p>${tableName} [${rollTotal}] → ${resultText}</p>`;
+
+  // Historique
+  tableHistory.unshift({ tableName, index: rollTotal, resultText });
+  if (tableHistory.length > 10) tableHistory.pop();
+  displayTableHistory();
+});
+
 });
 
 function displayTableHistory() {
