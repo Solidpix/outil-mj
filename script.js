@@ -256,3 +256,57 @@ function displayTableHistory() {
     div.appendChild(p);
   });
 }
+
+/* Chargement JSON depuis GITHUB */
+let tablesData = [];
+
+async function loadTablesFromGitHub(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error("Erreur de chargement");
+
+    const data = await response.json();
+    tablesData = data.tables;
+
+    populateTablesDropdown();
+  } catch (error) {
+    alert("Impossible de charger les tables JSON.");
+    console.error(error);
+  }
+}
+
+function populateTablesDropdown() {
+  const select = document.getElementById("table-select");
+  select.innerHTML = '<option value="">— Choisir une table —</option>';
+
+  tablesData.forEach((table, index) => {
+    const option = document.createElement("option");
+    option.value = index;
+    option.textContent = table.name;
+    select.appendChild(option);
+  });
+}
+function rollOnTable() {
+  const select = document.getElementById("table-select");
+  const index = select.value;
+
+  if (index === "") return;
+
+  const table = tablesData[index];
+  const roll = Math.floor(Math.random() * table.entries.length);
+  const result = table.entries[roll];
+
+  displayTableResult(table.name, roll + 1, result);
+}
+function displayTableResult(tableName, roll, result) {
+  const div = document.getElementById("table-result");
+  div.innerHTML = `
+    <p><strong>${tableName}</strong> [${roll}]</p>
+    <p>${result}</p>
+  `;
+}
+window.addEventListener("load", () => {
+  loadTablesFromGitHub(
+    "https://raw.githubusercontent.com/Solidpix/outil-mj/refs/heads/main/tables/Dragonbane_Tables.json"
+  );
+});
