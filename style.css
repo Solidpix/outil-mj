@@ -123,3 +123,29 @@ strong.crit {
   margin: 0.2rem 0;
   font-size: 0.9rem;
 }
+/* Bandeau module */
+.module-switch {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Couleurs boutons modules */
+.blue-btn {
+  background: #3a6ea5;
+  color: #fff;
+}
+
+.blue-btn:hover {
+  background: #4a83c2;
+}
+
+.red-btn {
+  background: #a53a3a;
+  color: #fff;
+}
+
+.red-btn:hover {
+  background: #c24a4a;
+}
+
