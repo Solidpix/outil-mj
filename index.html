@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outil MJ – Jets de dés</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>🎲 Jet de dés</h1>
+
+    <section class="dice-form">
+      <div class="row">
+        <label>
+          X
+          <input type="number" id="dice-count" value="1" min="1">
+        </label>
+
+        <label>
+          d
+          <select id="dice-type">
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="20" selected>20</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="row">
+        <label>
+          Opérateur
+          <select id="operator">
+            <option value="">—</option>
+            <option value="+">+</option>
+            <option value="-">−</option>
+            <option value="*">×</option>
+          </select>
+        </label>
+
+        <label>
+          Z
+          <input type="number" id="modifier" value="0">
+        </label>
+      </div>
+
+      <div class="row">
+        <label>
+          Mode
+          <select id="mode">
+            <option value="normal">Normal</option>
+            <option value="advantage">Avantage</option>
+            <option value="disadvantage">Désavantage</option>
+          </select>
+        </label>
+      </div>
+
+      <button id="roll-button">Lancer le jet</button>
+    </section>
+
+    <section class="result" id="result">
+      <p class="placeholder">Aucun jet effectué</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
