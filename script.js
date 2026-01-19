@@ -1,3 +1,4 @@
+
 // --- MOTEUR DE DES ---
 function rollSingleSet(x, y) {
   const dice = [];
@@ -138,5 +139,91 @@ function displayHistory() {
     const p = document.createElement("p");
     p.textContent = `${entry.x}d${entry.y}${entry.operator}${entry.modifier} (${entry.mode}) => ${entry.finalTotal}`;
     historyDiv.appendChild(p);
+  });
+}
+
+/* BOUTONS SWITCH MODULES */
+const diceModule = document.getElementById("dice-module");
+const tablesModule = document.getElementById("tables-module");
+
+const switchToDice = document.getElementById("switch-to-dice");
+const switchToTables = document.getElementById("switch-to-tables");
+
+switchToDice.addEventListener("click", () => {
+  diceModule.style.display = "block";
+  tablesModule.style.display = "none";
+});
+
+switchToTables.addEventListener("click", () => {
+  diceModule.style.display = "none";
+  tablesModule.style.display = "block";
+});
+
+/* TABLE ALEATOIRE */
+let tables = {}; // objet contenant toutes les tables importées
+let tableHistory = [];
+
+// Exemple pour tester
+tables["Monstre"] = [
+  "Gobelin",
+  "Orc",
+  "Troll",
+  "Dragon"
+];
+
+document.getElementById("import-tables").addEventListener("click", () => {
+  // Ici tu ajouteras plus tard le fetch depuis GitHub
+  const select = document.getElementById("table-select");
+  select.innerHTML = "";
+  for (let tableName in tables) {
+    const opt = document.createElement("option");
+    opt.value = tableName;
+    opt.textContent = tableName;
+    select.appendChild(opt);
+  }
+});
+
+document.getElementById("roll-table").addEventListener("click", () => {
+  const select = document.getElementById("table-select");
+  const tableName = select.value;
+  if (!tableName) return alert("Veuillez sélectionner une table.");
+
+  const table = tables[tableName];
+  const index = Math.floor(Math.random() * table.length);
+  const resultText = table[index];
+
+  // Affichage résultat
+  const container = document.getElementById("table-result");
+  container.innerHTML = `<p>${tableName} [${index + 1}] → ${resultText}</p>`;
+
+  // Historique
+  tableHistory.unshift({ tableName, index: index + 1, resultText });
+  if (tableHistory.length > 10) tableHistory.pop();
+  displayTableHistory();
+});
+
+const toggleTableHistory = document.getElementById("toggle-table-history");
+toggleTableHistory.addEventListener("click", () => {
+  const div = document.getElementById("table-history");
+  if (div.style.display === "none" || div.style.display === "") {
+    div.style.display = "block";
+    toggleTableHistory.textContent = "▲";
+  } else {
+    div.style.display = "none";
+    toggleTableHistory.textContent = "▼";
+  }
+});
+
+function displayTableHistory() {
+  const div = document.getElementById("table-history");
+  div.innerHTML = "";
+  if (tableHistory.length === 0) {
+    div.innerHTML = '<p class="placeholder">Aucun jet pour l’instant</p>';
+    return;
+  }
+  tableHistory.forEach(entry => {
+    const p = document.createElement("p");
+    p.textContent = `${entry.tableName} [${entry.index}] → ${entry.resultText}`;
+    div.appendChild(p);
   });
 }
