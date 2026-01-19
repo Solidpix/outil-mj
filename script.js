@@ -8,7 +8,14 @@ function rollSingleSet(x, y) {
   return { dice, total };
 }
 
-function rollDice({ x, y, z = 0, mode = "normal" }) {
+function applyOperator(value, operator, z) {
+  if (operator === "+") return value + z;
+  if (operator === "-") return value - z;
+  if (operator === "*") return value * z;
+  return value;
+}
+
+function rollDice({ x, y, z = 0, mode = "normal", operator = "+" }) {
   const rolls = [];
 
   if (mode === "normal") {
@@ -29,7 +36,7 @@ function rollDice({ x, y, z = 0, mode = "normal" }) {
   }
 
   const baseTotal = rolls[selectedRoll].total;
-  const finalTotal = baseTotal + z;
+  const finalTotal = applyOperator(baseTotal, operator, z);
 
   return {
     mode,
@@ -37,8 +44,19 @@ function rollDice({ x, y, z = 0, mode = "normal" }) {
     selectedRoll,
     baseTotal,
     modifier: z,
-    finalTotal
+    finalTotal,
+    x,
+    y,
+    operator
   };
+}
+
+// --- HISTORIQUE ---
+const history = [];
+
+function addToHistory(entry) {
+  history.unshift(entry); // le plus récent en haut
+  if (history.length > 10) history.pop(); // max 10
 }
 
 // --- LIAISON UI ---
@@ -46,35 +64,48 @@ document.getElementById("roll-button").addEventListener("click", () => {
   const x = parseInt(document.getElementById("dice-count").value, 10);
   const y = parseInt(document.getElementById("dice-type").value, 10);
   const z = parseInt(document.getElementById("modifier").value, 10);
+  const operator = document.getElementById("operator").value;
   const mode = document.getElementById("mode").value;
 
-  const result = rollDice({ x, y, z, mode });
-  displayResult(result, x, y);
+  const result = rollDice({ x, y, z, mode, operator });
+  displayResult(result);
+  addToHistory(result);
+  displayHistory();
 });
 
-function displayResult(result, x, y) {
+function displayResult(result) {
   const container = document.getElementById("result");
   container.innerHTML = "";
 
   result.rolls.forEach((roll, index) => {
-    const div = document.createElement("div");
     const selected = index === result.selectedRoll;
+    const crit = roll.dice.some(d => d === 1 || d === result.y) ? " (CRIT !)" : "";
 
+    const div = document.createElement("div");
     div.innerHTML = `
       <p>
         ${result.mode !== "normal" ? (selected ? "▶ " : "") : ""}
-        ${x}d${y} → [${roll.dice.join(", ")}] = <strong>${roll.total}</strong>
+        ${result.x}d${result.y} → [${roll.dice.join(", ")}] = <strong${crit ? ' class="crit"' : ''}>${roll.total}${crit}</strong>
       </p>
     `;
-
-    if (selected) div.style.color = "#8fd18f";
     container.appendChild(div);
   });
 
   const final = document.createElement("p");
   final.innerHTML = `
     <hr>
-    <p>Total final : <strong>${result.baseTotal} + ${result.modifier} = ${result.finalTotal}</strong></p>
+    <p>Total final : <strong>${result.baseTotal} ${result.operator} ${result.modifier} = ${result.finalTotal}</strong></p>
   `;
   container.appendChild(final);
 }
+
+// --- HISTORIQUE UI ---
+const toggleBtn = document.getElementById("toggle-history");
+toggleBtn.addEventListener("click", () => {
+  const historyDiv = document.getElementById("history");
+  if (historyDiv.style.display === "none") {
+    historyDiv.style.display = "block";
+    toggleBtn.textContent = "▲";
+  } else {
+    historyDiv.style.display = "none";
+    toggleBtn.textContent = "▼";
