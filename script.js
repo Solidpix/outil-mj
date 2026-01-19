@@ -1,7 +1,9 @@
-// --- MOTEUR ---
+// --- MOTEUR DE DES ---
 function rollSingleSet(x, y) {
   const dice = [];
-  for (let i = 0; i < x; i++) dice.push(Math.floor(Math.random() * y) + 1);
+  for (let i = 0; i < x; i++) {
+    dice.push(Math.floor(Math.random() * y) + 1);
+  }
   const total = dice.reduce((a, b) => a + b, 0);
   return { dice, total };
 }
@@ -16,37 +18,56 @@ function applyOperator(value, operator, z) {
 function rollDice({ x, y, z = 0, mode = "normal", operator = "+" }) {
   const rolls = [];
 
-  if (mode === "normal") rolls.push(rollSingleSet(x, y));
-  else {
+  if (mode === "normal") {
+    rolls.push(rollSingleSet(x, y));
+  } else {
     rolls.push(rollSingleSet(x, y));
     rolls.push(rollSingleSet(x, y));
   }
 
   let selectedRoll = 0;
-  if (mode === "max") selectedRoll = rolls[0].total >= rolls[1].total ? 0 : 1;
-  if (mode === "min") selectedRoll = rolls[0].total <= rolls[1].total ? 0 : 1;
+
+  if (mode === "max") {
+    selectedRoll = rolls[0].total >= rolls[1].total ? 0 : 1;
+  }
+
+  if (mode === "min") {
+    selectedRoll = rolls[0].total <= rolls[1].total ? 0 : 1;
+  }
 
   const baseTotal = rolls[selectedRoll].total;
   const finalTotal = applyOperator(baseTotal, operator, z);
 
-  return { x, y, z, operator, mode, rolls, selectedRoll, baseTotal, finalTotal };
+  return {
+    mode,
+    rolls,
+    selectedRoll,
+    baseTotal,
+    modifier: z,
+    finalTotal,
+    x,
+    y,
+    operator
+  };
 }
 
 // --- HISTORIQUE ---
 const history = [];
+
 function addToHistory(result) {
-  history.unshift({
+  const entry = {
     x: result.x,
     y: result.y,
     operator: result.operator,
-    z: result.z,
+    modifier: result.modifier, // ou result.z selon ton retour
     mode: result.mode,
     finalTotal: result.finalTotal
-  });
+  };
+  history.unshift(entry);
   if (history.length > 10) history.pop();
 }
 
-// --- UI ---
+// --- LIAISON UI ---
 document.getElementById("roll-button").addEventListener("click", () => {
   const x = parseInt(document.getElementById("dice-count").value, 10);
   const y = parseInt(document.getElementById("dice-type").value, 10);
@@ -54,7 +75,7 @@ document.getElementById("roll-button").addEventListener("click", () => {
   const operator = document.getElementById("operator").value;
   const mode = document.getElementById("mode").value;
 
-  const result = rollDice({ x, y, z, operator, mode });
+  const result = rollDice({ x, y, z, mode, operator });
   displayResult(result);
   addToHistory(result);
   displayHistory();
@@ -66,7 +87,8 @@ function displayResult(result) {
 
   result.rolls.forEach((roll, index) => {
     const selected = index === result.selectedRoll;
-    const crit = roll.dice.some(d => d === 1 || d === result.y) ? " (CRIT !)" : "";
+const crit = selected && roll.dice.some(d => d === 1 || d === result.y) ? " (CRIT !)" : "";
+
 
     const div = document.createElement("div");
     div.innerHTML = `
@@ -79,8 +101,10 @@ function displayResult(result) {
   });
 
   const final = document.createElement("p");
-  final.innerHTML = `<hr>
-    <p>Total final : <strong>${result.baseTotal} ${result.operator} ${result.z} = ${result.finalTotal}</strong></p>`;
+  final.innerHTML = `
+    <hr>
+    <p>Total final : <strong>${result.baseTotal} ${result.operator} ${result.modifier} = ${result.finalTotal}</strong></p>
+  `;
   container.appendChild(final);
 }
 
@@ -88,7 +112,7 @@ function displayResult(result) {
 const toggleBtn = document.getElementById("toggle-history");
 toggleBtn.addEventListener("click", () => {
   const historyDiv = document.getElementById("history");
-  if (historyDiv.style.display === "none" || historyDiv.style.display === "") {
+  if (historyDiv.style.display === "none") {
     historyDiv.style.display = "block";
     toggleBtn.textContent = "▲";
   } else {
@@ -106,7 +130,7 @@ function displayHistory() {
   }
   history.forEach(entry => {
     const p = document.createElement("p");
-    p.textContent = `${entry.x}d${entry.y}${entry.operator}${entry.z} (${entry.mode}) => ${entry.finalTotal}`;
+    p.textContent = `${entry.x}d${entry.y}${entry.operator}${entry.modifier} (${entry.mode}) => ${entry.finalTotal}`;
     historyDiv.appendChild(p);
   });
 }
