@@ -39,24 +39,32 @@ function rollDice({ x, y, z = 0, mode = "normal", operator = "+" }) {
   const finalTotal = applyOperator(baseTotal, operator, z);
 
   return {
+    x,
+    y,
+    z,
+    operator,
     mode,
     rolls,
     selectedRoll,
     baseTotal,
-    modifier: z,
-    finalTotal,
-    x,
-    y,
-    operator
+    finalTotal
   };
 }
 
 // --- HISTORIQUE ---
 const history = [];
 
-function addToHistory(entry) {
-  history.unshift(entry); // le plus récent en haut
-  if (history.length > 10) history.pop(); // max 10
+function addToHistory(result) {
+  const entry = {
+    x: result.x,
+    y: result.y,
+    operator: result.operator,
+    z: result.z,
+    mode: result.mode,
+    finalTotal: result.finalTotal
+  };
+  history.unshift(entry);
+  if (history.length > 10) history.pop();
 }
 
 // --- LIAISON UI ---
@@ -67,12 +75,13 @@ document.getElementById("roll-button").addEventListener("click", () => {
   const operator = document.getElementById("operator").value;
   const mode = document.getElementById("mode").value;
 
-  const result = rollDice({ x, y, z, mode, operator });
+  const result = rollDice({ x, y, z, operator, mode });
   displayResult(result);
   addToHistory(result);
   displayHistory();
 });
 
+// --- AFFICHAGE DU RESULTAT ---
 function displayResult(result) {
   const container = document.getElementById("result");
   container.innerHTML = "";
@@ -94,7 +103,7 @@ function displayResult(result) {
   const final = document.createElement("p");
   final.innerHTML = `
     <hr>
-    <p>Total final : <strong>${result.baseTotal} ${result.operator} ${result.modifier} = ${result.finalTotal}</strong></p>
+    <p>Total final : <strong>${result.baseTotal} ${result.operator} ${result.z} = ${result.finalTotal}</strong></p>
   `;
   container.appendChild(final);
 }
@@ -103,9 +112,25 @@ function displayResult(result) {
 const toggleBtn = document.getElementById("toggle-history");
 toggleBtn.addEventListener("click", () => {
   const historyDiv = document.getElementById("history");
-  if (historyDiv.style.display === "none") {
+  if (historyDiv.style.display === "none" || historyDiv.style.display === "") {
     historyDiv.style.display = "block";
     toggleBtn.textContent = "▲";
   } else {
     historyDiv.style.display = "none";
     toggleBtn.textContent = "▼";
+  }
+});
+
+function displayHistory() {
+  const historyDiv = document.getElementById("history");
+  historyDiv.innerHTML = "";
+  if (history.length === 0) {
+    historyDiv.innerHTML = '<p class="placeholder">Aucun jet pour l’instant</p>';
+    return;
+  }
+  history.forEach(entry => {
+    const p = document.createElement("p");
+    p.textContent = `${entry.x}d${entry.y}${entry.operator}${entry.z} (${entry.mode}) => ${entry.finalTotal}`;
+    historyDiv.appendChild(p);
+  });
+}
