@@ -87,16 +87,20 @@ function displayResult(result) {
 
   result.rolls.forEach((roll, index) => {
     const selected = index === result.selectedRoll;
-const crit = selected && roll.dice.some(d => d === 1 || d === result.y) ? " (CRIT !)" : "";
+// Créer l'affichage des dés en mettant en forme les critiques
+const diceDisplay = roll.dice.map(d => {
+  if (d === 1 || d === result.y) return `<strong class="crit">${d}</strong>`;
+  return d;
+}).join(", ");
 
+const div = document.createElement("div");
+div.innerHTML = `
+  <p>
+    ${result.mode !== "normal" ? (selected ? "▶ " : "") : ""}
+    ${result.x}d${result.y} → [${diceDisplay}] = ${roll.total}
+  </p>
+`;
 
-    const div = document.createElement("div");
-    div.innerHTML = `
-      <p>
-        ${result.mode !== "normal" ? (selected ? "▶ " : "") : ""}
-        ${result.x}d${result.y} → [${roll.dice.join(", ")}] = <strong${crit ? ' class="crit"' : ''}>${roll.total}${crit}</strong>
-      </p>
-    `;
     container.appendChild(div);
   });
 
