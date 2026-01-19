@@ -1,0 +1,106 @@
+{
+  "tables": [
+    {
+      "name": "Terreur",
+      "entries": [
+        "Affaibli. La peur draine votre énergie et votre détermination. Vous perdez 2D6 PV (minimum zéro) et vous êtes Découragé (CHA).",
+        "Secoué. Vous subissez l’état Effrayé (VOL).",
+        "Haletant. La peur intense vous coupe le souffle et vous devenez Épuisé (FOR).",
+        "Pâle. Votre visage devient blanc comme un linge. Vous et tous les personnages joueurs situés dans un rayon de dix mètres autour de vous et à portée de vue êtes Effrayés (VOL).",
+        "Cri. Vous hurlez d’horreur. De ce fait, tous les personnages joueurs qui vous entendent subissent immédiatement une attaque de terreur. Un individu n’a besoin que d’un seul jet de VOL pour résister à la même attaque de terreur.",
+        "Rage. Votre peur se transforme en colère, et vous êtes obligé d’attaquer sa source à votre prochain tour (de préférence au corps à corps). Vous devenez également Furieux (INT).",
+        "Paralysé. Vous êtes pétrifié de terreur et incapable de bouger. Vous ne pouvez pas effectuer d’action ou de déplacement lors de votre prochain tour. Faites un jet de VOL à chaque tour suivant (qui ne compte pas comme une action) pour briser la paralysie.",
+        "Panique. Dans un accès de panique totale, vous fuyez la scène aussi vite que vous le pouvez. Lors de votre prochain tour, vous vous éloignez de la source de votre peur. À chaque tour suivant, faites un jet de VOL (qui ne compte pas comme une action) pour arrêter de courir et agir à nouveau normalement."
+      ]
+    },
+    {
+      "name": "Trésor",
+      "entries": [
+        "Pièces de cuivre. 1D6 pièces de cuivre",
+        "Pièces de cuivre. 2D6 pièces de cuivre",
+        "Pièces de cuivre. 4D6 pièces de cuivre",
+        "Pièces de cuivre. 2D6 x 10 pièces de cuivre",
+        "Pièces de cuivre. 4D6 x 10 pièces de cuivre",
+        "Pièces d’argent. 1D6 pièces d’argent",
+        "Pièces d’argent. 3D6 pièces d’argent",
+        "Pièces d’argent. 1D6 x 5 pièces d’argent",
+        "Pièces d’argent. 1D6 x 10 pièces d’argent",
+        "Pièces d’argent. 2D6 x 10 pièces d’argent",
+        "Pièces d’argent. 3D6 x 10 pièces d’argent",
+        "Pièces d’or. 1D6 pièces d’or",
+        "Pièces d’or. 2D6 pièces d’or",
+        "Pièces d’or. 4D6 pièces d’or",
+        "Pièces d’or. 1D6 x 10 pièces d’or",
+        "Pièces d’or. 2D6 x 10 pièces d’or",
+        "Calice. 2D6 x 5 pièces d’or",
+        "Bracelet en argent. 2D6 x 10 pièces d’argent",
+        "Bracelet en or. 2D6 x 10 pièces d’or",
+        "Collier en argent. 2D6 x 5 pièces d’argent",
+        "Collier en or. 2D6 pièces d’or",
+        "Anneau en argent. 2D6 pièces d’argent",
+        "Anneau en or. 4D6 pièces d’or",
+        "Broche en argent. 2D6 x 5 pièces d’argent",
+        "Amulette en or. 2D6 x 5 pièces d’or",
+        "Gemme. Lancez 1D6: 1 – verre (2 PC); 2 – cristal (10 PA); 3 – émeraude (10 PO); 4 – saphir (15 PO); 5 – rubis (25 PO); 6 – diamant (100 PO)",
+        "Vêtement. Lancez 1D3: 1 – bottes; 2 – cape; 3 – fourrure.",
+        "Arme de corps à corps. Lancez 1D6: 1 – dague; 2 – épée courte; 3 – lance courte; 4 – épée large; 5 – lance longue; 6 – épée longue",
+        "Arme de corps à corps. Lancez 1D6: 1 – hache; 2 – cimeterre; 3 – étoile du matin; 4 – dague de parade; 5 – marteau de guerre léger ; 6 – fléau d’armes",
+        "Arme à distance. Lancez 1D6: 1 – fronde; 2 – arc court ; 3 – arc long; 4 – arbalète légère; 5 – arbalète lourde; 6 – arbalète de poing",
+        "Arme de maître. Lancez 1D6: 1 – dague; 2 – épée courte; 3 – hache de bataille; 4 – épée large; 5 – marteau de guerre lourd; 6 – épée longue",
+        "Armure/bouclier. Lancez 1D6: 1 – petit bouclier ; 2 – grand bouclier ; 3 – heaume ouvert ; 4 – grand heaume; 5 – cuir clouté; 6 – cotte de mailles",
+        "Dague empoisonnée. Faites un jet d’ESQUIVE. Si vous échouez, vous vous coupez et subissez les effets d’un poison de toxicité 12. \nLancez 1D3 pour connaître son type: 1 – mortel; 2 – paralysant ; 3 – narcotique.",
+        "Clou rouillé. Faites un jet d’ESQUIVE. Si vous échouez, vous subissez 1D6 points de dégâts.\nL’armure n’est d’aucune utilité.",
+        "Grimoire. Lancez 1D4 pour connaître l’école. 1 – animisme; 2 – élémentalisme; 3 – mentalisme; 4 – magie universelle.\nLancez 1D4–1 pour connaître le rang (0 pour un tour de magie) et 1D4 pour en connaître le nombre.\nLe MJ choisit les sorts ou laisse faire le hasard.",
+        "Bouteille. Un jet de SOINS en révèle le contenu. Sur un échec, le MJ fait un jet en secret.\nLancez 1D6: 1 – poison mortel (toxicité 12); 2 – narcotique (toxicité 14): 3 – boisson alcoolisée; 4 – décoction à base de plantes; 5 – potion de soins (2D6 PS); 6 – potion de soins (3D6 PS).",
+        "Livre. Lancez 1D6 pour connaître le titre: 1 – Manger ou être mangé – Les plantes de la forêt ; 2 – Grammaire de la langue draconique; 3 – Héros et vils personnages du passé; 4 – Manuel du maître charpentier ; 5 – Bêtes des profondeurs – Une encyclopédie; 6 – Sang, flegme et bile – Maîtrisez vos fluides corporels.",
+        "Instrument de musique. Lancez 1D6: 1 – corne; 2 – flûte; 3 – harpe; 4 – lyre; 5 – cornemuse; 6 – tambour.",
+        "Marchandise. Lancez 1D6: 1 – loupe ; 2 – longue-vue; 3 – parfum; 4 – jeu d’échecs; 5 – cartes à jouer ; 6 – billes.",
+        "Rat. Faites un jet d’ESQUIVE. En cas d’échec, vous subissez 1D4 points de dégâts.\nL’armure n’est d’aucune utilité."
+      ]
+    },
+    {
+      "name": "Events - Château du Chevalier Brigand",
+      "entries": [
+        "Gobelins : deux gobelins apparaissent soudain et après un moment de confusion, ils dégainent leurs épées courtes, poussent un cri et attaquent.",
+        "Cochon fouisseur : Merle le cochon grogne de contentement dans un coin. Lorsqu’il aperçoit les personnages, il s’immobilise dans un couinement effrayé et s’enfuit par l’issue la plus proche. S’ils blessent Merle, l’orc Grunta (voir la cave, emplacement n° 5) deviendra à jamais leur ennemie.",
+        "Esprits maléfiques: soudain, l’air se met à vibrer et un tourbillon froid s’abat sur les aventuriers. Les silhouettes de trois guerriers en cotte de mailles, morts depuis longtemps, apparaissent dans les bourrasques hurlantes. Ils tendent les bras vers eux, comme pour les entraîner dans le royaume des trépassés. Chacun doit faire un jet de VOL afin de résister à la terreur avant que les spectres disparaissent.",
+        "Tempête: de sombres nuages s’amoncellent au-dessus du château et tout à coup, le ciel libère des torrents de pluie et le tonnerre gronde dans la vallée. Pour le reste de l’aventure, toutes les attaques à distance subissent un fléau lorsqu’elles se déroulent à l’extérieur.",
+        "Corbeaux: un groupe de corbeaux jaillit soudain d’une fissure et se dirige droit sur les personnages. Tous doivent faire un jet d’ESQUIVE et en cas d’échec, les becs et les serres des oiseaux leur infligent 1D3 points de dégâts perforants. Ils s’envolent ensuite jusqu’au sommet de la tour.",
+        "Piège: les gobelins ont suspendu un marteau de guerre et mis en place un piège astucieux. Celui-ci se déclenche quand un personnage (avec le score d’AGI le plus bas) marche accidentellement sur une pierre descellée ou une planche mal fixée. Il devra alors réussir un jet d’ESQUIVE ou subir 2D6 points de dégâts contondants."
+      ]
+    },
+    {
+      "name": "Armes Improvisées (Auberge)",
+      "entries": [
+        "Chaudron d’eau bouillante\n✦ Lancez l’eau bouillante en un cône de 4 m de longueur.\n✦ Chaque personnage dans le cône subit 2D6 points de dégâts.\n✦ L’attaque peut être esquivée, mais pas parée.\n✦ L’armure n’est d’aucune utilité.",
+        "Seau d’eau savonneuse\n✦ Lancez l’eau savonneuse en un cône de 4 m de longueur.\n✦ Chaque personnage dans le cône tombe au sol.\n✦ L’attaque peut être esquivée, mais pas parée.",
+        "Bûche enflammée\n✦ Frappez un adversaire situé à 2 m ou moins avec la bûche.\n✦ Nécessite une main libre.\n✦ L’attaque touche automatiquement et inflige 2D6 points de dégâts de feu, plus le bonus aux dégâts.\n✦ L’attaque peut être esquivée ou parée.\n✦ La bûche peut ensuite être utilisée comme torche.",
+        "Cochon fouineur\n✦ Faites un jet de SURVIE pour énerver le cochon et lui faire attaquer un ennemi de votre choix situé à 10 m ou moins.\n✦ L’attaque touche automatiquement et inflige 3D6 points de dégâts contondants.\n✦ L’attaque peut être esquivée, mais pas parée.\n✦ Ensuite, le cochon détale en trombe.",
+        "Bouteille de vin\n✦ Frappez un adversaire situé à 2 m ou moins avec la bouteille.\n✦ Nécessite une main libre.\n✦ L’attaque touche automatiquement et inflige 2D6 points de dégâts contondants, plus le bonus aux dégâts.\n✦ L’attaque peut être esquivée ou parée.\n✦ L’ennemi a du vin dans les yeux et subit un fléau sur toutes ses actions jusqu’à votre prochain tour.",
+        "Lustre\n✦ Balancez-vous du lustre et effectuez une attaque de corps à corps.\n✦ Vous pouvez effectuer une action de déplacement normale sans déclencher d’attaque gratuite.\n✦ L’attaque de corps à corps doit être effectuée à mains nues, mais elle ne peut être ni esquivée ni parée.\n✦ Si l’attaque échoue, vous tombez au sol et subissez 1D6 points de dégâts contondants."
+      ]
+    },
+    {
+      "name": "Armes Improvisées (Caverne)",
+      "entries": [
+        "Stalactite\n✦ Poussez un adversaire situé à 2 m ou moins vers une formation rocheuse acérée pendant du plafond.\n✦ L’attaque touche automatiquement et inflige 2D6 points de dégâts perforants, plus le bonus aux dégâts.\n✦ L’attaque peut être esquivée, mais pas parée.\n✦ L’armure n’est d’aucune utilité, à l’exception des heaumes.",
+        "Torche\n✦ Saisissez une torche au mur et frappez un adversaire situé à 2 m ou moins.\n✦ Nécessite une main libre.\n✦ L’attaque touche automatiquement et inflige 2D6 points de dégâts de feu, plus le bonus aux dégâts.\n✦ L’attaque peut être esquivée ou parée.\n✦ Vous pouvez ensuite conserver la torche.",
+        "Stalagmite\n✦ Poussez un adversaire situé à 2 m ou moins vers une haute formation rocheuse au sol.\n✦ L’attaque touche automatiquement et inflige 1D6 points de dégâts contondants, plus le bonus aux dégâts. L’adversaire tombe au sol.\n✦ L’attaque peut être esquivée, mais pas parée.",
+        "Flaque\n✦ Faites un jet pour renverser votre adversaire (page 48).\n✦ En cas de succès, l’adversaire doit dépenser une action et réussir un jet d’ACROBATIE pour se relever.",
+        "Crevasse\n✦ Faites un jet pour renverser votre adversaire (page 48).\n✦ En cas de réussite, l’adversaire tombe dans une crevasse de 2D6 mètres et subit des dégâts de chute.\n✦ Remonter nécessite un jet d’ACROBATIE.",
+        "Chauves-souris\n✦ Effectuez un jet de SURVIE pour perturber les chauves-souris et leur faire attaquer un adversaire situé à 10 m ou moins.\n✦ Pour leurs caractéristiques, voir en page 99.\n✦ Les chauves-souris continuent à attaquer l’adversaire durant 1D3 rounds.\n✦ Si votre jet de SURVIE échoue, les chauves-souris vous attaquent plutôt que votre adversaire."
+      ]
+    },
+    {
+      "name": "Armes Improvisées (Forêt)",
+      "entries": [
+        "Branche basse\n✦ Balancez-vous depuis la branche et effectuez une attaque de corps à corps.\n✦ Vous pouvez effectuer une action de déplacement normale sans déclencher d’attaque gratuite.\n✦ L’attaque de corps à corps doit être effectuée à mains nues, mais elle ne peut être ni esquivée ni parée.\n✦ Si l’attaque échoue, vous tombez au sol et subissez 1D6 points de dégâts contondants.",
+        "Nid de guêpes\n✦ Faites un jet de SURVIE pour attraper le nid de guêpes et le lancer sur un adversaire situé à 10 m ou moins.\n✦ L’adversaire est sévèrement piqué. Il subit 2D6 points de dégâts et un fléau sur toutes ses actions durant un intervalle.\n✦ L’attaque peut être esquivée, mais pas parée.\n✦ L’armure n’est d’aucune utilité.\n✦ Si votre jet de SURVIE échoue, les guêpes vous piquent à la place de l’adversaire.",
+        "Racines noueuses\n✦ Faites un jet pour renverser votre adversaire (page 48).\n✦ En cas de succès, l’adversaire doit dépenser une action et réussir un jet d’ACROBATIE pour se relever.",
+        "Rocher\n✦ Faites un jet d’ACROBATIE pour sauter depuis le rocher et vous jeter sur un adversaire situé à 2 m ou moins.\n✦ L’attaque inflige 2D6 points de dégâts contondants, plus le bonus aux dégâts. Elle ne peut être ni esquivée ni parée.\n✦ En cas de succès, vous et votre adversaire tombez au sol.\n✦ Si votre jet échoue, vous seul tombez au sol et vous subissez 1D6 points de dégâts contondants.",
+        "Vipère\n✦ Faites un jet de SURVIE pour vous saisir de la vipère et la lancer sur un adversaire situé à 10 m ou moins.\n✦ L’adversaire est mordu. Il subit 1D6 points de dégâts et les effets d’un poison de toxicité 12 si la morsure transperce l’armure.\n✦ L’attaque peut être esquivée, mais pas parée.\n✦ Si votre jet de SURVIE échoue, la vipère vous mord à la place de l’adversaire.",
+        "Poignée de terre\n✦ Lancez de la terre dans les yeux d’un adversaire situé à 10 m ou moins.\n✦ L’adversaire subit 1D6 points de dégâts (l’armure n’est d’aucune utilité) et un fléau sur toutes ses actions pour le reste du combat.\n✦ L’attaque peut être esquivée, mais pas parée."
+      ]
+    }
+  ]
+}
