@@ -93,6 +93,20 @@
     </div>
 
     <button id="roll-table" class="red-btn">Lancer le jet</button>
+<div class="row">
+  <input type="number" id="custom-dice-count" value="1" min="1">
+  <span class="d-text">d</span>
+  <select id="custom-dice-type">
+    <option value="4">4</option>
+    <option value="6">6</option>
+    <option value="8">8</option>
+    <option value="10">10</option>
+    <option value="12">12</option>
+    <option value="20" selected>20</option>
+    <option value="100">100</option>
+  </select>
+</div>
+<button id="roll-table-custom" class="red-btn">Jet modifié</button>
 
     <section class="result" id="table-result">
       <p class="placeholder">Aucun résultat</p>
