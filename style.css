@@ -1,9 +1,13 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', system-ui, sans-serif;
+}
+
 body {
   margin: 0;
   padding: 1rem;
   background: #000;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -24,9 +28,18 @@ h1 {
 
 .row {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   margin-bottom: 1rem;
   align-items: center;
+}
+
+.row-align {
+  align-items: baseline;
+}
+
+label {
+  flex: 1;
+  font-size: 0.95rem;
 }
 
 input, select {
@@ -37,8 +50,18 @@ input, select {
   border-radius: 4px;
 }
 
+input[type="number"] {
+  width: 60px;
+  text-align: center;
+}
+
+.d-text {
+  font-weight: 600;
+  padding: 0 0.2rem;
+}
+
 button {
-  width: 100%; /* plein largeur */
+  width: 100%;
   padding: 0.6rem;
   font-size: 1rem;
   background: #3a6ea5;
@@ -57,6 +80,11 @@ button:hover {
   padding: 1rem;
   background: #111;
   border-radius: 8px;
+}
+
+.placeholder {
+  opacity: 0.6;
+  text-align: center;
 }
 
 strong.crit {
@@ -80,7 +108,7 @@ strong.crit {
 
 .history-content {
   margin-top: 0.5rem;
-  display: none;
+  display: none; /* replié par défaut */
 }
 
 .history-content p {
