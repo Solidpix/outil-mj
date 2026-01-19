@@ -160,47 +160,31 @@ switchToTables.addEventListener("click", () => {
 });
 
 /* TABLE ALEATOIRE */
-let tables = {}; // objet contenant toutes les tables importées
 let tableHistory = [];
-
-// Exemple pour tester
-tables["Monstre"] = [
-  "Gobelin",
-  "Orc",
-  "Troll",
-  "Dragon"
-];
-
-document.getElementById("import-tables").addEventListener("click", () => {
-  // Ici tu ajouteras plus tard le fetch depuis GitHub
-  const select = document.getElementById("table-select");
-  select.innerHTML = "";
-  for (let tableName in tables) {
-    const opt = document.createElement("option");
-    opt.value = tableName;
-    opt.textContent = tableName;
-    select.appendChild(opt);
-  }
-});
 
 document.getElementById("roll-table").addEventListener("click", () => {
   const select = document.getElementById("table-select");
-  const tableName = select.value;
-  if (!tableName) return alert("Veuillez sélectionner une table.");
+  const index = select.value;
 
-  const table = tables[tableName];
-  const index = Math.floor(Math.random() * table.length);
-  const resultText = table[index];
+  if (index === "") return alert("Veuillez sélectionner une table.");
 
-  // Affichage résultat
+  const table = tablesData[index];
+  const roll = Math.floor(Math.random() * table.entries.length);
+  const resultText = table.entries[roll];
+
   const container = document.getElementById("table-result");
-  container.innerHTML = `<p>${tableName} [${index + 1}] → ${resultText}</p>`;
+  container.innerHTML = `<p>${table.name} [${roll + 1}] → ${resultText}</p>`;
 
-  // Historique
-  tableHistory.unshift({ tableName, index: index + 1, resultText });
+  tableHistory.unshift({
+    tableName: table.name,
+    index: roll + 1,
+    resultText
+  });
+
   if (tableHistory.length > 10) tableHistory.pop();
   displayTableHistory();
 });
+
 
 const toggleTableHistory = document.getElementById("toggle-table-history");
 toggleTableHistory.addEventListener("click", () => {
@@ -212,6 +196,9 @@ toggleTableHistory.addEventListener("click", () => {
     div.style.display = "none";
     toggleTableHistory.textContent = "▼";
   }
+
+});
+
     document.getElementById("roll-table-custom").addEventListener("click", () => {
   const select = document.getElementById("table-select");
   const tableName = select.value;
@@ -239,8 +226,6 @@ toggleTableHistory.addEventListener("click", () => {
   tableHistory.unshift({ tableName, index: rollTotal, resultText });
   if (tableHistory.length > 10) tableHistory.pop();
   displayTableHistory();
-});
-
 });
 
 function displayTableHistory() {
