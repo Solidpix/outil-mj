@@ -85,24 +85,26 @@ function displayResult(result) {
   const container = document.getElementById("result");
   container.innerHTML = "";
 
-  result.rolls.forEach((roll, index) => {
-    const selected = index === result.selectedRoll;
-// Créer l'affichage des dés en mettant en forme les critiques
-const diceDisplay = roll.dice.map(d => {
-  if (d === 1 || d === result.y) return `<strong class="crit">${d}</strong>`;
-  return d;
-}).join(", ");
+result.rolls.forEach((roll, index) => {
+  const selected = index === result.selectedRoll;
 
-const div = document.createElement("div");
-div.innerHTML = `
-  <p>
-    ${result.mode !== "normal" ? (selected ? "▶ " : "") : ""}
-    ${result.x}d${result.y} → [${diceDisplay}] = ${roll.total}
-  </p>
-`;
+  // Affichage des dés, mise en forme uniquement pour le dé critique du jet sélectionné
+  const diceDisplay = roll.dice.map(d => {
+    if (selected && (d === 1 || d === result.y)) return `<strong class="crit">${d}</strong>`;
+    return d;
+  }).join(", ");
 
-    container.appendChild(div);
-  });
+  const div = document.createElement("div");
+  div.innerHTML = `
+    <p>
+      ${result.mode !== "normal" ? (selected ? "▶ " : "") : ""}
+      ${result.x}d${result.y} → [${diceDisplay}] = ${roll.total}
+    </p>
+  `;
+
+  container.appendChild(div);
+});
+
 
   const final = document.createElement("p");
   final.innerHTML = `
