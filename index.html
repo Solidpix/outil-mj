@@ -8,7 +8,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- Bandeau de switch en haut -->
+<div class="module-switch">
+  <button id="switch-to-dice" class="blue-btn">Jet de dés</button>
+  <button id="switch-to-tables" class="red-btn">Tables aléatoires</button>
+</div>
 
+<!-- MODULE JET DE DES (existant) -->
+<section id="dice-module">
   <main class="container">
     <h1>🎲 Jet de dés</h1>
 
@@ -69,7 +76,40 @@
     </section>
 
   </main>
+</section>
 
+<!-- MODULE TABLES ALEATOIRES -->
+<section id="tables-module" style="display:none;">
+  <div class="tables-form">
+    <button id="import-tables" class="red-btn">Importer tables</button>
+
+    <div class="row">
+      <label>
+        Table à utiliser
+        <select id="table-select">
+          <option value="">Aucune table chargée</option>
+        </select>
+      </label>
+    </div>
+
+    <button id="roll-table" class="red-btn">Lancer le jet</button>
+
+    <section class="result" id="table-result">
+      <p class="placeholder">Aucun résultat</p>
+    </section>
+
+    <!-- Historique tables -->
+    <section class="history-section">
+      <h2>
+        Historique
+        <button id="toggle-table-history">▼</button>
+      </h2>
+      <div id="table-history" class="history-content">
+        <p class="placeholder">Aucun jet pour l’instant</p>
+      </div>
+    </section>
+  </div>
+</section>
   <script src="script.js"></script>
 </body>
 </html>
