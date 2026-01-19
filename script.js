@@ -1,3 +1,4 @@
+// --- MOTEUR DE DES ---
 function rollSingleSet(x, y) {
   const dice = [];
   for (let i = 0; i < x; i++) {
@@ -7,14 +8,7 @@ function rollSingleSet(x, y) {
   return { dice, total };
 }
 
-function applyOperator(value, operator, z) {
-  if (operator === "+" && z !== null) return value + z;
-  if (operator === "-" && z !== null) return value - z;
-  if (operator === "*" && z !== null) return value * z;
-  return value;
-}
-
-function rollDice({ x, y, operator = null, z = null, mode = "normal" }) {
+function rollDice({ x, y, z = 0, mode = "normal" }) {
   const rolls = [];
 
   if (mode === "normal") {
@@ -26,39 +20,39 @@ function rollDice({ x, y, operator = null, z = null, mode = "normal" }) {
 
   let selectedRoll = 0;
 
-  if (mode === "advantage") {
+  if (mode === "max") {
     selectedRoll = rolls[0].total >= rolls[1].total ? 0 : 1;
   }
 
-  if (mode === "disadvantage") {
+  if (mode === "min") {
     selectedRoll = rolls[0].total <= rolls[1].total ? 0 : 1;
   }
 
   const baseTotal = rolls[selectedRoll].total;
-  const finalTotal = applyOperator(baseTotal, operator, z);
+  const finalTotal = baseTotal + z;
 
   return {
     mode,
     rolls,
     selectedRoll,
     baseTotal,
+    modifier: z,
     finalTotal
   };
 }
 
+// --- LIAISON UI ---
 document.getElementById("roll-button").addEventListener("click", () => {
   const x = parseInt(document.getElementById("dice-count").value, 10);
   const y = parseInt(document.getElementById("dice-type").value, 10);
-  const operator = document.getElementById("operator").value || null;
-  const zValue = document.getElementById("modifier").value;
-  const z = operator ? parseInt(zValue, 10) : null;
+  const z = parseInt(document.getElementById("modifier").value, 10);
   const mode = document.getElementById("mode").value;
 
-  const result = rollDice({ x, y, operator, z, mode });
-  displayResult(result, x, y, operator, z);
+  const result = rollDice({ x, y, z, mode });
+  displayResult(result, x, y);
 });
 
-function displayResult(result, x, y, operator, z) {
+function displayResult(result, x, y) {
   const container = document.getElementById("result");
   container.innerHTML = "";
 
@@ -77,12 +71,10 @@ function displayResult(result, x, y, operator, z) {
     container.appendChild(div);
   });
 
-  const modText = operator && z !== null ? ` ${operator} ${z}` : "";
-
   const final = document.createElement("p");
   final.innerHTML = `
     <hr>
-    <p>Total final : <strong>${result.baseTotal}${modText} = ${result.finalTotal}</strong></p>
+    <p>Total final : <strong>${result.baseTotal} + ${result.modifier} = ${result.finalTotal}</strong></p>
   `;
   container.appendChild(final);
 }
