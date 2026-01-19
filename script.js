@@ -199,34 +199,41 @@ toggleTableHistory.addEventListener("click", () => {
 
 });
 
-    document.getElementById("roll-table-custom").addEventListener("click", () => {
+document.getElementById("roll-table-custom").addEventListener("click", () => {
   const select = document.getElementById("table-select");
-  const tableName = select.value;
-  if (!tableName) return alert("Veuillez sélectionner une table.");
+  const index = select.value;
 
-  const table = tables[tableName];
+  if (index === "") return alert("Veuillez sélectionner une table.");
+
+  const table = tablesData[index];
   const x = parseInt(document.getElementById("custom-dice-count").value, 10);
   const y = parseInt(document.getElementById("custom-dice-type").value, 10);
 
-  // Lancer XdY
   let rollTotal = 0;
   for (let i = 0; i < x; i++) {
     rollTotal += Math.floor(Math.random() * y) + 1;
   }
 
-  // Déterminer l'index dans la table
-  const index = rollTotal > table.length ? table.length - 1 : rollTotal - 1;
-  const resultText = table[index];
+  const tableIndex =
+    rollTotal > table.entries.length
+      ? table.entries.length - 1
+      : rollTotal - 1;
 
-  // Affichage résultat
-  const container = document.getElementById("table-result");
-  container.innerHTML = `<p>${tableName} [${rollTotal}] → ${resultText}</p>`;
+  const resultText = table.entries[tableIndex];
 
-  // Historique
-  tableHistory.unshift({ tableName, index: rollTotal, resultText });
+  document.getElementById("table-result").innerHTML =
+    `<p>${table.name} [${rollTotal}] → ${resultText}</p>`;
+
+  tableHistory.unshift({
+    tableName: table.name,
+    index: rollTotal,
+    resultText
+  });
+
   if (tableHistory.length > 10) tableHistory.pop();
   displayTableHistory();
 });
+
 
 function displayTableHistory() {
   const div = document.getElementById("table-history");
@@ -271,25 +278,7 @@ function populateTablesDropdown() {
     select.appendChild(option);
   });
 }
-function rollOnTable() {
-  const select = document.getElementById("table-select");
-  const index = select.value;
 
-  if (index === "") return;
-
-  const table = tablesData[index];
-  const roll = Math.floor(Math.random() * table.entries.length);
-  const result = table.entries[roll];
-
-  displayTableResult(table.name, roll + 1, result);
-}
-function displayTableResult(tableName, roll, result) {
-  const div = document.getElementById("table-result");
-  div.innerHTML = `
-    <p><strong>${tableName}</strong> [${roll}]</p>
-    <p>${result}</p>
-  `;
-}
 window.addEventListener("load", () => {
   loadTablesFromGitHub(
     "https://raw.githubusercontent.com/Solidpix/outil-mj/refs/heads/main/tables/Dragonbane_Tables.json"
