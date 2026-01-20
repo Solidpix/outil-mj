@@ -58,17 +58,31 @@ campaignSelect.addEventListener("change", async () => {
 const tableSelect = document.getElementById("table-select");
 
 // --- REMPLISSAGE DU MENU DES TABLES --- //
+// Après avoir chargé les tables
+let tableSelectChoices;
+
 function populateTableSelect() {
+  // vider l'ancien contenu
   tableSelect.innerHTML = '<option value="">— Choisir une table —</option>';
 
-  // tablesData est un tableau
   tablesData.forEach((table, index) => {
     const option = document.createElement("option");
-    option.value = index;        // index pour accéder à tablesData
-    option.textContent = table.name; // nom affiché
+    option.value = index;
+    option.textContent = table.name;
     tableSelect.appendChild(option);
   });
+
+  // initialiser Choices.js
+  if (tableSelectChoices) {
+    tableSelectChoices.destroy();
+  }
+  tableSelectChoices = new Choices(tableSelect, {
+    searchEnabled: true,
+    itemSelectText: '',   // enlève le texte "Appuyez sur Entrée"
+    shouldSort: false
+  });
 }
+
 
 // --- LANCER UN JET SUR UNE TABLE ---
 function rollTable(customDice = false) {
