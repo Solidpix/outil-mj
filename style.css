@@ -227,3 +227,20 @@ strong.crit {
   background-color: #333 !important;
   color: #fff !important;
 }
+/* Champ visible fermé */
+.choices__inner {
+  background-color: #111 !important; /* fond noir */
+  color: #eee !important;            /* texte clair */
+  border: 1px solid #444 !important;
+}
+
+/* Texte affiché dans le champ fermé */
+.choices__inner::after {
+  background-color: #111 !important; /* fond noir du pseudo-élément */
+  color: #eee !important;            /* texte clair */
+}
+
+/* Placeholder quand rien n'est sélectionné */
+.choices__inner .choices__placeholder {
+  color: #aaa !important;
+}
