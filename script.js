@@ -1,3 +1,70 @@
+// --- CAMPAGNES DISPONIBLES ---
+const campaigns = {
+  "Dragonbane": {
+    url: "https://raw.githubusercontent.com/Solidpix/outil-mj/refs/heads/main/tables/Dragonbane.json"
+  },
+  "Alien RPG": {
+    url: "https://raw.githubusercontent.com/Solidpix/outil-mj/refs/heads/main/tables/Alien.json"
+  },
+  "Dragonbane - Duo": {
+    url: "https://raw.githubusercontent.com/Solidpix/outil-mj/refs/heads/main/tables/Dragonbane_Duo.json"
+  }
+};
+
+// --- CHARGEMENT DU MENU CAMPAGNE --- //
+const campaignSelect = document.getElementById("campaign-select");
+
+function populateCampaigns() {
+  campaignSelect.innerHTML = '<option value="">— Choisir une campagne —</option>';
+
+  Object.keys(campaigns).forEach(name => {
+    const option = document.createElement("option");
+    option.value = name;
+    option.textContent = name;
+    campaignSelect.appendChild(option);
+  });
+}
+
+populateCampaigns();
+
+
+// --- CHARGEMENT DU JSON QUAND ON CHARGE UNE CAMPAGNE --- //
+let tablesData = {};
+
+campaignSelect.addEventListener("change", async () => {
+  const campaignName = campaignSelect.value;
+  if (!campaignName) return;
+
+  const url = campaigns[campaignName].url;
+
+  try {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error("Erreur de chargement");
+
+    tablesData = await response.json();
+    populateTableSelect();
+
+  } catch (err) {
+    alert("Impossible de charger la campagne.");
+    console.error(err);
+  }
+});
+
+
+// --- REMPLISSAGE DU MENU DES TABLES --- //
+const tableSelect = document.getElementById("table-select");
+
+function populateTableSelect() {
+  tableSelect.innerHTML = '<option value="">— Choisir une table —</option>';
+
+  Object.keys(tablesData).forEach(tableName => {
+    const option = document.createElement("option");
+    option.value = tableName;
+    option.textContent = tableName;
+    tableSelect.appendChild(option);
+  });
+}
+
 
 // --- MOTEUR DE DES ---
 function rollSingleSet(x, y) {
