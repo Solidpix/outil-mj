@@ -149,3 +149,28 @@ strong.crit {
   background: #c24a4a;
 }
 
+/* Fond du menu déroulant */
+.choices__list--dropdown {
+  background-color: #111 !important; /* noir foncé */
+  color: #eee !important;            /* texte clair */
+  border: 1px solid #444 !important; /* bordure visible */
+}
+
+/* Option non sélectionnée */
+.choices__list--dropdown .choices__item {
+  background-color: #111 !important;
+  color: #eee !important;
+}
+
+/* Option survolée / focus */
+.choices__list--dropdown .choices__item.is-highlighted {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
+/* Input de recherche */
+.choices__input {
+  background-color: #111 !important;
+  color: #eee !important;
+}
+
