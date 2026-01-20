@@ -1,0 +1,561 @@
+{
+  "tables": [
+    {
+      "name": "😱 Terreur",
+      "entries": [
+        "Affaibli. La peur draine votre énergie et votre détermination. Vous perdez 2D6 PV (minimum zéro) et vous êtes Découragé (CHA).",
+        "Secoué. Vous subissez l’état Effrayé (VOL).",
+        "Haletant. La peur intense vous coupe le souffle et vous devenez Épuisé (FOR).",
+        "Pâle. Votre visage devient blanc comme un linge. Vous et tous les personnages joueurs situés dans un rayon de dix mètres autour de vous et à portée de vue êtes Effrayés (VOL).",
+        "Cri. Vous hurlez d’horreur. De ce fait, tous les personnages joueurs qui vous entendent subissent immédiatement une attaque de terreur. Un individu n’a besoin que d’un seul jet de VOL pour résister à la même attaque de terreur.",
+        "Rage. Votre peur se transforme en colère, et vous êtes obligé d’attaquer sa source à votre prochain tour (de préférence au corps à corps). Vous devenez également Furieux (INT).",
+        "Paralysé. Vous êtes pétrifié de terreur et incapable de bouger. Vous ne pouvez pas effectuer d’action ou de déplacement lors de votre prochain tour. Faites un jet de VOL à chaque tour suivant (qui ne compte pas comme une action) pour briser la paralysie.",
+        "Panique. Dans un accès de panique totale, vous fuyez la scène aussi vite que vous le pouvez. Lors de votre prochain tour, vous vous éloignez de la source de votre peur. À chaque tour suivant, faites un jet de VOL (qui ne compte pas comme une action) pour arrêter de courir et agir à nouveau normalement."
+      ]
+    },
+    {
+      "name": "🪙 Trésor",
+      "entries": [
+        "Pièces de cuivre. 1D6 pièces de cuivre",
+        "Pièces de cuivre. 2D6 pièces de cuivre",
+        "Pièces de cuivre. 4D6 pièces de cuivre",
+        "Pièces de cuivre. 2D6 x 10 pièces de cuivre",
+        "Pièces de cuivre. 4D6 x 10 pièces de cuivre",
+        "Pièces d’argent. 1D6 pièces d’argent",
+        "Pièces d’argent. 3D6 pièces d’argent",
+        "Pièces d’argent. 1D6 x 5 pièces d’argent",
+        "Pièces d’argent. 1D6 x 10 pièces d’argent",
+        "Pièces d’argent. 2D6 x 10 pièces d’argent",
+        "Pièces d’argent. 3D6 x 10 pièces d’argent",
+        "Pièces d’or. 1D6 pièces d’or",
+        "Pièces d’or. 2D6 pièces d’or",
+        "Pièces d’or. 4D6 pièces d’or",
+        "Pièces d’or. 1D6 x 10 pièces d’or",
+        "Pièces d’or. 2D6 x 10 pièces d’or",
+        "Calice. 2D6 x 5 pièces d’or",
+        "Bracelet en argent. 2D6 x 10 pièces d’argent",
+        "Bracelet en or. 2D6 x 10 pièces d’or",
+        "Collier en argent. 2D6 x 5 pièces d’argent",
+        "Collier en or. 2D6 pièces d’or",
+        "Anneau en argent. 2D6 pièces d’argent",
+        "Anneau en or. 4D6 pièces d’or",
+        "Broche en argent. 2D6 x 5 pièces d’argent",
+        "Amulette en or. 2D6 x 5 pièces d’or",
+        "Gemme. Lancez 1D6: 1 – verre (2 PC); 2 – cristal (10 PA); 3 – émeraude (10 PO); 4 – saphir (15 PO); 5 – rubis (25 PO); 6 – diamant (100 PO)",
+        "Vêtement. Lancez 1D3: 1 – bottes; 2 – cape; 3 – fourrure.",
+        "Arme de corps à corps. Lancez 1D6: 1 – dague; 2 – épée courte; 3 – lance courte; 4 – épée large; 5 – lance longue; 6 – épée longue",
+        "Arme de corps à corps. Lancez 1D6: 1 – hache; 2 – cimeterre; 3 – étoile du matin; 4 – dague de parade; 5 – marteau de guerre léger ; 6 – fléau d’armes",
+        "Arme à distance. Lancez 1D6: 1 – fronde; 2 – arc court ; 3 – arc long; 4 – arbalète légère; 5 – arbalète lourde; 6 – arbalète de poing",
+        "Arme de maître. Lancez 1D6: 1 – dague; 2 – épée courte; 3 – hache de bataille; 4 – épée large; 5 – marteau de guerre lourd; 6 – épée longue",
+        "Armure/bouclier. Lancez 1D6: 1 – petit bouclier ; 2 – grand bouclier ; 3 – heaume ouvert ; 4 – grand heaume; 5 – cuir clouté; 6 – cotte de mailles",
+        "Dague empoisonnée. Faites un jet d’ESQUIVE. Si vous échouez, vous vous coupez et subissez les effets d’un poison de toxicité 12. \nLancez 1D3 pour connaître son type: 1 – mortel; 2 – paralysant ; 3 – narcotique.",
+        "Clou rouillé. Faites un jet d’ESQUIVE. Si vous échouez, vous subissez 1D6 points de dégâts.\nL’armure n’est d’aucune utilité.",
+        "Grimoire. Lancez 1D4 pour connaître l’école. 1 – animisme; 2 – élémentalisme; 3 – mentalisme; 4 – magie universelle.\nLancez 1D4–1 pour connaître le rang (0 pour un tour de magie) et 1D4 pour en connaître le nombre.\nLe MJ choisit les sorts ou laisse faire le hasard.",
+        "Bouteille. Un jet de SOINS en révèle le contenu. Sur un échec, le MJ fait un jet en secret.\nLancez 1D6: 1 – poison mortel (toxicité 12); 2 – narcotique (toxicité 14): 3 – boisson alcoolisée; 4 – décoction à base de plantes; 5 – potion de soins (2D6 PS); 6 – potion de soins (3D6 PS).",
+        "Livre. Lancez 1D6 pour connaître le titre: 1 – Manger ou être mangé – Les plantes de la forêt ; 2 – Grammaire de la langue draconique; 3 – Héros et vils personnages du passé; 4 – Manuel du maître charpentier ; 5 – Bêtes des profondeurs – Une encyclopédie; 6 – Sang, flegme et bile – Maîtrisez vos fluides corporels.",
+        "Instrument de musique. Lancez 1D6: 1 – corne; 2 – flûte; 3 – harpe; 4 – lyre; 5 – cornemuse; 6 – tambour.",
+        "Marchandise. Lancez 1D6: 1 – loupe ; 2 – longue-vue; 3 – parfum; 4 – jeu d’échecs; 5 – cartes à jouer ; 6 – billes.",
+        "Rat. Faites un jet d’ESQUIVE. En cas d’échec, vous subissez 1D4 points de dégâts.\nL’armure n’est d’aucune utilité."
+      ]
+    },
+    {
+      "name": "📆 Event - Château du Chevalier Brigand",
+      "entries": [
+        "Gobelins : deux gobelins apparaissent soudain et après un moment de confusion, ils dégainent leurs épées courtes, poussent un cri et attaquent.",
+        "Cochon fouisseur : Merle le cochon grogne de contentement dans un coin. Lorsqu’il aperçoit les personnages, il s’immobilise dans un couinement effrayé et s’enfuit par l’issue la plus proche. S’ils blessent Merle, l’orc Grunta (voir la cave, emplacement n° 5) deviendra à jamais leur ennemie.",
+        "Esprits maléfiques: soudain, l’air se met à vibrer et un tourbillon froid s’abat sur les aventuriers. Les silhouettes de trois guerriers en cotte de mailles, morts depuis longtemps, apparaissent dans les bourrasques hurlantes. Ils tendent les bras vers eux, comme pour les entraîner dans le royaume des trépassés. Chacun doit faire un jet de VOL afin de résister à la terreur avant que les spectres disparaissent.",
+        "Tempête: de sombres nuages s’amoncellent au-dessus du château et tout à coup, le ciel libère des torrents de pluie et le tonnerre gronde dans la vallée. Pour le reste de l’aventure, toutes les attaques à distance subissent un fléau lorsqu’elles se déroulent à l’extérieur.",
+        "Corbeaux: un groupe de corbeaux jaillit soudain d’une fissure et se dirige droit sur les personnages. Tous doivent faire un jet d’ESQUIVE et en cas d’échec, les becs et les serres des oiseaux leur infligent 1D3 points de dégâts perforants. Ils s’envolent ensuite jusqu’au sommet de la tour.",
+        "Piège: les gobelins ont suspendu un marteau de guerre et mis en place un piège astucieux. Celui-ci se déclenche quand un personnage (avec le score d’AGI le plus bas) marche accidentellement sur une pierre descellée ou une planche mal fixée. Il devra alors réussir un jet d’ESQUIVE ou subir 2D6 points de dégâts contondants."
+      ]
+    },
+    {
+      "name": "⚔️ Armes Improvisées (Auberge)",
+      "entries": [
+        "Chaudron d’eau bouillante\n✦ Lancez l’eau bouillante en un cône de 4 m de longueur.\n✦ Chaque personnage dans le cône subit 2D6 points de dégâts.\n✦ L’attaque peut être esquivée, mais pas parée.\n✦ L’armure n’est d’aucune utilité.",
+        "Seau d’eau savonneuse\n✦ Lancez l’eau savonneuse en un cône de 4 m de longueur.\n✦ Chaque personnage dans le cône tombe au sol.\n✦ L’attaque peut être esquivée, mais pas parée.",
+        "Bûche enflammée\n✦ Frappez un adversaire situé à 2 m ou moins avec la bûche.\n✦ Nécessite une main libre.\n✦ L’attaque touche automatiquement et inflige 2D6 points de dégâts de feu, plus le bonus aux dégâts.\n✦ L’attaque peut être esquivée ou parée.\n✦ La bûche peut ensuite être utilisée comme torche.",
+        "Cochon fouineur\n✦ Faites un jet de SURVIE pour énerver le cochon et lui faire attaquer un ennemi de votre choix situé à 10 m ou moins.\n✦ L’attaque touche automatiquement et inflige 3D6 points de dégâts contondants.\n✦ L’attaque peut être esquivée, mais pas parée.\n✦ Ensuite, le cochon détale en trombe.",
+        "Bouteille de vin\n✦ Frappez un adversaire situé à 2 m ou moins avec la bouteille.\n✦ Nécessite une main libre.\n✦ L’attaque touche automatiquement et inflige 2D6 points de dégâts contondants, plus le bonus aux dégâts.\n✦ L’attaque peut être esquivée ou parée.\n✦ L’ennemi a du vin dans les yeux et subit un fléau sur toutes ses actions jusqu’à votre prochain tour.",
+        "Lustre\n✦ Balancez-vous du lustre et effectuez une attaque de corps à corps.\n✦ Vous pouvez effectuer une action de déplacement normale sans déclencher d’attaque gratuite.\n✦ L’attaque de corps à corps doit être effectuée à mains nues, mais elle ne peut être ni esquivée ni parée.\n✦ Si l’attaque échoue, vous tombez au sol et subissez 1D6 points de dégâts contondants."
+      ]
+    },
+    {
+      "name": "⚔️ Armes Improvisées (Caverne)",
+      "entries": [
+        "Stalactite\n✦ Poussez un adversaire situé à 2 m ou moins vers une formation rocheuse acérée pendant du plafond.\n✦ L’attaque touche automatiquement et inflige 2D6 points de dégâts perforants, plus le bonus aux dégâts.\n✦ L’attaque peut être esquivée, mais pas parée.\n✦ L’armure n’est d’aucune utilité, à l’exception des heaumes.",
+        "Torche\n✦ Saisissez une torche au mur et frappez un adversaire situé à 2 m ou moins.\n✦ Nécessite une main libre.\n✦ L’attaque touche automatiquement et inflige 2D6 points de dégâts de feu, plus le bonus aux dégâts.\n✦ L’attaque peut être esquivée ou parée.\n✦ Vous pouvez ensuite conserver la torche.",
+        "Stalagmite\n✦ Poussez un adversaire situé à 2 m ou moins vers une haute formation rocheuse au sol.\n✦ L’attaque touche automatiquement et inflige 1D6 points de dégâts contondants, plus le bonus aux dégâts. L’adversaire tombe au sol.\n✦ L’attaque peut être esquivée, mais pas parée.",
+        "Flaque\n✦ Faites un jet pour renverser votre adversaire (page 48).\n✦ En cas de succès, l’adversaire doit dépenser une action et réussir un jet d’ACROBATIE pour se relever.",
+        "Crevasse\n✦ Faites un jet pour renverser votre adversaire (page 48).\n✦ En cas de réussite, l’adversaire tombe dans une crevasse de 2D6 mètres et subit des dégâts de chute.\n✦ Remonter nécessite un jet d’ACROBATIE.",
+        "Chauves-souris\n✦ Effectuez un jet de SURVIE pour perturber les chauves-souris et leur faire attaquer un adversaire situé à 10 m ou moins.\n✦ Pour leurs caractéristiques, voir en page 99.\n✦ Les chauves-souris continuent à attaquer l’adversaire durant 1D3 rounds.\n✦ Si votre jet de SURVIE échoue, les chauves-souris vous attaquent plutôt que votre adversaire."
+      ]
+    },
+    {
+      "name": "⚔️ Armes Improvisées (Forêt)",
+      "entries": [
+        "Branche basse\n✦ Balancez-vous depuis la branche et effectuez une attaque de corps à corps.\n✦ Vous pouvez effectuer une action de déplacement normale sans déclencher d’attaque gratuite.\n✦ L’attaque de corps à corps doit être effectuée à mains nues, mais elle ne peut être ni esquivée ni parée.\n✦ Si l’attaque échoue, vous tombez au sol et subissez 1D6 points de dégâts contondants.",
+        "Nid de guêpes\n✦ Faites un jet de SURVIE pour attraper le nid de guêpes et le lancer sur un adversaire situé à 10 m ou moins.\n✦ L’adversaire est sévèrement piqué. Il subit 2D6 points de dégâts et un fléau sur toutes ses actions durant un intervalle.\n✦ L’attaque peut être esquivée, mais pas parée.\n✦ L’armure n’est d’aucune utilité.\n✦ Si votre jet de SURVIE échoue, les guêpes vous piquent à la place de l’adversaire.",
+        "Racines noueuses\n✦ Faites un jet pour renverser votre adversaire (page 48).\n✦ En cas de succès, l’adversaire doit dépenser une action et réussir un jet d’ACROBATIE pour se relever.",
+        "Rocher\n✦ Faites un jet d’ACROBATIE pour sauter depuis le rocher et vous jeter sur un adversaire situé à 2 m ou moins.\n✦ L’attaque inflige 2D6 points de dégâts contondants, plus le bonus aux dégâts. Elle ne peut être ni esquivée ni parée.\n✦ En cas de succès, vous et votre adversaire tombez au sol.\n✦ Si votre jet échoue, vous seul tombez au sol et vous subissez 1D6 points de dégâts contondants.",
+        "Vipère\n✦ Faites un jet de SURVIE pour vous saisir de la vipère et la lancer sur un adversaire situé à 10 m ou moins.\n✦ L’adversaire est mordu. Il subit 1D6 points de dégâts et les effets d’un poison de toxicité 12 si la morsure transperce l’armure.\n✦ L’attaque peut être esquivée, mais pas parée.\n✦ Si votre jet de SURVIE échoue, la vipère vous mord à la place de l’adversaire.",
+        "Poignée de terre\n✦ Lancez de la terre dans les yeux d’un adversaire situé à 10 m ou moins.\n✦ L’adversaire subit 1D6 points de dégâts (l’armure n’est d’aucune utilité) et un fléau sur toutes ses actions pour le reste du combat.\n✦ L’attaque peut être esquivée, mais pas parée."
+      ]
+    },
+    {
+      "name": "💀 Le Chevalier Brigand",
+      "entries": [
+        "Rugissement impie: un cri épouvantable jaillit du cou sans tête de la créature et transperce l’âme des personnages comme une lame rouillée. Tous ceux qui se trouvent dans un rayon de 10 m autour de lui subissent une attaque de terreur.",
+        "Horribles menaces: le spectre se tourne vers un aventurier malchanceux situé dans un rayon de 10 m autour de lui, puis sa gorge lui murmure d’horribles menaces. La victime devient Effrayée, et subit une attaque de terreur assortie d’un fléau sur son jet de VOL.",
+        "Poigne de la mort : la créature lève la main et fait un geste en direction d’un personnage situé dans un rayon de 10 m autour de lui. Ce dernier se retrouve projeté à 2D4 mètres de distance et tombe à terre. L’attaque inflige autant de points dégâts contondants et il est impossible de l’esquiver.",
+        "Balayage: à une vitesse surprenante, le chevalier balaie l’espace avec son étoile du matin et assène un coup mortel. Tous les personnages situés dans un rayon de 2 m autour de lui subissent 2D8 points de dégâts contondants. Il est possible de parer l’attaque.",
+        "Froid paralysant: le spectre saisit une malheureuse victime et cette dernière sent le froid de la mort se répandre dans son corps. Elle subit 1D6 points de dégâts (l’armure n’est d’aucune utilité) et doit faire un jet d’ESQUIVE (qui ne compte pas comme une action) à son prochain tour afin de pouvoir agir. En cas d’échec, elle pourra faire une nouvelle tentative au tour suivant. Elle a également froid et ne peut pas soigner ses PS ou ses PV tant qu’elle ne s’est pas réchauffée.",
+        "Coup puissant : malgré les craquements dans ses articulations, la créature fait tournoyer son arme et porte une attaque redoutable sur un personnage. Elle double les dégâts infligés par l’arme et la victime se retrouve à terre. Il est possible de parer cette attaque."
+      ]
+    },
+    {
+      "name": "💀 Chevaucheur de Worg",
+      "entries": [
+        "Saut. Le féroce worg se jette sur un personnage et le plaque violemment au sol. L’attaque inflige 2D8 points de dégâts contondants.",
+        "Coup descendant. Le worg bondit au-dessus d’un des personnages, son cavalier fend l’air de son cimeterre dentelé et l’abat sur lui. L’attaque inflige 3D6 points de dégâts tranchants. ",
+        "Hurlement affamé. Le worg lève la tête vers le ciel et pousse un hurlement affamé. Tous les personnages situés dans un rayon de 10 m autour de lui doivent faire un jet de VOL pour résister à la terreur.",
+        "Cri de guerre. Le cavalier rallie ses subordonnés. Tous les éclaireurs encore en vie bénéficient d’une faveur sur toutes leurs attaques jusqu’à son prochain tour.",
+        "Morsure. Le worg saisit une cible dans sa gueule écumante et commence à la secouer d’un côté à l’autre. L’attaque inflige 2D10 points de dégâts perforants, la victime se retrouve projetée à 2D4 mètres de distance et tombe à terre.",
+        "Charge. Le chevaucheur se précipite droit sur un personnage et tente de l’embrocher avec sa lance. L’attaque inflige 3D8 points de dégâts perforants, mais il est possible de la parer."
+      ]
+    },
+    {
+      "name": "💀 Worg",
+      "entries": [
+        "Hurlement vorace : le worg lève la tête vers le ciel et pousse un hurlement affamé. Tous ceux qui se trouvent dans un rayon de 10 m autour de lui doivent faire un jet de VOL pour résister à la terreur.",
+        "Grognement nauséabond : la créature crache un nuage pestilentiel de bave et de viande en décomposition sur tous les adversaires situés dans un rayon de 2 m autour d’elle. Les victimes deviennent Découragées et si elles subissent déjà cet état, elles doivent en choisir un autre.",
+        "Morsure : la bête ouvre ses mâchoires écumantes et mord furieusement son ennemi. L’attaque inflige 2D6 points de dégâts perforants et si la victime subit des dégâts, elle s’expose aussi à une maladie (virulence 12).",
+        "Charge : le worg se précipite à toute vitesse sur une cible. L’attaque inflige 1D6 points de dégâts contondants et la fait tomber à terre. Si elle n’esquive pas, il la mord sur-le-champ au cours d’une seconde attaque. Celle-ci inflige 2D8 points de dégâts perforants et il est possible de la parer. On doit esquiver ou parer les attaques séparément.",
+        "Traînée mortelle : la créature saisit son adversaire le moins protégé par son armure et le traîne sur 20 m à travers le champ de bataille. La victime subit 1D8 points de dégâts contondants et ne peut effectuer d’actions qui nécessitent un déplacement. Néanmoins, elle peut tenter de se libérer, ce qui demande un jet de FOR. À chaque tour suivant, le worg continue de la traîner jusqu’à ce qu’elle tombe à zéro PS ou qu’elle se libère.",
+        "Secousse mortelle : la bête bondit sur un adversaire et le mord, puis le secoue ensuite férocement avant de le jeter plus loin. L’attaque inflige 2D10 points de dégâts perforants, la victime se retrouve projetée à 2D4 mètres et elle tombe à terre."
+      ]
+    },
+    {
+      "name": "💀 Chauves-souris vampires",
+      "entries": [
+        "Horreur tourbillonnante: les chauves-souris tournent au-dessus de leurs victimes à un rythme effréné. Tous les individus qui se trouvent dans un rayon de 10 m autour d’elles subissent une attaque de terreur.",
+        "Horreur tourbillonnante: les chauves-souris tournent au-dessus de leurs victimes à un rythme effréné. Tous les individus qui se trouvent dans un rayon de 10 m autour d’elles subissent une attaque de terreur.",
+        "Attaque de groupe: les créatures lancent un assaut sur le personnage qui possède la CON la plus élevée. L’attaque inflige 2D6 points de dégâts tranchants, la victime subit une attaque de terreur et l’essaim récupère le même nombre de PS après avoir bu le sang de leur cible.",
+        "Attaque de groupe: les créatures lancent un assaut sur le personnage qui possède la CON la plus élevée. L’attaque inflige 2D6 points de dégâts tranchants, la victime subit une attaque de terreur et l’essaim récupère le même nombre de PS après avoir bu le sang de leur cible.",
+        "Attaque en masse: les chauves-souris se séparent pour attaquer tous les personnages situés dans un rayon de 10 m autour d’elles. Chaque victime subit 1D8 points de dégâts tranchants et l’essaim récupère le même nombre de PS après avoir bu le sang de leurs cibles.",
+        "Attaque en masse: les chauves-souris se séparent pour attaquer tous les personnages situés dans un rayon de 10 m autour d’elles. Chaque victime subit 1D8 points de dégâts tranchants et l’essaim récupère le même nombre de PS après avoir bu le sang de leurs cibles."
+      ]
+    },
+    {
+      "name": "💀 Araignée géante",
+      "entries": [
+        "Mandibules: les mandibules dentelées de l’araignée fendent l’air telles des cimeterres. L’attaque inflige 2D8 points de dégâts tranchants.",
+        "Déchiquetage: la créature affamée se jette sur ses proies, et attaque frénétiquement à l’aide de ses pattes poilues et couvertes de barbillons. Tous les personnages joueurs situés dans un rayon de 2 m autour d’elle subissent chacun 1D8 points de dégâts perforants.",
+        "Hypnose: le monstrueux arachnide fixe les personnages joueurs à travers une multitude d’yeux effrayants. Toutes les victimes situées dans un rayon de 10 m autour de lui doivent faire un jet de VOL pour résister à la terreur.",
+        "Dard empoisonné: l’horreur à huit pattes dresse son arrière-train et agresse un personnage. Un dard empoisonné jaillit de son corps répugnant et inflige 1D10 points de dégâts perforants. Si une victime subit au moins 1 point de dégâts, l’aiguillon lui injecte une substance paralysante (toxicité 16). Il est possible de parer l’attaque.",
+        "Toile d’araignée: l’araignée fixe ses nombreux yeux sur le personnage qui possède la plus haute valeur de FOR. L’instant d’après, elle lui crache une matière collante dessus et il doit faire un jet d’ESQUIVE (qui ne compte pas comme une action). En cas d’échec, la victime se retrouve prise dans les fils, incapable de bouger. Elle devra subir un fléau sur son jet de FOR (qui compte comme une action) pour se libérer, et d’autres individus peuvent l’aider.",
+        "Collision: l’araignée géante effectue un grand bond et lance son corps massif sur un personnage. L’attaque lui inflige 2D6 points dégâts contondants et le fait tomber à terre."
+      ]
+    },
+    {
+      "name": "💀 Spectre",
+      "entries": [
+        "Rugissement impie: la bouche sur le crâne décomposé de la créature se tord, et le cri terrible qu’elle pousse transperce l’âme des personnages comme une lame rouillée. Tous les individus situés dans un rayon de 10 m autour d’elle subissent une attaque de terreur (page 52).",
+        "Regard terrifiant : un personnage plonge directement son regard dans les yeux horribles du spectre, dont la gorge laisse échapper un sifflement. Le malchanceux devient Effrayé et subit une attaque de terreur, assortie d’un fléau sur son jet de VOL.",
+        "Poigne de la mort : le monstre lève la main et la tend en direction d’un personnage situé dans un rayon de 10 m autour de lui. Celui-ci se retrouve projeté à 2D4 mètres de distance, subit un nombre équivalent de points de dégâts et tombe à terre. Il est impossible d’esquiver cette attaque.",
+        "Balayage: avec une vitesse surprenante, le spectre fait tournoyer son arme et porte une attaque mortelle. Tous les personnages situés dans un rayon de 2 m autour de lui subissent les dégâts de l’arme. Il est possible de parer cette attaque.",
+        "Froid paralysant : le spectre saisit un malheureux personnage et celui-ci sent le froid de la mort envahir son corps. La victime subit 1D6 points de dégâts (l’armure n’est d’aucune utilité) et doit faire un jet d’ESQUIVE (qui ne compte pas comme une action) à son prochain tour pour pouvoir agir. S’il le rate, il peut effectuer une autre tentative au tour suivant. La cible a également froid (page 54) et elle ne peut pas récupérer de PS ou de PV tant qu’elle ne se réchauffe pas.",
+        "Coup puissant : malgré les craquements dans ses articulations, la créature fait tournoyer son arme et porte une attaque redoutable sur un personnage. Elle double les dégâts infligés par l’arme et la victime se retrouve à terre. Il est possible de parer cette attaque."
+      ]
+    },
+    {
+      "name": "💀 Bruyères meurtrières",
+      "entries": [
+        "Nuage de spores. Les ronces projettent un nuage de spores violettes qui provoquent de terribles démangeaisons. Il inflige un effet équivalent à celui d’un poison paralysant (toxicité 14) sur tous les personnages situés dans un rayon de 10 m autour des ronces.",
+        "Épines acérées. Les épines acérées des plantes déchirent la peau de la victime. L’attaque inflige 2D8 points de dégâts perforants.",
+        "Branches étrangleuses. De fines branches s’enroulent autour de tous les aventuriers situés dans un rayon de 6 m. Les victimes subissent 1D8 points de dégâts contondants et se retrouvent agrippées. Pour se libérer, elles devront réussir un jet de FOR (qui compte comme une action, et les autres peuvent aider), ou bien porter une attaque qui inflige au moins 6 points de dégâts aux ronces. Un personnage agrippé ne peut effectuer aucune action qui nécessite un mouvement du corps.",
+        "Attaque foudroyante. Une branche épaisse s’abat avec une force considérable sur un personnage situé dans un rayon de 10 m autour d’elle. L’attaque inflige 2D6 points de dégâts contondants et fait tomber la victime.",
+        "Étreinte mortelle. Un enchevêtrement de branches tente d’étrangler un héros situé dans un rayon de 10 m autour d’elles. La victime subit 2D8 points de dégâts contondants et se retrouve agrippée. Pour se libérer, elle devra réussir un jet de FOR (accompagné d’un fléau, d’autres peuvent aider), ou bien porter une attaque qui inflige au moins 6 points de dégâts aux ronces.",
+        "Attaque au visage. Une branche agresse un aventurier malchanceux situé dans un rayon de 10 m autour d’elle, et s’insinue dans la bouche et le nez de sa cible. L’attaque inflige 1D12 points de dégâts, et la victime doit faire un jet de VOL pour résister à la terreur."
+      ]
+    },
+    {
+      "name": "💀 Le Basilic",
+      "entries": [
+        "Coup de griffes. Le basilic abat ses terribles griffes sur deux personnages. Chaque attaque inflige 2D8 points de dégâts tranchants.",
+        "Coup de bec. La bête projette sa tête de vil oiseau vers l’avant et donne un coup de son bec tranchant comme un rasoir à l’un des personnages. L’attaque inflige 3D8 points de dégâts perforants.",
+        "Cocorico! La créature émet un chant cacophonique qui transperce les héros et leur fait saigner les oreilles. Tous ceux qui se trouvent dans un rayon de 10 m autour d’elle doivent faire un jet de CON (qui ne compte pas comme une action). En cas d’échec, la victime tombe au sol, devient Étourdie et perd son prochain tour.",
+        "Coup de fouet. Le monstre se sert de sa queue de serpent comme d’un fouet et porte une attaque de balayage qui atteint tous les aventuriers dans un rayon de 4 m autour de lui. Chaque attaque inflige 1D10 points de dégâts contondants, et ceux qu’elle touche se retrouvent au sol.",
+        "Nuage toxique. Le basilic crache un nuage jaune-verdâtre qui empeste le poison et les acides gastriques corrosifs. Tous les personnages situés dans un rayon de 10 m autour de lui subissent les effets d’un poison mortel (toxicité 15). ",
+        "Regard pétrifiant. Une lueur bleue s’allume dans les prunelles de la bête, et elle tourne sa tête d’oiseau vicieux vers le héros qui possède le plus de PS. Si la victime peut voir (c’est-à-dire qu’elle n’est pas aveugle et qu’elle n’a pas les yeux bandés), elle doit faire un jet de VOL (qui ne compte pas comme une action). En cas d’échec, son corps se transforme en pierre; elle ne peut plus bouger ou effectuer la moindre action, mais elle ne peut pas non plus subir de dégâts. Un personnage pétrifié meurt au bout de 2D6 rounds, mais un jet de VOL réussi annule les effets de ce pouvoir. Tant qu’elle demeure en vie, la victime peut faire un jet par tour. Le sort DISSIPATION (niveau de puissance 1) peut aussi annuler la pétrification, mais uniquement si la cible est encore en vie."
+      ]
+    },
+    {
+      "name": "💀 Squelette Boîteux",
+      "entries": [
+        "Direct osseux. Dans un méli-mélo d’os, la créature cueille sa victime avec un bon coup de poing et lui inflige 1D8 points de dégâts contondants.",
+        "Direct osseux. Dans un méli-mélo d’os, la créature cueille sa victime avec un bon coup de poing et lui inflige 1D8 points de dégâts contondants.",
+        "Direct osseux. Dans un méli-mélo d’os, la créature cueille sa victime avec un bon coup de poing et lui inflige 1D8 points de dégâts contondants.",
+        "Morsure. Le squelette enfonce ses dents jaunies et cassées dans la jambe de sa cible et lui inflige 1D6 points de dégâts tranchants.",
+        "Morsure. Le squelette enfonce ses dents jaunies et cassées dans la jambe de sa cible et lui inflige 1D6 points de dégâts tranchants.",
+        "Rugissement guttural. Un cri terrible fait trembler le sol et les esprits. Tous les personnages situés dans un rayon de 10 m autour de la créature subissent une attaque de terreur."
+      ]
+    },
+    {
+      "name": "💀 Chien de sorcière",
+      "entries": [
+        "Morsure. Le chien enfonce ses crocs dans un bras ou une jambe et inflige 2D10 points de dégâts perforants.",
+        "Morsure. Le chien enfonce ses crocs dans un bras ou une jambe et inflige 2D10 points de dégâts perforants.",
+        "Coup de griffes. À l’aide de ses griffes aussi tranchantes que des lames, le chien lacère la peau de sa victime et lui inflige 2D8 points de dégâts perforants. Il est impossible d’esquiver l’attaque.",
+        "Coup de griffes. À l’aide de ses griffes aussi tranchantes que des lames, le chien lacère la peau de sa victime et lui inflige 2D8 points de dégâts perforants. Il est impossible d’esquiver l’attaque.",
+        "Bousculade. L’animal bondit soudainement en avant. Sa cible ne subit pas de dégâts, mais elle tombe au sol et son arme lui échappe.",
+        "Assaut frénétique. Le chien porte une morsure et un coup de griffes en même temps contre deux personnages différents. Dans sa frénésie cependant, il perd sa prochaine action."
+      ]
+    },
+    {
+      "name": "💀 La Dame",
+      "entries": [
+        "Frappe spectrale: le fantôme s’élance vers un personnage joueur situé dans un rayon de 10 m autour de lui, puis le frappe avec une grande force. La victime se retrouve projetée de 2D6 mètres en arrière, subit le même nombre de dégâts contondants et tombe à terre.",
+        "Toucher mortel: le revenant enfonce sa main translucide dans la poitrine d’un malheureux PJ et saisit son cœur. La victime subit 2D10 points de dégâts et devient Effrayée. L’armure n'est d'aucune utilité.",
+        "Cri de la banshee: le visage du mort-vivant se déforme en une horrible grimace, puis il pousse un cri qui glace l’âme de tous les aventuriers situés dans un rayon de 10 m autour de lui. Tous subissent une attaque de terreur (page 18). ",
+        "Regard mortel: la créature domine un personnage et plonge ses yeux morts dans son âme. La victime voit sa vie défiler devant elle, tourmentée par des visions grotesques de tous ses amis et ses ennemis décédés. Elle devient Effrayée et subit une attaque de terreur (page 18), assortie d’un fléau sur son jet de VOL.",
+        "Étreinte fantomatique: l’esprit émet un sifflement surnaturel et apparaît soudainement devant un aventurier situé dans un rayon de 10 m autour de lui. Il l’enveloppe ensuite dans une étreinte mortelle et cherche à étouffer l’étincelle de vie en lui. L’attaque inflige 3D6 points de dégâts contondants et laisse sa victime Étourdie.",
+        "Toucher glacial: l’apparition saisit une victime et laisse le froid de la mort s’insinuer dans son corps. Le personnage joueur subit 2D8 points de dégâts et ne peut pas récupérer ses PS ou ses PV tant qu’il n’a pas passé un intervalle dans un endroit chaud. L’armure n'est d'aucune utilité."
+      ]
+    },
+    {
+      "name": "💀 La Mort Blanche",
+      "entries": [
+        "Coup de queue. Le serpent de mer porte un coup de queue à un personnage situé  dans un rayon de 10 m autour de lui. L’attaque lui inflige 2D8 points de dégâts contondants et le fait tomber.",
+        "Englouti. Le serpent de mer avale le héros qui possède la valeur de FOR la plus élevée et lui inflige 2D6 points de dégâts. La victime peut continuer à l’attaquer depuis l’intérieur de son corps, où elle n’a pas d’armure. Cependant, pour chaque round passé dans son estomac, elle subit 1D6 points de dégâts à son tour (l’armure n’est d’aucune utilité). Elle pourra en sortir une fois que le monstre est mort.",
+        "Morsure féroce. La Mort blanche mord un personnage et ses crocs aiguisés comme des rasoirs lui infligent 3D8 points de dégâts tranchants.",
+        "Noyade. Le serpent de mer attire un personnage dans les profondeurs et il commence immédiatement à se noyer, comme indiqué page 53 du livret de règles. La victime ne peut pas bouger ou effectuer des actions qui nécessitent un mouvement du corps, sauf pour essayer de se libérer. Dans ce cas, elle devra faire un jet de FOR (accompagné d’un fléau) et d’autres individus peuvent l’aider.",
+        "Coup de grâce. La bête se dresse haut au-dessus de la surface et laisse tomber son corps pesant sur deux personnages au plus situés dans un rayon de 10 m autour d’elle. Les victimes subissent 2D6 points de dégâts contondants et sont renversées au sol.",
+        "Constriction. La Mort blanche enroule sa queue autour d’un personnage situé dans un rayon de 10 m autour d’elle et tente de l’écraser. L’attaque inflige 2D6 points de dégâts contondants, et 2D6 points supplémentaires au tour de la victime. Celle-ci ne peut pas bouger ou effectuer des actions qui nécessitent un mouvement du corps, sauf pour essayer de se libérer. Dans ce cas, elle devra faire un jet de FOR (effectué avec un fléau) et d’autres peuvent l’aider."
+      ]
+    },
+    {
+      "name": "💀 Le fantôme de Bothild",
+      "entries": [
+        "Frappe spectrale: le fantôme s’élance vers un personnage joueur situé dans un rayon de 10 m autour de lui, puis le frappe avec une grande force. La victime se retrouve projetée de 2D6 mètres en arrière, subit le même nombre de dégâts contondants et tombe à terre.",
+        "Toucher mortel: le revenant enfonce sa main translucide dans la poitrine d’un malheureux PJ et saisit son cœur. La victime subit 2D10 points de dégâts et devient Effrayée. L’armure n’est d’aucune utilité.",
+        "Cri de la banshee: le visage du mort-vivant se déforme en une horrible grimace, puis il pousse un cri qui glace l’âme de tous les aventuriers situés dans un rayon de 10 m autour de lui. Tous subissent une attaque de terreur (page 52).",
+        "Regard mortel: la créature domine un personnage et plonge ses yeux morts dans son âme. La victime voit sa vie défiler devant elle, tourmentée par des visions grotesques de tous ses amis et ses ennemis décédés. Elle devient Effrayée, et subit une attaque de terreur (page 52), assortie d’un fléau sur son jet de VOL.",
+        "Étreinte fantomatique: l’esprit émet un sifflement surnaturel et apparaît soudainement devant un aventurier situé dans un rayon de 10 m autour de lui. Il l’enveloppe ensuite dans une étreinte mortelle et cherche à étouffer l’étincelle de vie en lui. L’attaque inflige 3D6 points de dégâts contondants et laisse sa victime Étourdie.",
+        "Toucher glacial: l’apparition saisit une victime et laisse le froid de la mort s’insinuer dans son corps. Le personnage joueur subit 2D8 points de dégâts et ne peut pas récupérer ses PS ou ses PV tant qu’il n’a pas passé un intervalle dans un endroit chaud. L’armure n’est d’aucune utilité."
+      ]
+    },
+    {
+      "name": "💀 Glam-glam le Géant",
+      "entries": [
+        "Coup écrasant : le géant fait tournoyer son arme au-dessus de sa tête et frappe un personnage de toutes ses forces. L’attaque inflige 4D10 points de dégâts contondants et la victime est renversée.",
+        "Rugissement : le géant pousse un mugissement qui instille la peur dans le cœur des aventuriers. Tous les personnages joueurs situés dans un rayon de 10 m autour de lui subissent une attaque de terreur.",
+        "Piétinement : le géant vise et tente de piétiner deux personnages joueurs situés au maximum à 4 m l’un de l’autre. Toute personne touchée par l’attaque subit 4D6 points de dégâts contondants et est renversée.",
+        "Balayage: le géant balaie tous les aventuriers situés dans un rayon de 10 m autour de lui à l’aide de son arme. Ceux qu’il parvient à atteindre subissent 2D10 points de dégâts contondants et se retrouvent renversés.",
+        "Projection: l’un des personnages agace prodigieusement la créature, qui l’attrape et tente de le lancer. L’attaque inflige 4D8 points de dégâts contondants, la victime se retrouve projetée à un nombre équivalent de mètres dans une direction aléatoire et elle atterrit à plat ventre.",
+        "Fracassement: fou de rage, le géant frappe le personnage avec ses pieds, ses poings et son arme dans une pluie de coups. Tous ceux qui se trouvent dans un rayon de 2 m autour de lui subissent 3D6 points de dégâts contondants et se retrouvent renversés."
+      ]
+    },
+    {
+      "name": "💀 L'Anguille Monstrueuse",
+      "entries": [
+        "Coup de queue. Le serpent de mer donne un coup de queue à un personnage situé dans un rayon de 10 m autour de lui. L’attaque inflige 2D6 points de dégâts contondants et fait tomber la victime.",
+        "Morsure brutale. La créature plante ses dents acérées dans l’un des personnages. L’attaque inflige 2D8 points de dégâts tranchants.",
+        "Noyade. L’anguille entraîne un personnage vers le fond et la victime commence immédiatement à se noyer, comme indiqué page 53 du livret de règles. Elle ne peut pas bouger ou effectuer des actions qui nécessitent un déplacement, sauf pour essayer de se libérer (jet de FOR accompagné d’un fléau). D’autres peuvent aider.",
+        "Constriction. La bête enroule sa queue autour d’un personnage et tente de l’écraser. L’attaque inflige 2D4 points de dégâts contondants, et 2D4 points de dégâts supplémentaires au tour de la victime. Celle-ci ne peut pas bouger ou effectuer des actions qui nécessitent un mouvement du corps, sauf pour essayer de se libérer (jet de FOR accompagné d’un fléau). D’autres personnes peuvent l’aider."
+      ]
+    },
+    {
+      "name": "💀 Les Bébés-Araignées",
+      "entries": [
+        "Horreurs grimpantes. Les araignées se déversent en flot vers les personnages et grimpent partout sur leurs corps. Tous ceux qui se trouvent dans un rayon de 10 m autour de l’essaim subissent une attaque de terreur.",
+        "Pris dans la toile. L’essaim cible une malheureuse victime et la recouvre entièrement de toiles collantes. Celle-ci ne peut pas bouger ou effectuer des actions qui nécessitent un mouvement du corps, sauf pour essayer de se libérer (jet de FOR accompagné d’un fléau). D’autres personnes peuvent l’aider.",
+        "Attaque coordonnée. Les rejetons effectuent ensemble une attaque contre le personnage qui possède la valeur de CON la plus basse. Ils infligent 2D4 points de dégâts tranchants et la victime subit une attaque de terreur. L’armure n’est d’aucune utilité.",
+        "Attaque en masse. L’essaim s’étend et attaque tous les personnages situés dans un rayon de 10 m autour de lui. Chaque victime subit 1D6 points de dégâts perforants. L’armure n’est d’aucune utilité."
+      ]
+    },
+    {
+      "name": "💀 Saak'shal l'Araignée",
+      "entries": [
+        "Mandibules: les mandibules dentelées de l’araignée fendent l’air telles des cimeterres. L’attaque inflige 3D8 points de dégâts tranchants.",
+        "Déchiquetage: la créature affamée se jette sur ses proies, et attaque frénétiquement à l’aide de ses pattes poilues et couvertes de barbillons. Tous les personnages joueurs situés dans un rayon de 2 m autour d’elle subissent chacun 2D8 points de dégâts perforants.",
+        "Hypnose: le monstrueux arachnide fixe les personnages joueurs à travers une multitude d’yeux effrayants. Toutes les victimes situées dans un rayon de 10 m autour de lui doivent faire un jet de VOL pour résister à la terreur.",
+        "Dard empoisonné: l’horreur à huit pattes dresse son arrière-train et agresse un personnage. Un dard empoisonné jaillit de son corps répugnant et inflige 2D10 points de dégâts perforants. Si une victime subit au moins 1 point de dégâts, l’aiguillon lui injecte une substance paralysante (toxicité 16). Il est possible de parer l’attaque.",
+        "Toile d’araignée: l’araignée fixe ses nombreux yeux sur le personnage qui possède la plus haute valeur de FOR. L’instant d’après, elle lui crache une matière collante dessus et il doit faire un jet d’ESQUIVE (qui ne compte pas comme une action). En cas d’échec, la victime se retrouve prise dans les fils, incapable de bouger. Elle devra subir un fléau sur son jet de FOR (qui compte comme une action) pour se libérer, et d’autres individus peuvent l’aider.",
+        "Collision: l’araignée géante effectue un grand bond et lance son corps massif sur un personnage. L’attaque lui inflige 3D6 points dégâts contondants et le fait tomber à terre."
+      ]
+    },
+    {
+      "name": "💀 Ambrosius le Crapaud",
+      "entries": [
+        "Coup de tête. Le crapaud saute et donne un coup de tête à un personnage. Il lui inflige 2D4 points de dégâts contondants et le fait tomber à terre.",
+        "Morsure venimeuse. Ambrosius mord l’un des héros à la jambe et lui inflige 1D10 points de dégâts tranchants. De plus, la victime qui subit au moins 1 point de dégâts se voit également injecter un poison paralysant (toxicité 12).",
+        "Crachat. La créature projette une énorme giclée de salive sur un personnage situé dans un rayon de 10 m autour d’elle. Le crachat inflige 1D6 points de dégâts, et la victime qui subit au moins 1 point de dégâts est également affectée par un poison paralysant (toxicité 12).",
+        "Langue désarmante. Le crapaud projette sa longue langue vers un personnage situé dans un rayon de 6 m autour de lui, et lui arrache une arme de la main. Celle-ci atterrira dans son nid."
+      ]
+    },
+    {
+      "name": "💀 Gorm",
+      "entries": [
+        "Vomissement : le troll se racle la gorge dans un grondement tonitruant et fait remonter tous les glaires du fond de ses poumons, puis vomit une cascade de bile et d’eau marécageuse nauséabonde. Tous les aventuriers situés dans un rayon de 6 m autour de lui souffrent d’un état de leur choix.",
+        "Éventration: la créature déchire le corps d’un personnage d’un coup de ses griffes noires et vertes, et lui inflige 1D10 points de dégâts tranchants. Cependant, il est possible de parer l’attaque. La victime qui subit des dégâts contracte également une maladie (virulence 10).",
+        "Morsure répugnante: le troll ouvre sa bouche à l’haleine fétide, pleine de crocs, de graviers et de vieux fragments d’os, et mord un personnage. L’attaque inflige 2D8 points de dégâts perforants, et la victime coincée dans sa gueule doit faire un jet de FOR (qui compte comme une action) à chaque round pour se libérer. En cas d’échec, elle subit 2D8 points de dégâts supplémentaires.",
+        "Projection: le monstre soulève un personnage au-dessus de sa tête et le lance sur 2D6 mètres dans une direction déterminée aléatoirement, comme une poupée de chiffon. La victime subit un nombre équivalent de points de dégâts contondants et tombe à terre.",
+        "Balayage: le troll balaie l’espace à l’aide de ses longs bras noueux et frappe tous les personnages situés dans un rayon de 2 m autour de lui. L’attaque inflige 2D6 points de dégâts contondants à chacun d’entre eux.",
+        "Assommoir : la créature saisit le personnage le plus proche et s’en sert comme d’une arme pour en frapper un autre. Les deux victimes subissent 2D8 points de dégâts contondants et tombent à terre."
+      ]
+    },
+    {
+      "name": "💀 Ix le Démon",
+      "entries": [
+        "Terreur démoniaque. Un chœur de voix s’élève des yeux du démon et monte jusqu’à atteindre un crescendo assourdissant. Tous les personnages situés dans un rayon de 10 m autour de lui sont Étourdis et subissent une attaque de terreur.",
+        "Poigne enflammée. Ix sourit et saisit un personnage, puis le brûle avec un feu démoniaque. L’attaque inflige 2D10 points de dégâts de feu, mais il est possible de la parer. ",
+        "Malédiction. Ix pointe un personnage situé dans un rayon de 10 m autour de lui et prononce une antique malédiction. L’attaque ne peut pas s’esquiver, mais il est possible de lever toutes les malédictions (sauf la quatrième) grâce à une DISSIPATION (niveau de pouvoir 1). Lancer 1D4: 1 La victime est aveuglée et agit comme si elle se trouvait dans l’obscurité totale. Lancez 1D4 à chaque intervalle. Sur un 1, l’effet disparaît. 2 La victime est frappée d’amnésie, et elle oublie son propre nom et l’identité des autres personnages. Le joueur doit interpréter l’effet. Lancez 1D4 tous les matins. Sur un 1, la victime retrouve la mémoire. 3 La victime se transforme en animal. Lancez 1D6. 1: chat, 2: renard, 3: chèvre, 4: loup, 5: cerf, 6: ours. La victime gagne les caractéristiques disponibles en page 99 du livret de règles et ne peut pas parler. Lancez 1D4 à chaque intervalle. Sur un 1, l’effet disparaît. 4 La victime vieillit d’une tranche d’âge, par exemple d’Adulte à Âgé. Ses caractéristiques et ses valeurs dérivées changent en fonction de la table disponible en page 24 du livret de règles, mais pas ses niveaux de compétence. L’effet demeure permanent et la cible vieillit normalement à partir de sa nouvelle tranche d’âge. Une personne déjà Âgée devient très fragile et subit un malus de –2 en FOR et en CON. ",
+        "Force invisible. Ix tend la main vers un personnage situé dans un rayon de 10 m autour de lui. Celui-ci se retrouve projeté à 2D8 mètres en arrière avec une force phénoménale, subit le même nombre de dégâts contondants et tombe à terre.",
+        "Fumée démoniaque. La fumée sulfureuse qui s’échappe des yeux d’Ix enveloppe un personnage. La victime subit 2D10 points de dégâts et devient Effrayée. L’armure n’est d’aucune utilité. ",
+        "Possession. Ix fixe l’un des héros situés dans un rayon de 10 m autour de lui et prend le contrôle total de son corps. La victime doit faire un jet de VOL accompagné d’un fléau (ce qui ne compte pas comme une action). En cas d’échec, elle doit immédiatement effectuer un déplacement et une action choisie par le démon, à l’exception de celles qui nécessitent la dépense de PV. Elle perd également son prochain tour."
+      ]
+    },
+    {
+      "name": "💀 Regard",
+      "entries": [
+        "Brise-orteils. Son coup de pied étonnamment puissant inflige 1D8 points de dégâts contondants.",
+        "Regard injecté de sang. Regard s’approche et ses yeux terribles obligent la victime à faire un jet de VOL, accompagné d’un fléau, pour résister à la terreur.",
+        "Griffes acérées. Le fantôme égratigne sa victime avec ses ongles durs comme de l’os, et lui inflige 2D6 points de dégâts tranchants.",
+        "Lamentations. Regard a passé le temps dans la chambre à composer un air terriblement triste et faux, vraiment agaçant à l’oreille. Pendant qu’elle le chante, tous les personnages joueurs doivent faire un jet de VOL pour résister à la terreur.",
+        "Pierres et graviers. La sorcière saisit une poignée de mortier effrité, puis la lance sur un personnage situé dans un rayon de 10 m autour d’elle et qui n’a pas encore agi pendant le round. La victime perd son prochain tour. On peut parer l’attaque avec un bouclier. ",
+        "Précipice illusoire. Tous les personnages situés à moins de 10 m de Regard pensent qu’ils se trouvent au bord d’une haute falaise et aperçoivent les corps fracassés de vieillards en contrebas. Ils doivent faire un jet de VOL pour percer l’illusion. En cas d’échec, ils tombent au sol avec une force inhabituelle, subissent 1D6 points de dégâts contondants et perdent leur prochain tour s’ils n’ont pas encore agi dans le round. Il est impossible d’esquiver l’attaque."
+      ]
+    },
+    {
+      "name": "💀 Le fantôme de Verkon",
+      "entries": [
+        "Frappe spectrale: le fantôme s’élance vers un personnage joueur situé dans un rayon de 10 m autour de lui, puis le frappe avec une grande force. La victime se retrouve projetée de 2D6 mètres en arrière, subit le même nombre de dégâts contondants et tombe à terre.",
+        "Toucher mortel: le revenant enfonce sa main translucide dans la poitrine d’un malheureux PJ et saisit son cœur. La victime subit 2D10 points de dégâts et devient Effrayée. L’armure n’est d’aucune utilité.",
+        "Cri de la banshee: le visage du mort-vivant se déforme en une horrible grimace, puis il pousse un cri qui glace l’âme de tous les aventuriers situés dans un rayon de 10 m autour de lui. Tous subissent une attaque de terreur (page 52).",
+        "Regard mortel: la créature domine un personnage et plonge ses yeux morts dans son âme. La victime voit sa vie défiler devant elle, tourmentée par des visions grotesques de tous ses amis et ses ennemis décédés. Elle devient Effrayée, et subit une attaque de terreur (page 52), assortie d’un fléau sur son jet de VOL.",
+        "Étreinte fantomatique: l’esprit émet un sifflement surnaturel et apparaît soudainement devant un aventurier situé dans un rayon de 10 m autour de lui. Il l’enveloppe ensuite dans une étreinte mortelle et cherche à étouffer l’étincelle de vie en lui. L’attaque inflige 3D6 points de dégâts contondants et laisse sa victime Étourdie.",
+        "Toucher glacial: l’apparition saisit une victime et laisse le froid de la mort s’insinuer dans son corps. Le personnage joueur subit 2D8 points de dégâts et ne peut pas récupérer ses PS ou ses PV tant qu’il n’a pas passé un intervalle dans un endroit chaud. L’armure n’est d’aucune utilité."
+      ]
+    },
+    {
+      "name": "💀 Akrae le Démon",
+      "entries": [
+        "Étreinte griffue. Le démon attrape un personnage dans ses griffes et l’écrase. Son étreinte inflige 2D8 points de dégâts tranchants à sa victime, qu’il projette ensuite à 1D6 mètres dans l’eau.",
+        "Crachat de sel. Un jet de matière visqueuse atteint un personnage situé dans un rayon de 4 m autour de lui et qui n’a pas encore agi pendant le round. Celui-ci perd son tour pendant le round.",
+        "Rugissement effrayant. Akrae pousse un hurlement démoniaque qui oblige tous ceux qui se trouvent dans un rayon de 10 m à faire un jet de VOL. En cas d’échec, ils subissent une attaque de terreur (page 52 du livret de règles).",
+        "Pincement. Le démon saisit le bras d’un personnage dans sa pince et manque de le lui arracher. L’attaque inflige 2D8 points de dégâts tranchants, mais il est possible de la parer. Si vous utilisez les règles relatives aux blessures graves (page 51 du livret de règles), la victime subit également une fracture si elle prend au moins 1 point de dégâts.",
+        "Cascade. Le démon fait jaillir une trombe d’eau magique qui touche tous les personnages situés dans un rayon de 6 m autour de lui, et les projette dans l’eau glacée (à moins qu’ils n’esquivent son attaque).",
+        "Morsure à la tête. Le démon mord un aventurier à la tête, et lui inflige 3D8 points de dégâts tranchants. Celui-ci peut parer l’attaque."
+      ]
+    },
+    {
+      "name": "💀 Okvid le Troll",
+      "entries": [
+        "Vomissement : le troll se racle la gorge dans un grondement tonitruant et fait remonter tous les glaires du fond de ses poumons, puis vomit une cascade de bile et d’eau marécageuse nauséabonde. Tous les aventuriers situés dans un rayon de 6 m autour de lui souffrent d’un état de leur choix.",
+        "Éventration: la créature déchire le corps d’un personnage d’un coup de ses griffes noires et vertes, et lui inflige 1D10 points de dégâts tranchants. Cependant, il est possible de parer l’attaque. La victime qui subit des dégâts contracte également une maladie (virulence 10).",
+        "Morsure répugnante: le troll ouvre sa bouche à l’haleine fétide, pleine de crocs, de graviers et de vieux fragments d’os, et mord un personnage. L’attaque inflige 2D8 points de dégâts perforants, et la victime coincée dans sa gueule doit faire un jet de FOR (qui compte comme une action) à chaque round pour se libérer. En cas d’échec, elle subit 2D8 points de dégâts supplémentaires.",
+        "Projection: le monstre soulève un personnage au-dessus de sa tête et le lance sur 2D6 mètres dans une direction déterminée aléatoirement, comme une poupée de chiffon. La victime subit un nombre équivalent de points de dégâts contondants et tombe à terre.",
+        "Balayage: le troll balaie l’espace à l’aide de ses longs bras noueux et frappe tous les personnages situés dans un rayon de 2 m autour de lui. L’attaque inflige 2D6 points de dégâts contondants à chacun d’entre eux.",
+        "Assommoir : la créature saisit le personnage le plus proche et s’en sert comme d’une arme pour en frapper un autre. Les deux victimes subissent 2D8 points de dégâts contondants et tombent à terre."
+      ]
+    },
+    {
+      "name": "💀 Khaa, le Démon du feu",
+      "entries": [
+        "Rugissement brûlant. Le démon rugit en direction d’un personnage situé dans un rayon de 10 m autour de lui. L’attaque inflige 1D8 points de dégâts, et la victime doit faire un jet de VOL pour résister à la terreur. L’armure n'est d'aucune utilité.",
+        "Griffes enflammées. Le démon porte deux coups de griffes distincts sur sa cible. Chacune inflige 1D10 points de dégâts tranchants. Il est possible de parer ces attaques.",
+        "Trait de lave. Khaa projette un rai de feu concentré sur un personnage situé dans un rayon de 20 mètres autour de lui. L’attaque inflige 2D8 points de dégâts. Il est possible de parer cette attaque avec un bouclier.",
+        "Vague de feu. Une vague de feu jaillit du démon, et inflige 1D8 points de dégâts à tous ceux qui se trouvent dans un rayon de 10 m autour de lui.",
+        "Entraves brûlantes. Le démon lance des flammes qui viennent ligoter et consumer un personnage. Celui-ci subit immédiatement 1D8 points de dégâts, puis 1D8 points supplémentaires par tour jusqu’à ce qu'il se libère, ce qui demande un jet de FOR (qui compte comme une action). Une victime entravée ne peut pas bouger ou effectuer d’actions qui nécessitent un mouvement du corps, sauf pour essayer de s’échapper. ",
+        "Étreinte infernale. Le démon attrape un personnage dans ses bras. La chaleur qu’il dégage devient si intense que la victime subit 3D8 points de dégâts. L’armure n'est d'aucune utilité."
+      ]
+    },
+    {
+      "name": "💀 Azrahel Koth",
+      "entries": [
+        "Coup de griffes. Sa main griffue déchire un personnage et lui inflige 2D6 points de dégâts tranchants. On peut parer l’attaque.",
+        "Malédiction. Azrahel Koth déverse un torrent d’imprécations démoniaques sur une victime. Celle-ci doit faire un jet de VOL accompagné d’un fléau pour résister à la terreur.",
+        "Froid mortel. Le sorcier émet un froid glacial. Tous les personnages situés dans un rayon de 10 m autour de lui perdent 1D6 PS et 1D6 PV (l’armure n'est d'aucune utilité) et ont froid. Ils ne peuvent pas guérir de PS ou de PV naturellement tant qu’ils ne se sont pas à nouveau réchauffés. De plus, ils sont gelés et incapables de se déplacer ou d’effectuer des actions (ou même des réactions). À chaque tour, ils peuvent faire un jet de FOR (qui ne compte pas comme une action) pour se libérer.",
+        "Drain de vie. Il fixe de ses yeux incandescents un personnage situé dans un rayon de 10 m autour de lui, lui inflige 1D10 points de dégâts (l’armure n'est d'aucune utilité) et se soigne du même nombre de PS. On ne peut pas esquiver l’attaque. Le porteur de l’épée Um-Durman est immunisé contre cette attaque.",
+        "Les flammes noires de Sathmog. Azrahel Koth ouvre la porte du royaume de Sathmog et un feu sombre envahit la pièce. Tous les personnages situés dans un rayon de 10 m autour de lui subissent 1D8 points de dégâts et doivent faire un jet de VOL pour résister à la terreur.",
+        "Regard dominateur. Le sorcier fixe ses yeux sur un personnage, qui doit faire un jet de VOL (qui ne compte pas comme une action). En cas d’échec, la victime doit immédiatement agresser un autre aventurier et perd son tour dans le round (à moins qu’elle n’ait déjà agi). On ne peut pas esquiver l’attaque, mais le porteur d’Um-Durman est immunisé contre ce pouvoir.",
+        "Combat pour Um-Durman. Si Azrahel Koth ne possède pas l’épée, il se précipite sur le personnage qui la porte et tente de la lui arracher des mains. La victime doit faire un jet d’ÉPÉES accompagné d’un fléau (qui ne compte pas comme une action) et en cas d’échec, le sorcier s’en empare. On ne peut pas esquiver l’attaque. Si Um-Durman se trouve au sol, il se contente de la ramasser et s’il s’en saisit, on peut le désarmer (page 48 du livret de règles). Pour cela, il faudra réussir un jet dans n’importe quelle compétence d’arme, accompagné d’un fléau.\nAttaque avec Um-Durman. S’il la tient déjà, il cible l’un des héros avec elle à la place. L’épée inflige 3D10 points de dégâts tranchants, mais on peut parer le coup.",
+        "Combat pour Um-Durman. Si Azrahel Koth ne possède pas l’épée, il se précipite sur le personnage qui la porte et tente de la lui arracher des mains. La victime doit faire un jet d’ÉPÉES accompagné d’un fléau (qui ne compte pas comme une action) et en cas d’échec, le sorcier s’en empare. On ne peut pas esquiver l’attaque. Si Um-Durman se trouve au sol, il se contente de la ramasser et s’il s’en saisit, on peut le désarmer (page 48 du livret de règles). Pour cela, il faudra réussir un jet dans n’importe quelle compétence d’arme, accompagné d’un fléau.\nAttaque avec Um-Durman. S’il la tient déjà, il cible l’un des héros avec elle à la place. L’épée inflige 3D10 points de dégâts tranchants, mais on peut parer le coup."
+      ]
+    },
+    {
+      "name": "📆 PRÉSAGES DÉMONIAQUES",
+      "entries": [
+        "1 Nuages sombres. La brume au-dessus de la vallée se densifie et se transforme en un épais et sombre brouillard. Le peu de lumière qui parvient à filtrer au travers devient rouge et baigne toute la région d’une lueur cramoisie pendant un intervalle.",
+        "2 Pluie de sang. Une pluie de sang chaud s’abat sur les personnages. Chacun doit faire un jet de VOL pour résister à la terreur.",
+        "3 Prophète fou. Un dément en haillons scande que « la fin est proche » et que « le prince des ténèbres arrive ». Personne ne réussit à lui faire entendre raison.",
+        "4 Météores. Une pluie d’étoiles filantes s’abat sur la vallée dans un déluge aussi ardent qu’effrayant. Chacun doit faire un jet de VOL pour résister à la terreur.",
+        "5 Le chevalier noir. Au loin, les héros aperçoivent la silhouette d’un chevalier tout de noir vêtu sur un immense cheval tout aussi sombre, qui se découpe sur le ciel nocturne. L’inconnu cabre sa monture et disparaît. Voici le héraut de Sathmog, mais les joueurs ne peuvent pour l’instant pas l’arrêter.",
+        "6 Pluie de grenouilles. Dans un bruit d’éclaboussure, quelque chose frappe le sol à côté des personnages joueurs. À l’instant où ils réalisent qu’il s’agit d’une grenouille, le ciel s’ouvre et une pluie de ces batraciens s’abat sur eux. Quiconque ne parvient pas à se mettre à l’abri subit 1D6 points de dégâts.",
+        "7 Tremblement de terre. Soudain, la terre se met à trembler violemment. Les personnages se retrouvent projetés au sol et doivent faire un jet de VOL pour résister à la terreur.",
+        "8 Nuage de sauterelles. Un nuage bourdonnant s’approche, que les personnages identifient comme un essaim de sauterelles, et dévore toute la végétation sur son passage. Chacun d’entre eux subit un état de son choix.",
+        "9 Éclipse de soleil. Bien qu’on soit en pleine journée, le soleil cesse de briller et une obscurité sinistre recouvre la vallée pendant une période. Les personnages doivent faire un jet de VOL pour résister à la terreur.",
+        "10 Volcan. Un grondement résonne en provenance des pics de Crocdragon. Au loin, les personnages voient un panache de feu et de fumée s’élever dans le ciel depuis un haut sommet."
+      ]
+    },
+    {
+      "name": "📆 Event - Lisière",
+      "entries": [
+        "Chauve-souris démoniaque. Une grande chauve-souris s’envole depuis la zone du temple. Elle se déplace rapidement et par à-coups, et ne tarde pas à disparaître vers le nord. Si l’un des personnages réussit un jet d’INTUITION, il remarquera quelque chose attaché à sa patte. Voici l’une des chauves-souris vampires de Leanara qui rejoint Azrahel Koth avec un message secret. Les héros ne peuvent pas l’arrêter pour le moment.",
+        "La racaille de Quasimund. « Oh, regardez-moi ça! Des visiteurs de qualité venus jusqu’à Lisière! J’espère que vous n’avez pas oublié de vous acquitter du péage? » Les personnages se retrouvent entourés par une bande d’individus peu recommandables (page 22) menés par le colvert Quasimund (page 21). Ils puent l’hydromel et comptent un membre de plus que votre groupe. Les voyous abandonnent si plus de la moitié d’entre eux sont blessés ou si les héros leur donnent de l’argent pour leur alcool. En réalité, ils mettent leurs capacités de combat à l’épreuve et suivent les ordres de Leanara.",
+        "Un troll dans la grange. L’enfer se déchaîne dans le village et une voix crie « Y’a un troll dans la grange du vieux Mifaldor ! ». L’instant d’après, celui-apparaît juste devant les personnages et ses énormes narines se mettent à renifler. Ils vont se retrouver plongés en plein combat s’ils n’agissent pas rapidement, mais ils peuvent apaiser la créature grâce à un jet de PERSUASION réussi. Vous trouverez le profil du troll en page 97 du livret de règles.",
+        "Les voleurs de farine. Des cris et de l’agitation se font entendre depuis le moulin et bientôt, le meunier Baryton Joufflu (page 25) arrive à bout de souffle à hauteur des personnages. Plusieurs sacs de sa meilleure farine ont disparu, et il est prêt à payer « tout ce qu’il faut » pour récupérer ces trésors en poudre. Baryton soupçonne Quasimund et ses hommes de main. Cependant, si les héros réussissent un jet de SURVIE, ils peuvent découvrir des traces qui les conduiront à la forêt de Fer, où des gobelins se régalent de leur larcin. Vous trouverez le profil des gobelins en page 89 du livret de règles.",
+        "Le cadavre du messager. Une vilaine carcasse de chauve-souris s’étale au sol devant les personnages, transpercée par le carreau d’arbalète du capitaine Hardy, et un petit parchemin se trouve attaché à sa patte. Une fois les mystérieuses runes déchiffrées grâce à un jet de LANGUES, le message indique les informations suivantes. « Nouveaux arrivants dans Lisière. Objectif incertain. Tenez-les à l’œil. » Il se termine par d’inquiétantes salutations: « Toute puissance à Sathmog, notre libérateur trifide. »",
+        "Un meurtre de lâche. Les personnages entendent de vives exclamations et des coups d’épée en provenance d’une ruelle sombre. S’ils s’y précipitent, ils découvrent Alfilia Ombrefeuille (page 22) allongée sur le sol et aperçoivent trois ombres qui s’enfuient. Elles font partie de la racaille de Quasimund (page 22) et ils les reconnaîtront peut-être pour les avoir déjà vues à l’auberge. Les criminels tentent de se sauver, mais ils se battront jusqu’à la mort si on les arrête. Si on les interroge, ils admettent fièrement qu’ils sont au service de Sathmog. Alfilia, mortellement blessée, ne peut être sauvée et le souffle court, elle ne parvient qu’à avertir les héros. « Ce sont des serviteurs de Sathmog... tous... Annabella aussi... » Puis elle pousse son dernier soupir après une ultime prière: « Salut à toi, Eledain, maître de la Flamme immaculée! »"
+      ]
+    },
+    {
+      "name": "📆 - Rumeurs Lisière",
+      "entries": [
+        "Le Tertre du chevalier. « De ce côté-ci de la forêt de Fer se trouve un endroit impie où d’énormes pierres s’élèvent dans le ciel. On l’appelle le Tertre du chevalier, d’après un individu peu recommandable enchaîné là par les dieux lorsque le monde était jeune. On dit qu’il a été enterré vivant dans ce monticule, avec sa famille, ses serviteurs et toutes ses richesses. »",
+        "Les clans orcs. « Voilà une génération de cela, les orcs régnaient sur Valbrume. Personne ne sait pourquoi ils sont partis, mais on raconte qu’une cheffe nommée Maladûk rassemble les clans pour reconquérir la vallée. »",
+        "Le filon de Bothild. « Les nains des monts Kummer sont des gens bien et honnêtes. Ce fut bien pire autrefois, sous le règne de Bothild la Vile et l’Avide, quand ils creusèrent trop profondément dans leurs mines misérables et libérèrent d’innommables horreurs sur le monde. Mais en même temps, quels formidables trésors ils trouvèrent ! Ils découvrirent des monceaux d’or et d’argent, des émeraudes scintillantes et des cristaux de la taille d’une tête de gobelin. D’après ce qui se raconte, tout cela demeure encore là-bas, dans le filon de Bothild, à l’extrême sud-ouest. »",
+        "Le temple de la Flamme pourpre. « Les bois de Magna sont une forêt malade, et nous savons tous d’où ça vient. Le temple de la Flamme pourpre, les vestiges en ruine d’une époque maléfique, où des connaissances interdites et des substances démoniaques reposent parmi d’indicibles trésors sous les rochers envahis par la végétation. »",
+        "La tour des soupirs. « Il y a une tourbière répugnante à une journée de marche à l’est d’ici. Elle grouille de sangsues et d’insectes buveurs de sang et sert de repaire à des bandits. Mais la boue recèle de vastes richesses, enfouies dans les ruines d’une ancienne tour de guet. Les gens du coin l’appellent la tour des soupirs. »",
+        "La grotte de l’oracle. « On vous a déjà parlé du jeune Roric? Quelqu’un a enlevé le gamin dans sa ferme à l’extérieur de Lisière. Les traces mènent à la forêt de Fer et les gens disent qu’on l’a amené à la grotte de l’oracle. Elle est très ancienne et sait tout sur Valbrume, et puis on raconte qu’elle est assise sur d’immenses richesses. Mais de temps en temps, elle exige un sacrifice humain. Je suppose qu’on ne reverra jamais Roric. »",
+        "La tour du troll. « Au moment de la pleine lune, on aperçoit parfois une tour qui brille comme une flèche d’argent à l’ouest de la vallée. Elle est magique, sans doute, car personne n’en a encore trouvé le chemin. Certains disent qu’elle abrite une alchimiste millénaire qui a voilà longtemps encouru la colère de l’Empereur-Dragon. Elle s’est cachée d’Eledain dans sa tour, où elle a concocté un élixir qui lui donna la vie éternelle. »",
+        "La grotte des yeux morts. « Une bête monstrueuse est descendue des montagnes et a attaqué la ferme d’Hildi l’aveugle, au sud-est de Lisière. Paraît qu’il existe une caverne remplie d’yeux arrachés, mais aussi de grands trésors et d’armes puissantes prises aux aventuriers malheureux qui ont connu une triste fin dans la grotte des yeux morts. »",
+        "L’auberge du Bout de la route. « Cette auberge située au bord des marais hantés possède quelque chose d’étrange. Plusieurs clients y ont disparu sans laisser de traces, parmi eux un petit enfant, et plus récemment la bergère Antelia. Sa famille est morte d’inquiétude. »",
+        "Le village du jour d’avant. « Voilà sept siècles de cela, cette vallée abritait Kato le Curieux, un sorcier au service de l’empereur Eledain, mais qui trahit son souverain. Sa tour et le village voisin de Crête Noire, à l’extrême nord-est, périrent dans le feu du dragon lorsque l’on découvrit sa félonie. Aujourd’hui, on raconte qu’il hante les ruines de sa demeure, censée renfermer toutes sortes de trésors. Cependant, aucun des aventuriers qui ont tenté de piller les lieux n’en est revenu. »",
+        "Fort Malus. « Fort Malus a été construit par la Maison Chêneroc vers la fin du règne de l’empereur Eledain. Il servait à protéger le bien le plus précieux de la famille, le Malus Aureus, un arbre qui portait de véritables pommes d’or ! Les ruines de Fort Malus se dressent toujours à l’extrême nord-ouest, et des milliers de ces fruits couvrent sans doute ses antiques racines. »",
+        "L’île des Brumes. « L’île du lac Miroir, à l’extrémité nord de la vallée, est un lieu de mort qu’évitent tous ceux qui vivent et respirent. Les légendes parlent d’une antique magie et d’une crypte qui regorgerait d’or et d’artefacts merveilleux. Mais un brouillard démoniaque enveloppe l’endroit et il aspire la vie de tout ce qui s’en approche. »"
+      ]
+    },
+    {
+      "name": "📆 RA autour de Lisière",
+      "entries": [
+        "Rien ne se passe. Le voyage à travers les champs de céréales et les collines se déroule sans histoire.",
+        "Rien ne se passe. Le voyage à travers les champs de céréales et les collines se déroule sans histoire.",
+        "Rien ne se passe. Le voyage à travers les champs de céréales et les collines se déroule sans histoire.",
+        "Rien ne se passe. Le voyage à travers les champs de céréales et les collines se déroule sans histoire.",
+        "Rien ne se passe. Le voyage à travers les champs de céréales et les collines se déroule sans histoire.",
+        "Rien ne se passe. Le voyage à travers les champs de céréales et les collines se déroule sans histoire.",
+        "Marchand. Les personnages rencontrent un marchand halfelin bon enfant prénommé Théobald. Dans sa charrette tirée par un âne, il dispose de la plupart des objets courants listés au chapitre 6 du livret de règles, et même quelques objets inhabituels. Il peut également partager une rumeur à propos d’un site d’aventure (page 17) et il aimerait bien que les héros lui donnent les dernières nouvelles.",
+        "Fermiers. Le fermier Oda et son fils Medvin sont en route pour Lisière afin de vendre leurs produits, et ils aimeraient partager le campement avec les joueurs. Cependant, Leanara a récemment recruté Medvin au sein de son culte de Sathmog. Le jeune homme  pose beaucoup de questions sur les plans des héros et il lui rapportera tout ce qu’ils disent. Ils peuvent rencontrer Medvin une seconde fois, par exemple lors de l’affrontement à la crypte d’Um-Durman (page 27).",
+        "Bandits. Une bande de voyous malpropres surgit au détour de la route, armes dégainées et pointées sur les héros. Leur chef ressemble à un rat, avec un sourire gras qui laisse beaucoup à désirer en matière de dents et de charme personnel. « Donnez-nous vos objets de valeur, ou vos vies et vos aventures s’arrêtent ici. », siffle-t-il. Les brigands sont plus nombreux que les membres du groupe et possèdent les caractéristiques habituelles des bandits (page 105 du livret de règles). Ils s’enfuient si la moitié d’entre eux sont vaincus.",
+        "Aventuriers. Trois aventuriers mal en point (un voleur humain, un guerrier lupin et un sorcier colvert) rentrent chez eux après avoir traversé le lieu où se rendent les personnages. Ils possèdent les caractéristiques habituelles des PNJ présentés en page 105 du livret de règles. Ils ont reçu une correction très brutale et ils leur conseillent de faire demi-tour. Ils peuvent fournir des détails sur le site s’ils obtiennent quelque chose en échange.",
+        "Adeptes morts. Trois humains morts, tous vêtus de robes noires, se trouvent pendus à un arbre au bord de la route. Un examen plus approfondi révèle sur leurs corps des blessures infligées à l’aide d’une épée, et ils portent la marque de Sathmog sur leurs avant-bras. Les héros la repéreront s’ils la cherchent activement ou s’ils réussissent un jet de PERCEPTION. Ces pauvres âmes sont des adeptes de Sathmog tués par le chevalier eledain Tylos (page 30) en guise d’avertissement.",
+        "Ruines. À une courte distance de la route se trouvent des ruines qui remontent à l’époque de l’empire. De l’impressionnante forteresse qui se dressait autrefois là, il ne reste que quelques pans de murs. Les bas-reliefs sculptés sur ces derniers représentent un personnage coiffé d’un heaume de dragon cornu. Si les héros passent un intervalle à explorer les lieux, ils découvriront l’entrée d’une cave secrète où l’on a placé un coffre. Tirez deux cartes de trésors pour voir ce qu’il contient."
+      ]
+    },
+    {
+      "name": "📆 RA dans les Bois de Magna",
+      "entries": [
+        "Rien ne se passe. La randonnée à travers les racines noueuses et les champignons bizarres se déroule sans encombre.",
+        "Rien ne se passe. La randonnée à travers les racines noueuses et les champignons bizarres se déroule sans encombre.",
+        "Rien ne se passe. La randonnée à travers les racines noueuses et les champignons bizarres se déroule sans encombre.",
+        "Rien ne se passe. La randonnée à travers les racines noueuses et les champignons bizarres se déroule sans encombre.",
+        "Rien ne se passe. La randonnée à travers les racines noueuses et les champignons bizarres se déroule sans encombre.",
+        "Rien ne se passe. La randonnée à travers les racines noueuses et les champignons bizarres se déroule sans encombre.",
+        "Créature volante. Un bruit épouvantable se fait entendre au-dessus des personnages et ces derniers assistent à un bien curieux spectacle. Une vache vole en marche arrière par-dessus de la cime des arbres et pousse des meuglements angoissés. Sur son dos, une créature cornue tire sur la queue du pauvre animal avec des cris triomphants. \nS’ils réussissent un jet de MYTHES ET LÉGENDES, les héros se souviendront d’histoires à propos d’êtres maléfiques qui voyageraient entre les dimensions, juchés sur du bétail ensorcelé. La créature en question, un serviteur démoniaque mineur, s’est infiltrée dans le monde réel par le temple de la Flamme pourpre (page 47).",
+        "Borne antique. Les héros aperçoivent un petit obélisque de granit usé par les éléments à travers les arbres. Partiellement recouvert de mousse et de broussailles, il est surmonté d’une couronne pointue, peut-être cornue, sculptée dans la pierre.\r\nLes personnages qui examinent l’obélisque et réussissent un jet de PERCEPTION localisent un compartiment secret dans lequel on a caché un magnifique anneau d’or orné d’une couronne stylisée. L’objet contient un SCEAU MAGIQUE avec le tour de magie LUMIÈRE. Celui-ci se déclenche lorsqu’on prononce la phrase « Eledain, seigneur du monde, donne-nous la lumière! ».",
+        "Harpies. Les personnages entendent des voix qui crient « Dooooonne-moi », « Non, dooooonne à moi », « Non, je veux les petiiiiiiits ». Soudain, trois harpies (page 91 du livret de règles) plongent vers eux et les attaquent. Elles ciblent en priorité celui qui porte le plus de métal. Si deux d’entre elles sont vaincues, la dernière s’échappe, mais elle peut revenir plus tard avec d’autres congénères.",
+        "Un appel à l’aide. Les personnages entendent des appels au secours aigus qui résonnent au milieu des arbres. S’ils suivent les cris à travers la végétation dense, ils tombent sur un groupe d’individus enveloppés dans des robes et armés de cimeterres. Ils portent un gobelin qui pousse des couinements, enchaîné à un épais tronc.\nCes derniers sont des adeptes au service de Sathmog, en route pour le temple de la Flamme pourpre (page 47). Ils ont la ferme intention de balancer le pauvre gobelin dans le portail démoniaque pour voir comment le monde au-delà affecte la matière vivante. Ils sont aussi nombreux que le groupe de héros et vous trouverez leurs caractéristiques en page 105 du livret de règles.",
+        "Clairière hantée. Les personnages s’aventurent dans une clairière hantée et une obscurité surnaturelle les entoure. Soudain, la silhouette bleue scintillante d’une femme aux orbites vides se matérialise. Le fantôme (page 87 du livret de règles) attaque sans pitié, mais peut s’apaiser si quelqu’un réussit un jet de PERSUASION. Dans ce cas, il raconte qu’il est « tombé sous la lame d’un meurtrier » voilà longtemps, mais que ses ossements sont éparpillés dans cette clairière.\r\nIl faut réussir un jet de PERCEPTION pour retrouver la dépouille et l’enterrer apportera la paix au fantôme. En récompense, il pourra partager une légende sur Valbrume (page 17).",
+        "Patrouille de gardes morts-vivants. Un groupe de squelettes vêtus d’armures vétustes bloque le chemin, et ils sont aussi nombreux que les héros. À travers les arbres, on aperçoit les ruines d’une petite tour de guet. S’ils s’approchent, le capitaine leur crie quelque chose dans un ancien dialecte. Avec un jet de LANGUES réussi, ils comprendront les mots comme « péage » et « mort aux rebelles ».\r\nS’ils s’acquittent d’une pièce d’or, ou bien s’ils arrivent à convaincre les créatures qu’ils détestent eux aussi « les rebelles » (ce qui nécessitera un jet de PERSUASION), on leur permettra de passer. Sinon, ils devront se battre. Tous les squelettes ont les mêmes caractéristiques que les guerriers en page 96 du livret de règles, mais ils possèdent des lances courtes et des cottes de mailles."
+      ]
+    },
+    {
+      "name": "📆 RA dans la Forêt de Fer",
+      "entries": [
+        "Rien ne se passe. La marche sous les sombres frondaisons se déroule sans incident.",
+        "Rien ne se passe. La marche sous les sombres frondaisons se déroule sans incident.",
+        "Rien ne se passe. La marche sous les sombres frondaisons se déroule sans incident.",
+        "Rien ne se passe. La marche sous les sombres frondaisons se déroule sans incident.",
+        "Rien ne se passe. La marche sous les sombres frondaisons se déroule sans incident.",
+        "Rien ne se passe. La marche sous les sombres frondaisons se déroule sans incident.",
+        "Repaire de trolls. Une odeur nauséabonde agresse soudain les personnages, et ils aperçoivent l’entrée d’un repaire souterrain derrière de gros rochers. Des traces de pieds griffus s’enfoncent dans l’obscurité et des fragments d’os d’animaux et d’humanoïdes jonchent le sol. Si les héros fouillent l’endroit pendant une période et réussissent un jet de PERCEPTION, ils peuvent tirer deux cartes de trésor. Après ce laps de temps, le troll (page 97 du livret de règles) apparaît, furieux.",
+        "Piège à gobelins. Un groupe de gobelins sournois a tendu un piège au milieu du chemin. Les personnages doivent faire un jet de PERCEPTION. Ceux qui le ratent tombent dans une fosse de quatre mètres de profondeur et subissent des dégâts de la chute. Ensuite, les gobelins passent à l’action. Ils sont deux fois plus nombreux que les héros et possèdent les caractéristiques de l’éclaireur (page 89 du livret de règles).\r\nLes créatures peuvent se laisser soudoyer pour abandonner leur attaque en échange de 1D12 pièces d’or et un jet de PERSUASION réussi. Ils admettent servir la cheffe orc Maladûk si on le leur demande. Ils peuvent même révéler qu’elle se trouve actuellement au filon de Bothild (page 39).",
+        "Le chevalier-dragon. Les personnages entendent une cavalcade qui se rapproche rapidement. Ceux qui réussissent un jet d’INTUITION peuvent se cacher s’ils le souhaitent, tandis que les autres se font arrêter par un chevalier en armure. Il s’appelle Tylos et appartient aux Gardiens de la Flamme immaculée, dont ils peuvent apercevoir le symbole sur son armure.\r\nL’homme leur demande où ils se rendent, mais quoi qu’ils disent, ils doivent faire un jet de PERSUASION pour qu’il les croie. En effet, il les soupçonne d’être des adeptes de Sathmog en route pour Fort Malus (page 79) afin de libérer leur camarade emprisonné. En cas d’échec, Tylos attaque, à moins qu’ils ne précisent qu’ils collaborent avec Alfilia Ombrefeuille (page 22).\r\nS’ils parviennent à le calmer, le chevalier leur ordonne de le suivre et les conduit au Fort Malus (page 79) pour « une importante quête » (résoudre l’énigme sur la porte de la cave ou passer à travers le plancher, mais Tylos ne le révélera pas maintenant). Si les héros sont déjà allés à Fort Malus, il n’en saura rien. S’ils refusent de les accompagner, ils doivent à nouveau le PERSUADER ou se faire attaquer. Tylos possède les mêmes caractéristiques et le même équipement qu’Isadelia (page 84), et il monte un cheval entraîné au combat.",
+        "Manticore en maraude. Une manticore affamée (page 92 du livret de règles) traque les personnages à travers les arbres. Chacun d’entre eux subit un fléau sur le jet d’INTUITION qu’il doit faire. Si tous le ratent, ils sont surpris par l’attaque de la créature et cet avantage lui confère les cartes d’initiative no 1 et 2 au premier round. Elle s’enfuira après avoir perdu la moitié de ses PV.",
+        "Elfes en chasse. Les deux chasseurs Aldonil et Orifin se sont placés en embuscade (caractéristiques en page 105 du livret de règles). Laissez les joueurs faire un jet d’INTUITION sur lequel ils subissent un fléau. En cas d’échec, ils sont surpris et les elfes apparaissent soudain sur le sentier, arcs bandés. Ils cherchent leur amie Iliel, enlevée par un homme à cheval (voir rencontre no9 et Fort Malus, page 79). Aldonil et Orifin soupçonnent les héros d’être impliqués, mais ils peuvent se calmer grâce à un jet de PERSUASION. Si les PJ les assistent de manière concrète, ils recevront une arme elfique de maître en récompense lors de leur prochaine rencontre. Si Iliel a déjà été libérée au moment de cet événement, elle se trouve avec Aldonil et Orifin, et les personnages sont invités à camper avec les trois elfes.",
+        "Adeptes en prière. Les personnages entendent des psalmodies en provenance d’une lugubre clairière. Lorsqu’ils se rapprochent, ils remarquent des silhouettes encapuchonnées, aussi nombreuses qu’eux, des torches allumées en main. Ceux qui réussissent un jet de LANGUES comprennent les mots « Sathmog, notre maître trifide ».\r\nVous trouverez les caractéristiques des adeptes en page 105 du livret de règles. S’ils interrompent le rituel, ceux-ci attaquent et se battent jusqu’à la mort. Si on les laisse poursuivre, ils disparaissent dans un nuage de fumée noire, un démon (page 85 du livret de règles) se matérialise et les agresse."
+      ]
+    },
+    {
+      "name": "📆 RA dans les Marais Hantés",
+      "entries": [
+        "Rien ne se passe. Les personnages joueurs pataugent sans relâche dans le marais putride.",
+        "Rien ne se passe. Les personnages joueurs pataugent sans relâche dans le marais putride.",
+        "Rien ne se passe. Les personnages joueurs pataugent sans relâche dans le marais putride.",
+        "Rien ne se passe. Les personnages joueurs pataugent sans relâche dans le marais putride.",
+        "Rien ne se passe. Les personnages joueurs pataugent sans relâche dans le marais putride.",
+        "Rien ne se passe. Les personnages joueurs pataugent sans relâche dans le marais putride.",
+        "Sangsues. Une portion inondée du chemin grouille de sangsues. Tous ceux qui pataugent dans l’eau doivent faire un jet de SURVIE. En cas d’échec, ils subissent 1D3 points de dégâts et un état de leur choix. L’armure n’est d’aucune utilité.",
+        "Piège de chasse. Un piège à ours rouillé est dissimulé sous un tas de vieilles feuilles. Tous les personnages doivent faire un jet d’INTUITION selon leur ordre de marche. Le premier qui échoue déclenche le  piège et subit 1D6 points de dégâts perforants.",
+        "Araignée géante. Une araignée géante vorace (page 98 du livret de règles) a tissé sa toile en travers du chemin. Tous les personnages doivent faire un jet d’INTUITION et ceux qui échouent se retrouvent empêtrés dans les fils de sa toile (attaque monstrueuse no5, page 98 du livret de règles). L’araignée attaque au prochain round et pour se libérer, les individus pris au piège doivent faire un jet de FOR sur lequel ils subissent un fléau.",
+        "Esprits tourmentés. Des silhouettes lumineuses d’orcs en armure brisée flottent à travers le marais. Les personnages doivent faire un jet de VOL pour résister à la terreur (page 52 du livret de règles). Ces esprits sont ceux des orcs tués au combat autour de la tour des soupirs.",
+        "L’herboriste. Les héros rencontrent Elmina, une vieille herboriste qui vit dans une hutte au milieu du marais. Elle peut leur indiquer la direction de la tour des soupirs et les avertir de la présence d’un géant et d’une bande de brigands. Pour quelques pièces d’or, elle peut également leur offrir ses services de guérisseuse, voire leur enseigner ses compétences. Elmina possède les compétences ANIMISME 15 et SOINS 16, et elle connaît les sorts CUISINER, PROPRETÉ, BANNISSEMENT, MURMUREUR, PIÈGE DE RACINES et GUÉRIR UNE BLESSURE.",
+        "Lumières fantomatiques. La végétation des marais devient de plus en plus haute et dense. Dans l’obscurité, sous les arbres, des lumières spectrales éclairent le sol. Chaque personnage doit faire un jet de VOL pour ne pas se laisser attirer dans les marécages. S’ils le ratent, ils s’enlisent rapidement dans la boue. Ils doivent faire un jet d’ESQUIVE sur lequel ils subissent un fléau s’ils ne veulent pas couler et commencer à se noyer (page 53 du livret de règles). L’un de ses camarades peut faire un jet d’ACROBATIE et tenter de le sauver. En cas d’échec toutefois, il commencera lui aussi à couler."
+      ]
+    },
+    {
+      "name": "📆 RA au pied des Montagnes",
+      "entries": [
+        "Rien ne se passe. Le vent hurle sur les pentes arides des montagnes, et la pénible marche se poursuit sans encombre.",
+        "Rien ne se passe. Le vent hurle sur les pentes arides des montagnes, et la pénible marche se poursuit sans encombre.",
+        "Rien ne se passe. Le vent hurle sur les pentes arides des montagnes, et la pénible marche se poursuit sans encombre.",
+        "Rien ne se passe. Le vent hurle sur les pentes arides des montagnes, et la pénible marche se poursuit sans encombre.",
+        "Rien ne se passe. Le vent hurle sur les pentes arides des montagnes, et la pénible marche se poursuit sans encombre.",
+        "Rien ne se passe. Le vent hurle sur les pentes arides des montagnes, et la pénible marche se poursuit sans encombre.",
+        "La silhouette de la mort. Les personnages sont frappés par un sentiment d’anxiété et se sentent soudain petits, inoffensifs et vulnérables. Quelques instants plus tard, le monde s’assombrit alors qu’une ombre gigantesque glisse dans le ciel. Tous ceux qui lèvent les yeux doivent effectuer un jet de VOL pour résister à la terreur (page 52 du livret de règles). Si quelqu’un réussit un jet de CONNAISSANCE DES BÊTES, il identifiera l’ombre ailée, qui arbore des excroissances épineuses et un museau allongé, comme un dragon.",
+        "Des orcs nerveux. Les héros se retrouvent encerclés par des orcs menaçants surgis sans crier gare de toutes les directions. Deux fois plus nombreux, ils possèdent les caractéristiques et l’équipement du guerrier (page 94 du livret de règles).\r\nLes orcs renfrognés les regardent d’un air mauvais et se montrent extrêmement méfiants à leur égard, mais ils veulent seulement savoir ce qu’ils font dans la région. Au service de Maladûk, ils soupçonnent les intrus d’être des adeptes de Sathmog à la recherche de leur cheffe.\r\nLe risque de combat demeure élevé, mais un affrontement peut être évité par de beaux parleurs s’ils réussissent un jet de PERSUASION.",
+        "Le géant en colère. Un géant enragé (page 88 du livret de règles) fonce sur les personnages, pousse des rugissements furieux et fait tournoyer son énorme gourdin de bois. Il arrive sur eux en deux rounds. Si l’un d’entre eux réussit un jet CONNAISSANCE DES BÊTES, il se souviendra que ces créatures se révèlent extrêmement territoriales.\r\nLe géant arrêtera son attaque si les héros se dépêchent de s’éloigner, ce qui nécessite un jet d’ESQUIVE et de consacrer exclusivement cet intervalle à leur déplacement. Sinon, l’un d’entre eux peut faire un jet de DISCRÉTION pour se cacher, ou bien user de PERSUASION pour convaincre le géant qu’ils ne menacent pas sa grotte. Les jets ratés peuvent entraîner un combat, mais vous devez donner à votre groupe plusieurs occasions de l’éviter.",
+        "La maîtresse des vents. Les rafales d’une grande tempête hurlent entre les sommets des montagnes. Soudain, les personnages aperçoivent une silhouette encapuchonnée sur une falaise,  plus loin, qui gesticule et tend les bras vers le ciel. Il s’agit de Sephyra, une mage élémentaliste qui tente de conquérir le vent d’ouest.\r\nSephyra connaît très bien les montagnes et les histoires de la reine naine Bothild. Si les personnages joueurs gagnent sa confiance (jet de PERSUASION), elle peut leur montrer le chemin vers le filon de Bothild, ou même leur enseigner ce qu’elle sait. Elle possède le niveau 15 en ÉLÉMENTALISME et maîtrise les sorts GEL, RAFALE DE VENT et TOURBILLON.",
+        "L’œuf de dragon. Une pierre de taille humaine striée de rouge se trouve sous un rocher en saillie. S’ils l’examinent de plus près, les personnages se rendent compte que cette chose étrange est un œuf, manifestement pondu par une bête géante. Si l’un d’entre eux réussit un jet de CONNAISSANCE DES BÊTES, il identifiera un œuf de dragon, et se souviendra avoir entendu dire que ces œufs possèdent une coquille empoisonnée. Celui qui le touche subit les effets d’un poison mortel (toxicité 7).",
+        "La mort qui vient du ciel. Depuis son nid juché au sommet d’un arbre gigantesque, un griffon affamé (page 90 du livret de règles) aperçoit les personnages. Il pousse un cri à glacer le sang quand il passe à l’action. Chaque héros subira un fléau sur le jet d’INTUITION qu’il devra effectuer. Si tout le monde le rate, l’attaque du griffon les surprendra et la créature recevra les cartes d’initiative no 1 et 2 au premier tour. Elle s’enfuira après avoir perdu la moitié de ses PV."
+      ]
+    },
+    {
+      "name": "📆 Event - Tertre du Chevalier",
+      "entries": [
+        "Les gobelins attaquent ! Après avoir été réprimandée par leurs chefs, une patrouille de gobelins est revenue au tertre pour récupérer le trésor et (peut-être) sauver leurs camarades restés sur place. Ils comptent deux individus de plus que le nombre de personnages et attaquent sur-le-champ, mais ils s’enfuient si la moitié d’entre eux est vaincue. Les gobelins possèdent les mêmes caractéristiques que Grub (page 36) et si on les capture, ils peuvent révéler qu’ils servent Maladûk.",
+        "Gobelin massacré. Les personnages trouvent la triste dépouille d’un gobelin mort. Le corps est gravement mutilé, mais si l’un d’entre eux fait un jet de SOINS, il se rendra compte que le décès ne remonte pas à très longtemps.",
+        "Araignée géante. Une araignée géante qui vit dans une cavité derrière l’un des murs attaque les héros. Ses caractéristiques figurent en page 98 du livret de règles. Cet événement ne peut se produire qu’une seule fois.",
+        "Le spectre. L’un des personnages l’a dérangé et il attaque. Comme il est partiellement immatériel, il peut passer à travers les portes fermées, mais il lui faut une action pour le faire. S’il perd la moitié de ses PS, il se retire dans son tombeau (no 9) et s’y rétablit complètement en une seule période.",
+        "Esprits tourmentés. Des silhouettes translucides aux visages déformés sortent des ombres et attaquent les personnages par des cris et des hurlements. Ces derniers doivent faire un jet de VOL pour résister à la terreur (page 52 du livret de règles). Autrefois serviteurs de la maison du chevalier-dragon, les esprits attirent leur maître, le spectre du tertre, qui arrive au bout de 1D3 rounds (voir l’événement no 4 ci-dessus).",
+        "Vision draconique. Un souvenir errant enveloppe l’un des personnages, qui se retrouve soudain face à une étrange cité pleine de tourelles, de tours et de flèches en forme de cornes. Un énorme dragon chevauché par un chevalier en cotte de mailles dorée et coiffé d’un grand heaume à cornes fonce droit sur lui. Ce dernier subit un fléau sur le jet de VOL qu’il doit faire pour résister à la terreur. L’événement ne peut se produire qu’une seule fois.",
+        "Rien ne se passe.",
+        "Rien ne se passe.",
+        "Rien ne se passe.",
+        "Rien ne se passe.",
+        "Rien ne se passe.",
+        "Rien ne se passe."
+      ]
+    },
+    {
+      "name": "📆 - QUITTER LE TUMULUS ?",
+      "entries": [
+        "Rien ne se passe.",
+        "Rien ne se passe.",
+        "Rien ne se passe.",
+        "Une patrouille de gobelins, deux fois plus nombreux que les personnages et dotés des mêmes caractéristiques que Grub (page 36), arrive et attaque immédiatement.",
+        "Une patrouille de gobelins, deux fois plus nombreux que les personnages et dotés des mêmes caractéristiques que Grub (page 36), arrive et attaque immédiatement.",
+        "Le chevalier apparaît près du camp des héros et les attaque, mais il disparaît dès qu’il subit des dégâts."
+      ]
+    },
+    {
+      "name": "📆 Event - Le Filon de Bothild",
+      "entries": [
+        "Rien ne se passe.",
+        "Rien ne se passe.",
+        "Rien ne se passe.",
+        "Rien ne se passe.",
+        "Rien ne se passe.",
+        "Rien ne se passe.",
+        "Le cliquetis d’une cotte de mailles. Soudain, le cliquetis distinct d’une cotte de mailles se fait entendre, en provenance d’une direction parfaite pour l’histoire. Ces échos surgissent de l’époque où les nains habitaient les grottes. Tous les personnages doivent faire un jet de  VOL pour résister à la terreur.",
+        "Esprits nains. Les héros sentent une brise froide souffler dans leur cou et entendent de faibles voix chuchoter, de façon presque inaudible, dans un vieux dialecte nain. Tous doivent faire un jet de VOL pour résister à la terreur. Ceux qui le réussissent peuvent faire un jet de LANGUES pour distinguer des phrases telles que « aidez-moi », « je coule », « air » et « mort blanche ».",
+        "Cascade. Un craquement résonne à l’intérieur de la paroi rocheuse et quelques instants plus tard, celle-ci éclate et déverse une cascade de pierre et d’eau sur l’un des personnages. La victime doit faire un jet d’ESQUIVE; en cas d’échec, elle subit 2D6 points de dégâts contondants et doit faire un jet de résistance au froid (page 54 du livret de règles).",
+        "L’attrait de l’eau. Une belle lumière apparaît sous la surface. Tous les personnages doivent faire un jet de VOL pour ne pas être attirés la tête la première dans l’eau. Une fois dessous, les victimes doivent retenir leur respiration pour éviter la noyade (page 53 du livret de règles). L’enchantement disparaît si elles perdent au moins 1 PS.",
+        "Effondrement. Une partie du sol disparaît sous les pieds d’un des personnages. S’il ne veut pas se retrouver emporté par l’eau tourbillonnante et entraîné dans une autre pièce (au choix du MJ), il devra réussir un jet d’ESQUIVE.",
+        "La Mort blanche. Soudain, la Mort blanche (page suivante) jaillit de l’eau, effectue une attaque monstrueuse contre l’un des héros, puis disparaît à nouveau dans les tunnels."
+      ]
+    }
+  ]
+}
