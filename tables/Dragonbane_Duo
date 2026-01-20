@@ -1,0 +1,751 @@
+{
+  "tables": [
+    {
+      "name": "😱 Terreur",
+      "entries": [
+        "Affaibli. La peur draine votre énergie et votre détermination. Vous perdez 2D6 PV (minimum zéro) et vous êtes Découragé (CHA).",
+        "Secoué. Vous subissez l’état Effrayé (VOL).",
+        "Haletant. La peur intense vous coupe le souffle et vous devenez Épuisé (FOR).",
+        "Pâle. Votre visage devient blanc comme un linge. Vous et tous les personnages joueurs situés dans un rayon de dix mètres autour de vous et à portée de vue êtes Effrayés (VOL).",
+        "Cri. Vous hurlez d’horreur. De ce fait, tous les personnages joueurs qui vous entendent subissent immédiatement une attaque de terreur. Un individu n’a besoin que d’un seul jet de VOL pour résister à la même attaque de terreur.",
+        "Rage. Votre peur se transforme en colère, et vous êtes obligé d’attaquer sa source à votre prochain tour (de préférence au corps à corps). Vous devenez également Furieux (INT).",
+        "Paralysé. Vous êtes pétrifié de terreur et incapable de bouger. Vous ne pouvez pas effectuer d’action ou de déplacement lors de votre prochain tour. Faites un jet de VOL à chaque tour suivant (qui ne compte pas comme une action) pour briser la paralysie.",
+        "Panique. Dans un accès de panique totale, vous fuyez la scène aussi vite que vous le pouvez. Lors de votre prochain tour, vous vous éloignez de la source de votre peur. À chaque tour suivant, faites un jet de VOL (qui ne compte pas comme une action) pour arrêter de courir et agir à nouveau normalement."
+      ]
+    },
+    {
+      "name": "🪙 Trésor",
+      "entries": [
+        "Pièces de cuivre. 1D6 pièces de cuivre",
+        "Pièces de cuivre. 2D6 pièces de cuivre",
+        "Pièces de cuivre. 4D6 pièces de cuivre",
+        "Pièces de cuivre. 2D6 x 10 pièces de cuivre",
+        "Pièces de cuivre. 4D6 x 10 pièces de cuivre",
+        "Pièces d’argent. 1D6 pièces d’argent",
+        "Pièces d’argent. 3D6 pièces d’argent",
+        "Pièces d’argent. 1D6 x 5 pièces d’argent",
+        "Pièces d’argent. 1D6 x 10 pièces d’argent",
+        "Pièces d’argent. 2D6 x 10 pièces d’argent",
+        "Pièces d’argent. 3D6 x 10 pièces d’argent",
+        "Pièces d’or. 1D6 pièces d’or",
+        "Pièces d’or. 2D6 pièces d’or",
+        "Pièces d’or. 4D6 pièces d’or",
+        "Pièces d’or. 1D6 x 10 pièces d’or",
+        "Pièces d’or. 2D6 x 10 pièces d’or",
+        "Calice. 2D6 x 5 pièces d’or",
+        "Bracelet en argent. 2D6 x 10 pièces d’argent",
+        "Bracelet en or. 2D6 x 10 pièces d’or",
+        "Collier en argent. 2D6 x 5 pièces d’argent",
+        "Collier en or. 2D6 pièces d’or",
+        "Anneau en argent. 2D6 pièces d’argent",
+        "Anneau en or. 4D6 pièces d’or",
+        "Broche en argent. 2D6 x 5 pièces d’argent",
+        "Amulette en or. 2D6 x 5 pièces d’or",
+        "Gemme. Lancez 1D6: 1 – verre (2 PC); 2 – cristal (10 PA); 3 – émeraude (10 PO); 4 – saphir (15 PO); 5 – rubis (25 PO); 6 – diamant (100 PO)",
+        "Vêtement. Lancez 1D3: 1 – bottes; 2 – cape; 3 – fourrure.",
+        "Arme de corps à corps. Lancez 1D6: 1 – dague; 2 – épée courte; 3 – lance courte; 4 – épée large; 5 – lance longue; 6 – épée longue",
+        "Arme de corps à corps. Lancez 1D6: 1 – hache; 2 – cimeterre; 3 – étoile du matin; 4 – dague de parade; 5 – marteau de guerre léger ; 6 – fléau d’armes",
+        "Arme à distance. Lancez 1D6: 1 – fronde; 2 – arc court ; 3 – arc long; 4 – arbalète légère; 5 – arbalète lourde; 6 – arbalète de poing",
+        "Arme de maître. Lancez 1D6: 1 – dague; 2 – épée courte; 3 – hache de bataille; 4 – épée large; 5 – marteau de guerre lourd; 6 – épée longue",
+        "Armure/bouclier. Lancez 1D6: 1 – petit bouclier ; 2 – grand bouclier ; 3 – heaume ouvert ; 4 – grand heaume; 5 – cuir clouté; 6 – cotte de mailles",
+        "Dague empoisonnée. Faites un jet d’ESQUIVE. Si vous échouez, vous vous coupez et subissez les effets d’un poison de toxicité 12. \nLancez 1D3 pour connaître son type: 1 – mortel; 2 – paralysant ; 3 – narcotique.",
+        "Clou rouillé. Faites un jet d’ESQUIVE. Si vous échouez, vous subissez 1D6 points de dégâts.\nL’armure n’est d’aucune utilité.",
+        "Grimoire. Lancez 1D4 pour connaître l’école. 1 – animisme; 2 – élémentalisme; 3 – mentalisme; 4 – magie universelle.\nLancez 1D4–1 pour connaître le rang (0 pour un tour de magie) et 1D4 pour en connaître le nombre.\nLe MJ choisit les sorts ou laisse faire le hasard.",
+        "Bouteille. Un jet de SOINS en révèle le contenu. Sur un échec, le MJ fait un jet en secret.\nLancez 1D6: 1 – poison mortel (toxicité 12); 2 – narcotique (toxicité 14): 3 – boisson alcoolisée; 4 – décoction à base de plantes; 5 – potion de soins (2D6 PS); 6 – potion de soins (3D6 PS).",
+        "Livre. Lancez 1D6 pour connaître le titre: 1 – Manger ou être mangé – Les plantes de la forêt ; 2 – Grammaire de la langue draconique; 3 – Héros et vils personnages du passé; 4 – Manuel du maître charpentier ; 5 – Bêtes des profondeurs – Une encyclopédie; 6 – Sang, flegme et bile – Maîtrisez vos fluides corporels.",
+        "Instrument de musique. Lancez 1D6: 1 – corne; 2 – flûte; 3 – harpe; 4 – lyre; 5 – cornemuse; 6 – tambour.",
+        "Marchandise. Lancez 1D6: 1 – loupe ; 2 – longue-vue; 3 – parfum; 4 – jeu d’échecs; 5 – cartes à jouer ; 6 – billes.",
+        "Rat. Faites un jet d’ESQUIVE. En cas d’échec, vous subissez 1D4 points de dégâts.\nL’armure n’est d’aucune utilité."
+      ]
+    },
+    {
+      "name": "📆 Events - MENACE",
+      "entries": [
+        "Une redoutable créature a repéré votre odeur. Elle attaque lorsque la menace se déclenche.",
+        "Cette région est sujette aux tremblements de terre et aux effondrements. Lorsque la menace se déclenche, vous vous retrouvez confronté à un séisme catastrophique.",
+        "Un ennemi connu vous cherche. Lorsque la menace se déclenche, il vous rattrape.",
+        "Une corruption infâme imprègne ce lieu. Lorsque la menace se déclenche, vous y êtes exposé.",
+        "Des pièges parsèment votre chemin. Lorsque la menace se déclenche, l’un d’entre eux s’amorce.",
+        "Des chuchotements fantomatiques hantent vos pas. Lorsque la menace se déclenche, vous affrontez une manifestation atroce."
+      ]
+    },
+    {
+      "name": "⚔️ Armes Improvisées (Auberge)",
+      "entries": [
+        "Chaudron d’eau bouillante\n✦ Lancez l’eau bouillante en un cône de 4 m de longueur.\n✦ Chaque personnage dans le cône subit 2D6 points de dégâts.\n✦ L’attaque peut être esquivée, mais pas parée.\n✦ L’armure n’est d’aucune utilité.",
+        "Seau d’eau savonneuse\n✦ Lancez l’eau savonneuse en un cône de 4 m de longueur.\n✦ Chaque personnage dans le cône tombe au sol.\n✦ L’attaque peut être esquivée, mais pas parée.",
+        "Bûche enflammée\n✦ Frappez un adversaire situé à 2 m ou moins avec la bûche.\n✦ Nécessite une main libre.\n✦ L’attaque touche automatiquement et inflige 2D6 points de dégâts de feu, plus le bonus aux dégâts.\n✦ L’attaque peut être esquivée ou parée.\n✦ La bûche peut ensuite être utilisée comme torche.",
+        "Cochon fouineur\n✦ Faites un jet de SURVIE pour énerver le cochon et lui faire attaquer un ennemi de votre choix situé à 10 m ou moins.\n✦ L’attaque touche automatiquement et inflige 3D6 points de dégâts contondants.\n✦ L’attaque peut être esquivée, mais pas parée.\n✦ Ensuite, le cochon détale en trombe.",
+        "Bouteille de vin\n✦ Frappez un adversaire situé à 2 m ou moins avec la bouteille.\n✦ Nécessite une main libre.\n✦ L’attaque touche automatiquement et inflige 2D6 points de dégâts contondants, plus le bonus aux dégâts.\n✦ L’attaque peut être esquivée ou parée.\n✦ L’ennemi a du vin dans les yeux et subit un fléau sur toutes ses actions jusqu’à votre prochain tour.",
+        "Lustre\n✦ Balancez-vous du lustre et effectuez une attaque de corps à corps.\n✦ Vous pouvez effectuer une action de déplacement normale sans déclencher d’attaque gratuite.\n✦ L’attaque de corps à corps doit être effectuée à mains nues, mais elle ne peut être ni esquivée ni parée.\n✦ Si l’attaque échoue, vous tombez au sol et subissez 1D6 points de dégâts contondants."
+      ]
+    },
+    {
+      "name": "⚔️ Armes Improvisées (Caverne)",
+      "entries": [
+        "Stalactite\n✦ Poussez un adversaire situé à 2 m ou moins vers une formation rocheuse acérée pendant du plafond.\n✦ L’attaque touche automatiquement et inflige 2D6 points de dégâts perforants, plus le bonus aux dégâts.\n✦ L’attaque peut être esquivée, mais pas parée.\n✦ L’armure n’est d’aucune utilité, à l’exception des heaumes.",
+        "Torche\n✦ Saisissez une torche au mur et frappez un adversaire situé à 2 m ou moins.\n✦ Nécessite une main libre.\n✦ L’attaque touche automatiquement et inflige 2D6 points de dégâts de feu, plus le bonus aux dégâts.\n✦ L’attaque peut être esquivée ou parée.\n✦ Vous pouvez ensuite conserver la torche.",
+        "Stalagmite\n✦ Poussez un adversaire situé à 2 m ou moins vers une haute formation rocheuse au sol.\n✦ L’attaque touche automatiquement et inflige 1D6 points de dégâts contondants, plus le bonus aux dégâts. L’adversaire tombe au sol.\n✦ L’attaque peut être esquivée, mais pas parée.",
+        "Flaque\n✦ Faites un jet pour renverser votre adversaire (page 48).\n✦ En cas de succès, l’adversaire doit dépenser une action et réussir un jet d’ACROBATIE pour se relever.",
+        "Crevasse\n✦ Faites un jet pour renverser votre adversaire (page 48).\n✦ En cas de réussite, l’adversaire tombe dans une crevasse de 2D6 mètres et subit des dégâts de chute.\n✦ Remonter nécessite un jet d’ACROBATIE.",
+        "Chauves-souris\n✦ Effectuez un jet de SURVIE pour perturber les chauves-souris et leur faire attaquer un adversaire situé à 10 m ou moins.\n✦ Pour leurs caractéristiques, voir en page 99.\n✦ Les chauves-souris continuent à attaquer l’adversaire durant 1D3 rounds.\n✦ Si votre jet de SURVIE échoue, les chauves-souris vous attaquent plutôt que votre adversaire."
+      ]
+    },
+    {
+      "name": "⚔️ Armes Improvisées (Forêt)",
+      "entries": [
+        "Branche basse\n✦ Balancez-vous depuis la branche et effectuez une attaque de corps à corps.\n✦ Vous pouvez effectuer une action de déplacement normale sans déclencher d’attaque gratuite.\n✦ L’attaque de corps à corps doit être effectuée à mains nues, mais elle ne peut être ni esquivée ni parée.\n✦ Si l’attaque échoue, vous tombez au sol et subissez 1D6 points de dégâts contondants.",
+        "Nid de guêpes\n✦ Faites un jet de SURVIE pour attraper le nid de guêpes et le lancer sur un adversaire situé à 10 m ou moins.\n✦ L’adversaire est sévèrement piqué. Il subit 2D6 points de dégâts et un fléau sur toutes ses actions durant un intervalle.\n✦ L’attaque peut être esquivée, mais pas parée.\n✦ L’armure n’est d’aucune utilité.\n✦ Si votre jet de SURVIE échoue, les guêpes vous piquent à la place de l’adversaire.",
+        "Racines noueuses\n✦ Faites un jet pour renverser votre adversaire (page 48).\n✦ En cas de succès, l’adversaire doit dépenser une action et réussir un jet d’ACROBATIE pour se relever.",
+        "Rocher\n✦ Faites un jet d’ACROBATIE pour sauter depuis le rocher et vous jeter sur un adversaire situé à 2 m ou moins.\n✦ L’attaque inflige 2D6 points de dégâts contondants, plus le bonus aux dégâts. Elle ne peut être ni esquivée ni parée.\n✦ En cas de succès, vous et votre adversaire tombez au sol.\n✦ Si votre jet échoue, vous seul tombez au sol et vous subissez 1D6 points de dégâts contondants.",
+        "Vipère\n✦ Faites un jet de SURVIE pour vous saisir de la vipère et la lancer sur un adversaire situé à 10 m ou moins.\n✦ L’adversaire est mordu. Il subit 1D6 points de dégâts et les effets d’un poison de toxicité 12 si la morsure transperce l’armure.\n✦ L’attaque peut être esquivée, mais pas parée.\n✦ Si votre jet de SURVIE échoue, la vipère vous mord à la place de l’adversaire.",
+        "Poignée de terre\n✦ Lancez de la terre dans les yeux d’un adversaire situé à 10 m ou moins.\n✦ L’adversaire subit 1D6 points de dégâts (l’armure n’est d’aucune utilité) et un fléau sur toutes ses actions pour le reste du combat.\n✦ L’attaque peut être esquivée, mais pas parée."
+      ]
+    },
+    {
+      "name": "💀 Worg",
+      "entries": [
+        "Hurlement vorace : le worg lève la tête vers le ciel et pousse un hurlement affamé. Tous ceux qui se trouvent dans un rayon de 10 m autour de lui doivent faire un jet de VOL pour résister à la terreur.",
+        "Grognement nauséabond : la créature crache un nuage pestilentiel de bave et de viande en décomposition sur tous les adversaires situés dans un rayon de 2 m autour d’elle. Les victimes deviennent Découragées et si elles subissent déjà cet état, elles doivent en choisir un autre.",
+        "Morsure : la bête ouvre ses mâchoires écumantes et mord furieusement son ennemi. L’attaque inflige 2D6 points de dégâts perforants et si la victime subit des dégâts, elle s’expose aussi à une maladie (virulence 12).",
+        "Charge : le worg se précipite à toute vitesse sur une cible. L’attaque inflige 1D6 points de dégâts contondants et la fait tomber à terre. Si elle n’esquive pas, il la mord sur-le-champ au cours d’une seconde attaque. Celle-ci inflige 2D8 points de dégâts perforants et il est possible de la parer. On doit esquiver ou parer les attaques séparément.",
+        "Traînée mortelle : la créature saisit son adversaire le moins protégé par son armure et le traîne sur 20 m à travers le champ de bataille. La victime subit 1D8 points de dégâts contondants et ne peut effectuer d’actions qui nécessitent un déplacement. Néanmoins, elle peut tenter de se libérer, ce qui demande un jet de FOR. À chaque tour suivant, le worg continue de la traîner jusqu’à ce qu’elle tombe à zéro PS ou qu’elle se libère.",
+        "Secousse mortelle : la bête bondit sur un adversaire et le mord, puis le secoue ensuite férocement avant de le jeter plus loin. L’attaque inflige 2D10 points de dégâts perforants, la victime se retrouve projetée à 2D4 mètres et elle tombe à terre."
+      ]
+    },
+    {
+      "name": "💀 Chevaucheur de Worg",
+      "entries": [
+        "Saut. Le féroce worg se jette sur un personnage et le plaque violemment au sol. L’attaque inflige 2D8 points de dégâts contondants.",
+        "Coup descendant. Le worg bondit au-dessus d’un des personnages, son cavalier fend l’air de son cimeterre dentelé et l’abat sur lui. L’attaque inflige 3D6 points de dégâts tranchants. ",
+        "Hurlement affamé. Le worg lève la tête vers le ciel et pousse un hurlement affamé. Tous les personnages situés dans un rayon de 10 m autour de lui doivent faire un jet de VOL pour résister à la terreur.",
+        "Cri de guerre. Le cavalier rallie ses subordonnés. Tous les éclaireurs encore en vie bénéficient d’une faveur sur toutes leurs attaques jusqu’à son prochain tour.",
+        "Morsure. Le worg saisit une cible dans sa gueule écumante et commence à la secouer d’un côté à l’autre. L’attaque inflige 2D10 points de dégâts perforants, la victime se retrouve projetée à 2D4 mètres de distance et tombe à terre.",
+        "Charge. Le chevaucheur se précipite droit sur un personnage et tente de l’embrocher avec sa lance. L’attaque inflige 3D8 points de dégâts perforants, mais il est possible de la parer."
+      ]
+    },
+    {
+      "name": "💀 Troll",
+      "entries": [
+        "Vomissement : le troll se racle la gorge dans un grondement tonitruant et fait remonter tous les glaires du fond de ses poumons, puis vomit une cascade de bile et d’eau marécageuse nauséabonde. Tous les aventuriers situés dans un rayon de 6 m autour de lui souffrent d’un état de leur choix.",
+        "Éventration: la créature déchire le corps d’un personnage d’un coup de ses griffes noires et vertes, et lui inflige 1D10 points de dégâts tranchants. Cependant, il est possible de parer l’attaque. La victime qui subit des dégâts contracte également une maladie (virulence 10).",
+        "Morsure répugnante: le troll ouvre sa bouche à l’haleine fétide, pleine de crocs, de graviers et de vieux fragments d’os, et mord un personnage. L’attaque inflige 2D8 points de dégâts perforants, et la victime coincée dans sa gueule doit faire un jet de FOR (qui compte comme une action) à chaque round pour se libérer. En cas d’échec, elle subit 2D8 points de dégâts supplémentaires.",
+        "Projection: le monstre soulève un personnage au-dessus de sa tête et le lance sur 2D6 mètres dans une direction déterminée aléatoirement, comme une poupée de chiffon. La victime subit un nombre équivalent de points de dégâts contondants et tombe à terre.",
+        "Balayage: le troll balaie l’espace à l’aide de ses longs bras noueux et frappe tous les personnages situés dans un rayon de 2 m autour de lui. L’attaque inflige 2D6 points de dégâts contondants à chacun d’entre eux.",
+        "Assommoir : la créature saisit le personnage le plus proche et s’en sert comme d’une arme pour en frapper un autre. Les deux victimes subissent 2D8 points de dégâts contondants et tombent à terre."
+      ]
+    },
+    {
+      "name": "💀 Chauves-souris vampires",
+      "entries": [
+        "Horreur tourbillonnante: les chauves-souris tournent au-dessus de leurs victimes à un rythme effréné. Tous les individus qui se trouvent dans un rayon de 10 m autour d’elles subissent une attaque de terreur.",
+        "Horreur tourbillonnante: les chauves-souris tournent au-dessus de leurs victimes à un rythme effréné. Tous les individus qui se trouvent dans un rayon de 10 m autour d’elles subissent une attaque de terreur.",
+        "Attaque de groupe: les créatures lancent un assaut sur le personnage qui possède la CON la plus élevée. L’attaque inflige 2D6 points de dégâts tranchants, la victime subit une attaque de terreur et l’essaim récupère le même nombre de PS après avoir bu le sang de leur cible.",
+        "Attaque de groupe: les créatures lancent un assaut sur le personnage qui possède la CON la plus élevée. L’attaque inflige 2D6 points de dégâts tranchants, la victime subit une attaque de terreur et l’essaim récupère le même nombre de PS après avoir bu le sang de leur cible.",
+        "Attaque en masse: les chauves-souris se séparent pour attaquer tous les personnages situés dans un rayon de 10 m autour d’elles. Chaque victime subit 1D8 points de dégâts tranchants et l’essaim récupère le même nombre de PS après avoir bu le sang de leurs cibles.",
+        "Attaque en masse: les chauves-souris se séparent pour attaquer tous les personnages situés dans un rayon de 10 m autour d’elles. Chaque victime subit 1D8 points de dégâts tranchants et l’essaim récupère le même nombre de PS après avoir bu le sang de leurs cibles."
+      ]
+    },
+    {
+      "name": "💀 Fantôme",
+      "entries": [
+        "Frappe spectrale: le fantôme s’élance vers un personnage joueur situé dans un rayon de 10 m autour de lui, puis le frappe avec une grande force. La victime se retrouve projetée de 2D6 mètres en arrière, subit le même nombre de dégâts contondants et tombe à terre.",
+        "Toucher mortel: le revenant enfonce sa main translucide dans la poitrine d’un malheureux PJ et saisit son cœur. La victime subit 2D10 points de dégâts et devient Effrayée. L’armure n’est d’aucune utilité.",
+        "Cri de la banshee: le visage du mort-vivant se déforme en une horrible grimace, puis il pousse un cri qui glace l’âme de tous les aventuriers situés dans un rayon de 10 m autour de lui. Tous subissent une attaque de terreur (page 52).",
+        "Regard mortel: la créature domine un personnage et plonge ses yeux morts dans son âme. La victime voit sa vie défiler devant elle, tourmentée par des visions grotesques de tous ses amis et ses ennemis décédés. Elle devient Effrayée, et subit une attaque de terreur (page 52), assortie d’un fléau sur son jet de VOL.",
+        "Étreinte fantomatique: l’esprit émet un sifflement surnaturel et apparaît soudainement devant un aventurier situé dans un rayon de 10 m autour de lui. Il l’enveloppe ensuite dans une étreinte mortelle et cherche à étouffer l’étincelle de vie en lui. L’attaque inflige 3D6 points de dégâts contondants et laisse sa victime Étourdie.",
+        "Toucher glacial: l’apparition saisit une victime et laisse le froid de la mort s’insinuer dans son corps. Le personnage joueur subit 2D8 points de dégâts et ne peut pas récupérer ses PS ou ses PV tant qu’il n’a pas passé un intervalle dans un endroit chaud. L’armure n’est d’aucune utilité."
+      ]
+    },
+    {
+      "name": "💀 Démon",
+      "entries": [
+        "Terreur démoniaque: le démon siffle des menaces épouvantables dans une ancienne et effroyable langue. Tous les personnages joueurs situés dans un rayon de 10 m autour de lui deviennent la cible d’une attaque de terreur.",
+        "Attaque de griffes: le démon sourit et entaille un personnage joueur à l’aide de ses griffes acérées. L’attaque inflige 2D10 points de dégâts tranchants. Il est possible de la parer.",
+        "Malédiction: le démon pointe du doigt un PJ malchanceux situé dans un rayon de 10 m autour de lui, puis psalmodie une antique malédiction. Il est impossible d’esquiver l’attaque. En revanche, on peut annuler toutes les malédictions, à l’exception de la sixième, grâce à un sort de DISSIPATION (niveau 1). Lancez 1D6. 1 La victime vomit une grenouille chaque fois qu’elle raconte un mensonge. Lancez 1D4 tous les matins. Sur un 1, l’effet disparaît. 2 L’or ou l’argent que la cible touche tombe en poussière. Lancez 1D4 tous les matins. Sur un 1, l’effet disparaît. 3 La victime est aveuglée et agit comme si elle se trouvait dans l’obscurité totale. Lancez 1D4 à chaque intervalle. Sur un 1, l’effet disparaît. 4 La cible est frappée d’amnésie et oublie son propre nom et l’identité des autres personnages joueurs. L’effet doit être interprété. Lancez 1D4 tous les matins. Sur un 1, elle retrouve la mémoire. 5 La victime se transforme en animal. Lancez 1D6. 1: chat, 2: renard, 3: chèvre, 4: loup, 5: cerf, 6: ours. La cible se sert des caractéristiques indiquées en page 99 et ne peut pas parler. Lancez 1D4 à chaque intervalle. Sur un 1, l’effet disparaît. 6 La victime vieillit d’une tranche d’âge, par exemple d’Adulte à Âgé. Ses caractéristiques et ses valeurs dérivées changent en fonction du tableau en page 24, mais pas ses niveaux de compétence. L’effet devient permanent et elle vieillit ensuite normalement à partir de cette nouvelle tranche d’âge. Une personne déjà Âgée se retrouve très fragile et perd 2 points en FOR et en CON.",
+        "Férocité sans précédent : le démon tend la main vers une cible située dans un rayon de 10 m autour de lui. Celle-ci se retrouve projetée à 2D8 mètres en arrière avec une force phénoménale, subit le même nombre de dégâts contondants et tombe à terre.",
+        "Dard du scorpion: la bête lève sa queue de scorpion et pique rapidement sa victime. L’attaque inflige 1D12 points de dégâts perforants, et une cible qui subit au moins 1 point de dégâts se voit injecter un poison paralysant (toxicité 16). Il est possible de parer l’attaque.",
+        "Possession: le démon fixe un personnage situé dans un rayon de 10 m autour de lui et prend le contrôle de son corps. Celui-ci doit faire un jet de VOL sur lequel il subit un fléau (cela ne compte pas comme une action). En cas d’échec, la victime doit immédiatement se déplacer et effectuer une action choisie par le démon, à l’exception de celles qui nécessitent une dépense de PV. De plus, elle perd son prochain tour."
+      ]
+    },
+    {
+      "name": "💀 Griffon",
+      "entries": [
+        "Coup de bec: la bête frappe un personnage de son bec tranchant comme un rasoir, et lui inflige 2D8 points de dégâts perforants.",
+        "Ruade: le griffon porte 1D6 coups rapides à l’aide de ses pattes arrière et tente de déchiqueter le PJ. Chaque attaque inflige 1D8 points de dégâts tranchants. Il est possible de parer ou d’esquiver ces attaques, mais une seule à la fois.",
+        "Coup de griffe: le griffon lève sa patte griffue en un large arc de cercle, et attaque tous les personnages situés dans un rayon de 2 m autour de lui. Chaque victime subit 1D8 points de dégâts tranchants et tombe à terre. ",
+        "Projection: le fauve saisit un personnage dans son bec et le lance. Cette attaque inflige 2D6 points de dégâts perforants et la victime se retrouve projetée à un même nombre de mètres. Ensuite, elle tombe à terre.",
+        "Tourbillon: le griffon utilise ses puissantes ailes pour créer un tourbillon qui emporte tous les personnages situés dans un rayon de 10 m autour de lui. Les victimes atterrissent à 1D6 mètres de distance et subissent le même nombre de dégâts contondants.",
+        "Chute: la créature saisit un personnage dans ses griffes et s’envole dans le ciel. Si la victime n’esquive pas l’attaque, le griffon l’attrape et s’élève à 2D6+6 mètres dans les airs. À son prochain tour, il la lâchera (au lieu de porter une autre attaque monstrueuse) et elle subira les dégâts de la chute."
+      ]
+    },
+    {
+      "name": "💀 Araignée géante",
+      "entries": [
+        "Mandibules: les mandibules dentelées de l’araignée fendent l’air telles des cimeterres. L’attaque inflige 2D8 points de dégâts tranchants.",
+        "Déchiquetage: la créature affamée se jette sur ses proies, et attaque frénétiquement à l’aide de ses pattes poilues et couvertes de barbillons. Tous les personnages joueurs situés dans un rayon de 2 m autour d’elle subissent chacun 1D8 points de dégâts perforants.",
+        "Hypnose: le monstrueux arachnide fixe les personnages joueurs à travers une multitude d’yeux effrayants. Toutes les victimes situées dans un rayon de 10 m autour de lui doivent faire un jet de VOL pour résister à la terreur.",
+        "Dard empoisonné: l’horreur à huit pattes dresse son arrière-train et agresse un personnage. Un dard empoisonné jaillit de son corps répugnant et inflige 1D10 points de dégâts perforants. Si une victime subit au moins 1 point de dégâts, l’aiguillon lui injecte une substance paralysante (toxicité 16). Il est possible de parer l’attaque.",
+        "Toile d’araignée: l’araignée fixe ses nombreux yeux sur le personnage qui possède la plus haute valeur de FOR. L’instant d’après, elle lui crache une matière collante dessus et il doit faire un jet d’ESQUIVE (qui ne compte pas comme une action). En cas d’échec, la victime se retrouve prise dans les fils, incapable de bouger. Elle devra subir un fléau sur son jet de FOR (qui compte comme une action) pour se libérer, et d’autres individus peuvent l’aider.",
+        "Collision: l’araignée géante effectue un grand bond et lance son corps massif sur un personnage. L’attaque lui inflige 2D6 points dégâts contondants et le fait tomber à terre."
+      ]
+    },
+    {
+      "name": "💀 Spectre",
+      "entries": [
+        "Rugissement impie: la bouche sur le crâne décomposé de la créature se tord, et le cri terrible qu’elle pousse transperce l’âme des personnages comme une lame rouillée. Tous les individus situés dans un rayon de 10 m autour d’elle subissent une attaque de terreur (page 52).",
+        "Regard terrifiant : un personnage plonge directement son regard dans les yeux horribles du spectre, dont la gorge laisse échapper un sifflement. Le malchanceux devient Effrayé et subit une attaque de terreur, assortie d’un fléau sur son jet de VOL.",
+        "Poigne de la mort : le monstre lève la main et la tend en direction d’un personnage situé dans un rayon de 10 m autour de lui. Celui-ci se retrouve projeté à 2D4 mètres de distance, subit un nombre équivalent de points de dégâts et tombe à terre. Il est impossible d’esquiver cette attaque.",
+        "Balayage: avec une vitesse surprenante, le spectre fait tournoyer son arme et porte une attaque mortelle. Tous les personnages situés dans un rayon de 2 m autour de lui subissent les dégâts de l’arme. Il est possible de parer cette attaque.",
+        "Froid paralysant : le spectre saisit un malheureux personnage et celui-ci sent le froid de la mort envahir son corps. La victime subit 1D6 points de dégâts (l’armure n’est d’aucune utilité) et doit faire un jet d’ESQUIVE (qui ne compte pas comme une action) à son prochain tour pour pouvoir agir. S’il le rate, il peut effectuer une autre tentative au tour suivant. La cible a également froid (page 54) et elle ne peut pas récupérer de PS ou de PV tant qu’elle ne se réchauffe pas.",
+        "Coup puissant : malgré les craquements dans ses articulations, la créature fait tournoyer son arme et porte une attaque redoutable sur un personnage. Elle double les dégâts infligés par l’arme et la victime se retrouve à terre. Il est possible de parer cette attaque."
+      ]
+    },
+    {
+      "name": "💀 Dragon",
+      "entries": [
+        "Rugissement : le dragon ouvre la gueule et pousse un effroyable rugissement. Tous les personnages joueurs situés dans un rayon de 20 m autour de lui se retrouvent la cible d’une attaque de terreur et subissent un fléau sur leur jet de VOL.",
+        "Attaque de griffes: le dragon frappe deux personnages joueurs avec ses griffes, qui subissent chacun 2D10 points de dégâts tranchants.",
+        "Déplacement d’air : le dragon déploie ses grandes ailes et leur battement provoque un puissant coup de vent qui frappe tous les aventuriers situés dans un rayon de 10 m autour de lui. Les objets ou les créatures de taille humaine qui se retrouvent pris dans le tourbillon sont projetés à 2D6 mètres de distance, subissent autant de points de dégâts contondants et tombent à terre. ",
+        "Coup de queue: le dragon frappe ses victimes avec sa queue hérissée de pointes. Tous les personnages joueurs situés dans un rayon de 6 m autour de lui subissent 2D8 points de dégâts contondants et tombent à terre.",
+        "Morsure: la bête ouvre ses énormes mâchoires et dévore une victime à une vitesse terrifiante. L’attaque lui inflige 4D10 points de dégâts tranchants.",
+        "Souffle ardent: le dragon se dresse dans toute sa splendeur avant de faire jaillir de sa gueule une tempête de feu dévastatrice. Celle-ci forme un cône de 10 m de long et d’une largeur égale à la distance depuis la gueule du dragon. Les personnages qu’elle atteint s’enflamment et subissent 3D10 points de dégâts. L’armure n’est d’aucune utilité."
+      ]
+    },
+    {
+      "name": "💀 Géant",
+      "entries": [
+        "Coup écrasant : le géant fait tournoyer son arme au-dessus de sa tête et frappe un personnage de toutes ses forces. L’attaque inflige 4D10 points de dégâts contondants et la victime est renversée.",
+        "Rugissement : le géant pousse un mugissement qui instille la peur dans le cœur des aventuriers. Tous les personnages joueurs situés dans un rayon de 10 m autour de lui subissent une attaque de terreur.",
+        "Piétinement : le géant vise et tente de piétiner deux personnages joueurs situés au maximum à 4 m l’un de l’autre. Toute personne touchée par l’attaque subit 4D6 points de dégâts contondants et est renversée.",
+        "Balayage: le géant balaie tous les aventuriers situés dans un rayon de 10 m autour de lui à l’aide de son arme. Ceux qu’il parvient à atteindre subissent 2D10 points de dégâts contondants et se retrouvent renversés.",
+        "Projection: l’un des personnages agace prodigieusement la créature, qui l’attrape et tente de le lancer. L’attaque inflige 4D8 points de dégâts contondants, la victime se retrouve projetée à un nombre équivalent de mètres dans une direction aléatoire et elle atterrit à plat ventre.",
+        "Fracassement: fou de rage, le géant frappe le personnage avec ses pieds, ses poings et son arme dans une pluie de coups. Tous ceux qui se trouvent dans un rayon de 2 m autour de lui subissent 3D6 points de dégâts contondants et se retrouvent renversés."
+      ]
+    },
+    {
+      "name": "💀 Harpie",
+      "entries": [
+        "Ricanement menaçant : les harpies abreuvent les aventuriers de terribles descriptions sur ce qu’elles vont leur faire subir. Tous les personnages situés dans un rayon de 10 m autour d’elles doivent faire un jet de VOL pour résister à la terreur (page 52).",
+        "Attaque coordonnée: les créatures se rassemblent et attaquent le personnage qui porte le plus de métal. L’attaque inflige 2D6 points de dégâts tranchants et si elle atteint sa cible, celle-ci se retrouve également soulevée dans les airs. Elle tombera d’une hauteur de 1D3+3 mètres.",
+        "La mort venue du ciel: les harpies lancent des rochers et d’autres objets depuis une certaine distance. Toutes les personnes qui se trouvent dans un rayon de 10 m autour de l’essaim subissent 1D6 points de dégâts contondants.",
+        "Éborgnage: les monstres prennent un malheureux pour cible et tentent de lui arracher les yeux à coup de griffes acérées. L’attaque inflige 2D6 points de dégâts perforants et la victime se retrouve aveuglée. Elle agit comme si elle se trouvait dans l’obscurité la plus totale pendant une période.",
+        "Attaque groupée: les harpies se séparent et attaquent un nombre de personnages joueurs égal au leur et situés dans un rayon de 10 m autour d’elles. Chaque attaque inflige 1D8 points de dégâts tranchants. ",
+        "Pluie de déjections: elles ouvrent leurs cloaques et leurs gueules et arrosent de vomi et d’excréments les personnages joueurs. Tous les individus qui se trouvent dans un rayon de 10 m autour d’elles doivent choisir un état. Il est possible de parer l’attaque avec un bouclier."
+      ]
+    },
+    {
+      "name": "💀 Manticore",
+      "entries": [
+        "Coup de queue: la manticore prend pour cible un personnage situé dans un rayon de 20 m autour d’elle. Elle lance ensuite une attaque à distance redoutable avec les piques sur sa queue. Celle-ci inflige 1D12 points de dégâts perforants et injecte à la victime un poison paralysant (toxicité 12). Il est possible de parer l’attaque avec un bouclier.",
+        "Crocs acérés: la manticore mord un personnage et ses nombreux crocs lui infligent 3D8 points de dégâts tranchants.",
+        "Coup de griffe: la bête s’approche d’un personnage joueur, le renverse et le déchire à l’aide de ses griffes acérées. L’attaque inflige 2D8 points de dégâts tranchants, et 1D6 points supplémentaires puisque la victime est à terre.",
+        "Balayage: la manticore fouette de sa queue deux personnages joueurs, qui subissent 2D6 points de dégâts tranchants et sont renversés.",
+        "Charge: la bête charge de toutes ses forces le personnage joueur avec la valeur de FOR la plus élevée situé dans un rayon de 10 m autour d’elle. La victime subit 3D6 points de dégâts contondants et est renversée.",
+        "Pluie de piquants: la queue de la manticore projette une pluie de pointes mortelles. Tous les aventuriers situés dans un rayon de 10 m autour d’elle subissent 1D10 points de dégâts perforants. De plus, l’attaque injecte un poison paralysant (toxicité 12)."
+      ]
+    },
+    {
+      "name": "💀 Minotaure",
+      "entries": [
+        "Poing de taureau: le minotaure porte un coup à l’aide de son poing recouvert de fourrure et frappe de plein fouet le personnage. L’attaque inflige 2D6 points dégâts contondants et la victime devient Étourdie, même si son armure a absorbé tous les dommages.",
+        "Coup de sabot : la créature donne une ruade à l’aide de ses puissantes pattes arrière. La force de l’attaque projette la victime à 2D6 mètres de distance et lui inflige le même nombre de points de dégâts contondants, et cette dernière tombe à terre.",
+        "Coup de corne: la bête baisse la tête, se précipite vers deux aventuriers situés à moins de 2 m l’un de l’autre, et espère bien les empaler sur ses cornes acérées. Les deux cibles subissent 2D8 points de dégâts perforants et sont assommées.",
+        "Coup de taille: le minotaure lève son arme au-dessus de sa tête et l’abat de toutes ses forces. L’attaque inflige 1D10 points de dégâts supplémentaires en plus des dégâts de la hache. Il est possible de parer le coup.",
+        "Balayage: le minotaure rugit et fait tournoyer son arme en un large arc de cercle, ce qui lui permet d’atteindre toutes les personnes présentes dans un rayon de 2 m autour de lui. L’attaque inflige les dégâts de l’arme.",
+        "Piétinement : la créature saute haut dans les l’air et se laisse tomber sur un aventurier, qui subit 2D10 points de dégâts contondants et se retrouve à terre."
+      ]
+    },
+    {
+      "name": "💀 Centaure",
+      "entries": [
+        "Ruade : le centaure frappe son adversaire à l’aide de ses postérieurs. Cette attaque le projette à 2D6 mètres en arrière et lui inflige un nombre équivalent de dégâts contondants. La victime se retrouve à terre.",
+        "Coup de lance : la créature donne un coup de lance à son opposant et lui inflige 2D10 points de dégâts perforants. Il est possible de parer l’attaque.",
+        "Piétinement : le centaure se cabre et frappe deux adversaires situés dans les deux mètres l’un de l’autre à l’aide de ses sabots. Il leur inflige 2D6 points de dégâts contondants à chacun.",
+        "Tir rapide : la créature se sert de son arc long pour décocher rapidement une flèche sur un adversaire (de préférence un magicien ou un autre archer) situé dans un rayon de 30 m autour de lui. La victime subit 1D12 points de dégâts perforants.",
+        "Charge : le centaure se jette de toute sa masse sur son adversaire. L’attaque inflige 2D10 points de dégâts contondants à sa cible et la fait tomber à terre.",
+        "Rire moqueur : la créature émet un rire moqueur assourdissant. Tous les adversaires situés dans un rayon de 10 m autour d’elle doivent faire un jet de VOL et en cas d’échec, ils deviennent Furieux. Si l’un d’entre eux souffre déjà de cet état, il en subit un autre de son choix à la place."
+      ]
+    },
+    {
+      "name": "💀 Demoiselle-cygne",
+      "entries": [
+        "Coup d’aile : la demoiselle-cygne agite ses ailes et provoque une rafale de vent qui affecte tous les individus situés dans un rayon de 4 m autour d’elle. Les créatures de taille humaine ou inférieure se retrouvent projetées à 1D8 m, subissent le même nombre de points de dégâts contondants et tombent à terre.",
+        "Coup de bec : le cygne donne des coups de bec répétés à un adversaire. Cette attaque lui inflige 2D8 points de dégâts tranchants et il doit faire un jet de VOL pour résister à la terreur.",
+        "Chant du cygne : la créature entonne une belle oraison pour les braves tombés au combat. Tous ceux qui se trouvent dans un rayon de 10 m autour d’elle ressentent soudain une profonde tristesse face à la cruauté de la mort, et ils deviennent Découragés. S’ils en souffrent déjà, ils doivent choisir un autre état.",
+        "Volée de cygnes : l’elfe invoque un groupe de cygnes blancs qui attaquent frénétiquement ses ennemis. Tous les adversaires situés dans un rayon de 10 m autour d’elle subissent 2D4 points de dégâts tranchants et doivent faire un jet de VOL pour résister à la terreur.",
+        "Regard implorant : la demoiselle-cygne pose les yeux sur une cible située dans un rayon de 10 m autour d’elle et la supplie de cesser de se battre. Celle-ci doit faire un jet de VOL ou effectuer sur-le-champ un déplacement et une action (ce qui ne nécessite pas de PV) qu’elle (le MJ) aura choisis. La victime perd également son tour dans le round, s’il n’est pas déjà passé.",
+        "Don des dieux : la créature lance une malédiction sur un adversaire situé dans un rayon de 10 m autour d’elle. Ce dernier expérimente des visions chaotiques venues des temps les plus reculés et il doit faire un jet de VOL assorti d’un fléau pour résister à la terreur."
+      ]
+    },
+    {
+      "name": "💀 Fée",
+      "entries": [
+        "Taquineries : les fées lancent insultes et railleries à la face de leurs ennemis. Tous ceux qui se trouvent dans un rayon de 10 m autour d’elles doivent réussir un jet de VOL ou devenir Furieux. Les individus qui subissent déjà cet état en choisissent un autre.",
+        "Piqûres d’épingle : plusieurs fées se rassemblent en essaim autour d’un adversaire et le poignardent à l’aide de leurs dagues effilées comme des aiguilles. Il subit 1D10 points de dégâts (l’armure n’est d’aucune utilité) et il subit la condition Étourdi.",
+        "Poussière aveuglante : la créature lance une poignée de paillettes en l’air qui peuvent aveugler tous ceux qui se trouvent dans un rayon de 10 m autour d’elle. Les individus affectés doivent réussir un jet d’ESQUIVE (qui ne compte pas comme une action), ou bien agir comme s’ils étaient plongés dans l’obscurité totale pendant 1D6 rounds (page 52 du livre de règles).",
+        "Fais de beaux rêves : la fée se faufile derrière un adversaire et le poignarde avec l’épine d’une rose enchantée. Elle injecte alors un poison paralysant (toxicité 12) à sa victime.",
+        "Baiser enchanté : l’une des fées souffle un baiser enchanté en direction d’une cible, qui doit réussir un jet d’ESQUIVE (qui ne compte pas comme une action), ou devenir Découragée. Les individus qui subissent déjà cet état en choisissent un autre.",
+        "Flèche magique : la créature tire une flèche enchantée sur un adversaire situé dans un rayon de 10 m autour d’elle. Ce dernier subit 1D10 points de dégâts perforants et fait un jet de VOL pour résister à la terreur."
+      ]
+    },
+    {
+      "name": "💀 Naïade",
+      "entries": [
+        "Étranglement : la naïade étend ses longs bras puissants et attrape une victime à la gorge. L’attaque inflige 1D10 points de dégâts contondants, et 1D10 points de dégâts supplémentaires à chaque tour de sa cible. Étranglée, la cible ne peut pas se déplacer ou effectuer d’actions qui nécessitent un déplacement. Néanmoins, elle peut tenter de se libérer, ce qui demande un jet de FOR assorti d’un fléau (qui compte comme une action). D’autres personnes peuvent aider.",
+        "Cœur brisé : la créature fait un geste dédaigneux de la main en direction d’une cible située dans un rayon de 10 m autour d’elle. Cette dernière réalise soudain que son amour pour la naïade ne sera jamais réciproque. Elle devra alors faire un jet de VOL assorti d’un fléau afin de résister à la terreur.",
+        "Griffes acérées : à l’aide de ses ongles effilés, le monstre griffe les yeux de son adversaire. L’attaque lui inflige 1D8 points de dégâts tranchants, et il agira comme s’il était plongé dans l’obscurité totale pendant 1D3 rounds.",
+        "Noyade : la naïade saisit son opposant avec ses bras puissants et le tire dans l’eau. Celui-ci commence immédiatement à se noyer comme indiqué en page 53 du livre de règles, et il ne peut pas se déplacer ou effectuer d’actions qui nécessitent un déplacement. Néanmoins, il peut tenter de se libérer, ce qui demande un jet de FOR assorti d’un fléau (qui compte comme une action). D’autres personnes peuvent aider.",
+        "Ballade enchanteresse : la créature séduit de sa voix douce une victime située dans un rayon de 10 m autour d’elle. Sa cible doit réussir un jet de VOL ou effectuer immédiatement un déplacement et une action (ce qui ne doit pas nécessiter de PV) au choix de la naïade (MJ). Elle perd également son tour dans le round, s’il n’est pas déjà passé.",
+        "Lame de fond : le monstre invoque une grande vague depuis une source d’eau située dans un rayon de 10 m autour d’elle. Elle repousse les objets et les créatures de taille humaine présents dans la zone d’effet (un cône de 10 m) et qui ne sont pas attachés à une distance de 2D6 m. De plus, ils subissent un nombre équivalent de dégâts contondants."
+      ]
+    },
+    {
+      "name": "💀 Sirène",
+      "entries": [
+        "Lancer de harpon : la sirène saisit un harpon en os de baleine glissé dans le carquois accroché sur son dos. Elle le lance ensuite de toutes ses forces sur un adversaire situé dans un rayon de 10 m autour d’elle. Ce dernier subit 2D6 points de dégâts perforants. ",
+        "Coup de lance : la sirène lance son trident sur un ennemi et lui inflige 2D8 points de dégâts perforants. L’attaque le renverse.",
+        "Pêche miraculeuse : la créature lance un filet et nage avec de grands coups de queue autour de ses cibles, situées dans un rayon de 6 m. Celles-ci doivent faire un jet d’ESQUIVE (qui ne compte pas comme une action) pour échapper à ses rets. En cas d’échec, elles ne peuvent pas se déplacer ou effectuer d’actions qui nécessitent un déplacement. Néanmoins, elles peuvent tenter de se libérer et doivent réussir un jet de FOR assorti d’un fléau. D’autres personnes peuvent aider. ",
+        "Noyade : la sirène saisit sa victime et la tire dans l’eau. Cette dernière commence immédiatement à se noyer, comme indiqué en page 53 du livre de règles. De plus, elle ne peut pas se déplacer ou effectuer d’actions qui nécessitent un déplacement. Néanmoins, elle peut tenter de se libérer et devra réussir un jet de FOR assorti d’un fléau. D’autres personnes peuvent aider.",
+        "Vague : la créature frappe à plusieurs reprises la surface de l’eau avec sa queue de poisson et produit une puissante vague. Celle-ci repousse à une distance de 2D6 m les objets et les créatures de taille humaine situés dans un cône de 10 m et qui ne sont pas attachés. De plus, ils subissent un nombre équivalent de dégâts contondants.",
+        "Tourbillon : la sirène génère un grand tourbillon d’eau. Celui-ci projette à une distance de 2D4 m les objets et les créatures de taille humaine ou inférieure situés dans un rayon de 4 m autour d’elle et qui ne sont pas attachés. De plus, ils subissent un nombre équivalent de dégâts contondants."
+      ]
+    },
+    {
+      "name": "💀 Sylvains",
+      "entries": [
+        "Ordre : le sylvain prononce des mots de pouvoir venus des temps anciens. Tous ceux qui se trouvent dans un rayon de 10 m autour de lui se sentent ébranlés par ses paroles tonitruantes et doivent faire un jet de VOL pour résister à la terreur.",
+        "La mort venue du ciel : une nuée de petits oiseaux s’abat sur tous les adversaires de la créature situés dans un rayon de 10 m autour d’elle. Ces derniers subissent 1D8 points de dégâts et perdent leur prochain tour dans le round, s’il n’est pas déjà passé.",
+        "Coup de lance : la créature transforme une longue branche en lance, la projette sur une cible et lui inflige 2D10 points de dégâts perforants. Il est possible de parer l’attaque.",
+        "Coup de massue : à l’aide de sa branche la plus épaisse, le sylvain frappe de toutes ses forces sur la tête de son adversaire. Celui-ci subit 2D10 points de dégâts contondants et tombe à terre.",
+        "Monte, monte et s’envole : le monstre saisit sa victime et la projette à 2D8 m de distance. Elle subit alors un nombre équivalent de dégâts contondants et se retrouve à terre.",
+        "Pendez-les haut et court : le sylvain étend une longue branche et l’enroule autour du cou de son adversaire. Il lui inflige 2D6 points de dégâts contondants, et 2D6 points supplémentaires au tour de sa cible. Cette dernière ne peut pas se déplacer ou effectuer d’actions qui nécessitent un déplacement. Néanmoins, elle peut tenter de se libérer, ce qui demande un jet de FOR assorti d’un fléau (ce qui compte comme une action). D’autres personnes peuvent aider."
+      ]
+    },
+    {
+      "name": "💀 Arachnides",
+      "entries": [
+        "Morsure empoisonnée : la créature saisit un adversaire dans ses redoutables mandibules. L’attaque lui inflige 1D10 points de dégâts et lui injecte un poison paralysant (toxicité 12).",
+        "Trop d’yeux : le monstre fixe les personnages de sa multitude d’yeux effrayants. Tous les individus situés dans un rayon de 10 m autour de lui doivent faire un jet de VOL pour résister à la terreur.",
+        "Vision de mauvais augure : les yeux de l’arachnide étincellent et laissent entrevoir un reflet chaotique et inquiétant sur le futur de la victime. Un personnage situé dans un rayon de 10 m autour de lui doit faire un jet de VOL assorti d’un fléau pour résister à la terreur.",
+        "Dard empoisonné : la créature tourne sur elle-même à une vitesse fulgurante et frappe avec le dard venimeux situé à l’arrière de son corps. L’attaque inflige 1D8 points de dégâts perforants, et elle injecte également un poison paralysant (toxicité 12) à la victime qui subit au moins 1 point de dégâts. Il est possible de parer cette attaque.",
+        "Toile visqueuse : le monstre projette une matière collante sur un adversaire. Celui-ci ne peut pas se déplacer ou effectuer d’actions qui nécessitent un déplacement. Néanmoins, il peut tenter de se libérer, ce qui demande un jet de FOR (qui compte comme une action). D’autres personnes peuvent aider.",
+        "Yeux hypnotiques : la victime doit faire un jet de VOL (qui ne compte pas comme une action). En cas d’échec, elle doit entreprendre sur-le-champ un déplacement et une action (qui ne nécessitent pas de PV) déterminés par l’arachnide (MJ). Elle perd également son tour dans le round, s’il n’est pas déjà passé."
+      ]
+    },
+    {
+      "name": "💀 Bruyères meurtrières",
+      "entries": [
+        "Nuage de spores. Les ronces projettent un nuage de spores violettes qui provoquent de terribles démangeaisons. Il inflige un effet équivalent à celui d’un poison paralysant (toxicité 14) sur tous les personnages situés dans un rayon de 10 m autour des ronces.",
+        "Épines acérées. Les épines acérées des plantes déchirent la peau de la victime. L’attaque inflige 2D8 points de dégâts perforants.",
+        "Branches étrangleuses. De fines branches s’enroulent autour de tous les aventuriers situés dans un rayon de 6 m. Les victimes subissent 1D8 points de dégâts contondants et se retrouvent agrippées. Pour se libérer, elles devront réussir un jet de FOR (qui compte comme une action, et les autres peuvent aider), ou bien porter une attaque qui inflige au moins 6 points de dégâts aux ronces. Un personnage agrippé ne peut effectuer aucune action qui nécessite un mouvement du corps.",
+        "Attaque foudroyante. Une branche épaisse s’abat avec une force considérable sur un personnage situé dans un rayon de 10 m autour d’elle. L’attaque inflige 2D6 points de dégâts contondants et fait tomber la victime.",
+        "Étreinte mortelle. Un enchevêtrement de branches tente d’étrangler un héros situé dans un rayon de 10 m autour d’elles. La victime subit 2D8 points de dégâts contondants et se retrouve agrippée. Pour se libérer, elle devra réussir un jet de FOR (accompagné d’un fléau, d’autres peuvent aider), ou bien porter une attaque qui inflige au moins 6 points de dégâts aux ronces.",
+        "Attaque au visage. Une branche agresse un aventurier malchanceux situé dans un rayon de 10 m autour d’elle, et s’insinue dans la bouche et le nez de sa cible. L’attaque inflige 1D12 points de dégâts, et la victime doit faire un jet de VOL pour résister à la terreur."
+      ]
+    },
+    {
+      "name": "💀 Le Basilic",
+      "entries": [
+        "Coup de griffes. Le basilic abat ses terribles griffes sur deux personnages. Chaque attaque inflige 2D8 points de dégâts tranchants.",
+        "Coup de bec. La bête projette sa tête de vil oiseau vers l’avant et donne un coup de son bec tranchant comme un rasoir à l’un des personnages. L’attaque inflige 3D8 points de dégâts perforants.",
+        "Cocorico! La créature émet un chant cacophonique qui transperce les héros et leur fait saigner les oreilles. Tous ceux qui se trouvent dans un rayon de 10 m autour d’elle doivent faire un jet de CON (qui ne compte pas comme une action). En cas d’échec, la victime tombe au sol, devient Étourdie et perd son prochain tour.",
+        "Coup de fouet. Le monstre se sert de sa queue de serpent comme d’un fouet et porte une attaque de balayage qui atteint tous les aventuriers dans un rayon de 4 m autour de lui. Chaque attaque inflige 1D10 points de dégâts contondants, et ceux qu’elle touche se retrouvent au sol.",
+        "Nuage toxique. Le basilic crache un nuage jaune-verdâtre qui empeste le poison et les acides gastriques corrosifs. Tous les personnages situés dans un rayon de 10 m autour de lui subissent les effets d’un poison mortel (toxicité 15). ",
+        "Regard pétrifiant. Une lueur bleue s’allume dans les prunelles de la bête, et elle tourne sa tête d’oiseau vicieux vers le héros qui possède le plus de PS. Si la victime peut voir (c’est-à-dire qu’elle n’est pas aveugle et qu’elle n’a pas les yeux bandés), elle doit faire un jet de VOL (qui ne compte pas comme une action). En cas d’échec, son corps se transforme en pierre; elle ne peut plus bouger ou effectuer la moindre action, mais elle ne peut pas non plus subir de dégâts. Un personnage pétrifié meurt au bout de 2D6 rounds, mais un jet de VOL réussi annule les effets de ce pouvoir. Tant qu’elle demeure en vie, la victime peut faire un jet par tour. Le sort DISSIPATION (niveau de puissance 1) peut aussi annuler la pétrification, mais uniquement si la cible est encore en vie."
+      ]
+    },
+    {
+      "name": "💀 Squelette Boîteux",
+      "entries": [
+        "Direct osseux. Dans un méli-mélo d’os, la créature cueille sa victime avec un bon coup de poing et lui inflige 1D8 points de dégâts contondants.",
+        "Direct osseux. Dans un méli-mélo d’os, la créature cueille sa victime avec un bon coup de poing et lui inflige 1D8 points de dégâts contondants.",
+        "Direct osseux. Dans un méli-mélo d’os, la créature cueille sa victime avec un bon coup de poing et lui inflige 1D8 points de dégâts contondants.",
+        "Morsure. Le squelette enfonce ses dents jaunies et cassées dans la jambe de sa cible et lui inflige 1D6 points de dégâts tranchants.",
+        "Morsure. Le squelette enfonce ses dents jaunies et cassées dans la jambe de sa cible et lui inflige 1D6 points de dégâts tranchants.",
+        "Rugissement guttural. Un cri terrible fait trembler le sol et les esprits. Tous les personnages situés dans un rayon de 10 m autour de la créature subissent une attaque de terreur."
+      ]
+    },
+    {
+      "name": "💀 Chien de sorcière",
+      "entries": [
+        "Morsure. Le chien enfonce ses crocs dans un bras ou une jambe et inflige 2D10 points de dégâts perforants.",
+        "Morsure. Le chien enfonce ses crocs dans un bras ou une jambe et inflige 2D10 points de dégâts perforants.",
+        "Coup de griffes. À l’aide de ses griffes aussi tranchantes que des lames, le chien lacère la peau de sa victime et lui inflige 2D8 points de dégâts perforants. Il est impossible d’esquiver l’attaque.",
+        "Coup de griffes. À l’aide de ses griffes aussi tranchantes que des lames, le chien lacère la peau de sa victime et lui inflige 2D8 points de dégâts perforants. Il est impossible d’esquiver l’attaque.",
+        "Bousculade. L’animal bondit soudainement en avant. Sa cible ne subit pas de dégâts, mais elle tombe au sol et son arme lui échappe.",
+        "Assaut frénétique. Le chien porte une morsure et un coup de griffes en même temps contre deux personnages différents. Dans sa frénésie cependant, il perd sa prochaine action."
+      ]
+    },
+    {
+      "name": "❓ OUI/NON",
+      "entries": [
+        "Pas du tout",
+        "Non",
+        "Non",
+        "Oui",
+        "Oui",
+        "Tout à fait"
+      ]
+    },
+    {
+      "name": "❓ NOMBRE",
+      "entries": [
+        "Aucun/un",
+        "Peu",
+        "Peu",
+        "Plusieurs",
+        "Plusieurs",
+        "Nombreux"
+      ]
+    },
+    {
+      "name": "❓ ÉCHELLE",
+      "entries": [
+        "Petite",
+        "Modérée",
+        "Modérée",
+        "Grande",
+        "Grande",
+        "Immense"
+      ]
+    },
+    {
+      "name": "❓ PUISSANCE",
+      "entries": [
+        "Faible",
+        "Mineure",
+        "Mineure",
+        "Formidable",
+        "Formidable",
+        "Incroyable"
+      ]
+    },
+    {
+      "name": "❓ QUALITÉ",
+      "entries": [
+        "Défaillante",
+        "Ordinaire",
+        "Ordinaire",
+        "Raffinée",
+        "Raffinée",
+        "Précieuse"
+      ]
+    },
+    {
+      "name": "❓ RÉACTION",
+      "entries": [
+        "Hostile",
+        "Méfiante",
+        "Méfiante",
+        "Ouverte",
+        "Ouverte",
+        "Amicale"
+      ]
+    },
+    {
+      "name": "❓ Action",
+      "entries": [
+        "Affaiblir",
+        "Arrêter",
+        "Artisanat",
+        "Chasse",
+        "Contrôle",
+        "Découvrir",
+        "Délivrer",
+        "Détruire",
+        "Échapper",
+        "Garde",
+        "Infiltrer",
+        "Invoquer",
+        "Protéger",
+        "Rechercher",
+        "Récupérer",
+        "Renforcer",
+        "Restaurer",
+        "S’emparer",
+        "Secourir",
+        "Vengeance"
+      ]
+    },
+    {
+      "name": "❓ Caractéristique",
+      "entries": [
+        "Ancien",
+        "Bloqué",
+        "Corrompu",
+        "Dangereux",
+        "Détruit",
+        "En décomposition",
+        "En mouvement",
+        "Endommagé",
+        "Inondé",
+        "Magie",
+        "Maudit",
+        "Métamorphosé",
+        "Oublié",
+        "Paisible",
+        "Perdu",
+        "Protégé",
+        "Puissant",
+        "Sacré",
+        "Secret",
+        "Violent"
+      ]
+    },
+    {
+      "name": "❓ Chose",
+      "entries": [
+        "Arme",
+        "Barrière",
+        "Captivité",
+        "Chef",
+        "Chemin",
+        "Conflit",
+        "Connaissances",
+        "Créature",
+        "Défense",
+        "Dispositif",
+        "Groupe",
+        "Histoire",
+        "Message",
+        "Mort",
+        "Personne",
+        "Piège",
+        "Puissance",
+        "Refuge",
+        "Ressource",
+        "Trésor"
+      ]
+    },
+    {
+      "name": "❓ EFFET D’UN DRAGON",
+      "entries": [
+        "Vous découvrez un objet ou une ressource utile",
+        "L’action s’accomplit plus rapidement que d’habitude",
+        "Vous impressionnez les autres ou créez une diversion",
+        "Vous révélez une nouvelle occasion ou un nouvel indice",
+        "Vous déclenchez un effet bénéfique inattendu",
+        "L’action donne des résultats plus importants que d’habitude"
+      ]
+    },
+    {
+      "name": "❓ EFFET D’UN DÉMON",
+      "entries": [
+        "Un objet important est perdu ou cassé",
+        "Vous subissez un retard dangereux",
+        "Vous attirez une attention non désirée",
+        "Vous tombez sur un nouveau danger",
+        "Vous déclenchez une réaction ou un piège inattendu",
+        "Vous provoquez des dégâts collatéraux ou vous vous blessez"
+      ]
+    },
+    {
+      "name": "❓ HABITANTS",
+      "entries": [
+        "Dragons",
+        "Orcs",
+        "Orcs",
+        "Orcs",
+        "Orcs",
+        "Orcs",
+        "Aventuriers",
+        "Fantômes",
+        "Araignées géantes",
+        "Gobelins",
+        "Harpies",
+        "Squelettes",
+        "Trolls",
+        "Chauves-souris vampires",
+        "Adeptes",
+        "Adeptes",
+        "Adeptes",
+        "Adeptes",
+        "Adeptes",
+        "Démons"
+      ]
+    },
+    {
+      "name": "❓ LIEUX",
+      "entries": [
+        "Antique tombe",
+        "Atelier inoccupé",
+        "Avant-poste abandonné",
+        "Avant-poste habité",
+        "Bibliothèque oubliée",
+        "Chambre exiguë",
+        "Echelle dangereuse",
+        "Escalier étroit",
+        "Faux plafond étroit",
+        "Gouffre béant",
+        "Grotte naturelle",
+        "Hall spacieux",
+        "Labyrinthe déconcertant",
+        "Mine excavée",
+        "Passage tortueux",
+        "Pont imposant",
+        "Puits profond",
+        "Rivière souterraine",
+        "Temple abominable",
+        "Tunnel creusé"
+      ]
+    },
+    {
+      "name": "❓ CONTENU",
+      "entries": [
+        "Antichambre scellée",
+        "Aventurier errant",
+        "Barricade de fortune",
+        "Braseros allumés",
+        "Cadavres momifiés",
+        "Cadavres récents",
+        "Campement isolé",
+        "Nid crasseux",
+        "Ossements éparpillés",
+        "Piliers renversés",
+        "Piste sanglante",
+        "Porte enfoncée",
+        "Provisions abandonnées",
+        "Puits profond",
+        "Sanctuaire décrépit",
+        "Sarcophages décorés",
+        "Statues imposantes",
+        "Tapisseries en fusion",
+        "Terrain fissuré",
+        "Tomes poussiéreux"
+      ]
+    },
+    {
+      "name": "❓ ENVIRONNEMENT",
+      "entries": [
+        "Air enfumé",
+        "Air poussiéreux",
+        "Bassin bouillonnant",
+        "Bruits de petits pas",
+        "Chaleur oppressante",
+        "Champignons florissants",
+        "Cristaux lumineux",
+        "Écoulement d’eau",
+        "Épais brouillard",
+        "Flaque d’eau stagnante",
+        "Froid glacial",
+        "Griffures irrégulières",
+        "Puanteur de décomposition",
+        "Ronronnement mécanique",
+        "Spores luminescentes",
+        "Surfaces corrodées",
+        "Surfaces gluantes",
+        "Surfaces vitreuses",
+        "Toiles suspendues",
+        "Vignes rampantes"
+      ]
+    },
+    {
+      "name": "❓ ÉTRANGETÉ",
+      "entries": [
+        "Apparition fantomatique",
+        "Arbre florissant",
+        "Architecture ésotérique",
+        "Architecture mouvante",
+        "Cadavre gigantesque",
+        "Crânes chantants",
+        "Énigme déroutante",
+        "Gravité inversée",
+        "Lumière mystique",
+        "Mécanismes mystérieux",
+        "Miroir magique",
+        "Obélisque bourdonnant",
+        "Portail tourbillonnant",
+        "Porte intelligente",
+        "Rire perturbant",
+        "Sphère en lévitation",
+        "Statue parlante",
+        "Symboles magiques",
+        "Ténèbres surnaturelles",
+        "Terrain charnu"
+      ]
+    },
+    {
+      "name": "❓ DANGER",
+      "entries": [
+        "Alentours enflammés",
+        "Autel effrayant",
+        "Aventurier en danger",
+        "Avertissement gribouillé",
+        "Chemin brisé",
+        "Éboulement",
+        "Effondrement imminent",
+        "Ennemi embusqué",
+        "Ennemi en approche",
+        "Espace inondé",
+        "Flaques d’acide",
+        "Flot de lave",
+        "Fumées toxiques",
+        "Piège caché",
+        "Piège magique",
+        "Porte scellée",
+        "Surfaces gelées",
+        "Tambours sinistres",
+        "Tanière habitée",
+        "Vapeur brûlante"
+      ]
+    },
+    {
+      "name": "❓ TROUVAILLE",
+      "entries": [
+        "Danger inattendu. Lancez 1D4. 1: créature, 2: objet maudit, 3: spores toxiques, 4: piège.",
+        "Rien de particulier.",
+        "Rien de particulier.",
+        "Équipement. Lancez 1D6. 1: bandages, 2: ration de voyage, 3: vêtements de qualité, 4: outils de crochetage, 5: carquois de flèches, 6: torche.",
+        "Objet intéressant. Lancez 1D4. 1: clé, 2: carte, 3: dispositif étrange, 4: message écrit.",
+        "Une carte de trésor.",
+        "Une carte de trésor.",
+        "Une carte de trésor.",
+        "Une carte de trésor, et relancez."
+      ]
+    },
+    {
+      "name": "❓ Recherche",
+      "entries": [
+        "Ennemi caché: vous êtes prévenu et bénéficiez d’une faveur lors de votre première action contre lui.",
+        "Piège: pour le désarmer, effectuez un jet de DEXTÉRITÉ sur lequel s’applique une faveur, puis refaites un jet sur cette table, en ignorant ce résultat.",
+        "Chemin secret : déviation vers 1D4 nouvelles étapes.",
+        "Antichambre cachée: lancez un dé pour connaître les détails de cet emplacement.",
+        "Antichambre cachée: lancez un dé pour connaître les détails de cet emplacement.",
+        "Trésor caché: une carte de trésor.",
+        "Trésor caché: une carte de trésor.",
+        "Trésor caché: une carte de trésor.",
+        "Salle cachée: deux cartes de trésor, et relancez.",
+        "Salle cachée: deux cartes de trésor, et relancez."
+      ]
+    },
+    {
+      "name": "❓ Piège",
+      "entries": [
+        "Ennemi déchaîné",
+        "Explosion magique",
+        "Fléchette empoisonnée",
+        "Gaz toxique",
+        "Jet d’acide",
+        "Jet de flammes",
+        "Lames tourbillonnantes",
+        "Murs qui se rapprochent",
+        "Piège d’enchevêtrement",
+        "Pieux perforants",
+        "Rocher dévalant",
+        "Salle inondée",
+        "Sceau de téléportation (nouvelle étape)",
+        "Sonnerie d’alarme",
+        "Tir de flèche",
+        "Trappe qui s’effondre (fosse)",
+        "Trappe qui s’effondre (nouvelle étape)",
+        "Lancer deux fois, et ignorez ce résultat",
+        "Lancer deux fois, et ignorez ce résultat",
+        "Lancer deux fois, et ignorez ce résultat",
+        "Lancer deux fois, et ignorez ce résultat",
+        "Lancer deux fois, et ignorez ce résultat",
+        "Lancer deux fois, et ignorez ce résultat"
+      ]
+    }
+  ]
+}
