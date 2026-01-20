@@ -232,18 +232,25 @@ switchToTables.addEventListener("click", () => {
 let tableHistory = [];
 
 document.getElementById("roll-table").addEventListener("click", () => {
+  if (tableSelect.value === "") {
+    alert("Veuillez sélectionner une table.");
+    return;
+  }
+
   const index = parseInt(tableSelect.value, 10);
-const table = tablesData[index];
-const entries = table.entries;
+  const table = tablesData[index];
 
-  if (!tableName) return alert("Veuillez sélectionner une table.");
+  if (!table || !Array.isArray(table.entries)) {
+    alert("Table invalide ou sans entrées.");
+    return;
+  }
 
-const roll = Math.floor(Math.random() * entries.length);
-const resultText = entries[roll];
+  const entries = table.entries;
+  const roll = Math.floor(Math.random() * entries.length);
+  const resultText = entries[roll];
 
-document.getElementById("table-result").innerHTML =
-  `<p>${table.name} [${roll + 1}] → ${resultText}</p>`;
-
+  document.getElementById("table-result").innerHTML =
+    `<p>${table.name} [${roll + 1}] → ${resultText}</p>`;
 
   tableHistory.unshift({
     tableName: table.name,
@@ -254,6 +261,7 @@ document.getElementById("table-result").innerHTML =
   if (tableHistory.length > 10) tableHistory.pop();
   displayTableHistory();
 });
+
 
 
 const toggleTableHistory = document.getElementById("toggle-table-history");
@@ -270,12 +278,20 @@ toggleTableHistory.addEventListener("click", () => {
 });
 
 document.getElementById("roll-table-custom").addEventListener("click", () => {
+  if (tableSelect.value === "") {
+    alert("Veuillez sélectionner une table.");
+    return;
+  }
+
   const index = parseInt(tableSelect.value, 10);
-const table = tablesData[index];
-const entries = table.entries;
+  const table = tablesData[index];
 
-  if (!tableName) return alert("Veuillez sélectionner une table.");
+  if (!table || !Array.isArray(table.entries)) {
+    alert("Table invalide ou sans entrées.");
+    return;
+  }
 
+  const entries = table.entries;
 
   const x = parseInt(document.getElementById("custom-dice-count").value, 10);
   const y = parseInt(document.getElementById("custom-dice-type").value, 10);
@@ -286,11 +302,10 @@ const entries = table.entries;
   }
 
   const entryIndex = Math.min(rollTotal - 1, entries.length - 1);
-const resultText = entries[entryIndex];
+  const resultText = entries[entryIndex];
 
-document.getElementById("table-result").innerHTML =
-  `<p>${table.name} [${rollTotal}] → ${resultText}</p>`;
-
+  document.getElementById("table-result").innerHTML =
+    `<p>${table.name} [${rollTotal}] → ${resultText}</p>`;
 
   tableHistory.unshift({
     tableName: table.name,
@@ -301,6 +316,7 @@ document.getElementById("table-result").innerHTML =
   if (tableHistory.length > 10) tableHistory.pop();
   displayTableHistory();
 });
+
 
 
 
