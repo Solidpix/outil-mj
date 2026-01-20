@@ -29,7 +29,8 @@ populateCampaigns();
 
 
 // --- CHARGEMENT DU JSON QUAND ON CHARGE UNE CAMPAGNE --- //
-let tablesData = {};
+let tablesData = [];
+
 
 campaignSelect.addEventListener("change", async () => {
   const campaignName = campaignSelect.value;
@@ -61,8 +62,8 @@ function populateTableSelect() {
 
   tablesData.forEach((table, index) => {
     const option = document.createElement("option");
-    option.value = index;          // 👈 INDEX NUMÉRIQUE
-    option.textContent = table.name;
+    option.value = index;              // index interne
+    option.textContent = table.name;   // nom lisible
     tableSelect.appendChild(option);
   });
 }
