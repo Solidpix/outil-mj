@@ -1,0 +1,153 @@
+{
+  "tables": [
+    {
+      "name": "💀 Test de Panique",
+      "entries": [
+        "JE TIENS LE COUP. Vous parvenez à maîtriser vos nerfs. Tout juste.",
+        "JE TIENS LE COUP. Vous parvenez à maîtriser vos nerfs. Tout juste.",
+        "JE TIENS LE COUP. Vous parvenez à maîtriser vos nerfs. Tout juste.",
+        "JE TIENS LE COUP. Vous parvenez à maîtriser vos nerfs. Tout juste.",
+        "JE TIENS LE COUP. Vous parvenez à maîtriser vos nerfs. Tout juste.",
+        "JE TIENS LE COUP. Vous parvenez à maîtriser vos nerfs. Tout juste.",
+        "TRESSAILLEMENT NERVEUX. Votre NIVEAU DE STRESS et celui de tous les PJ amicaux situés à COURTE portée de vous augmentent de 1.",
+        "TREMBLEMENT. Vous êtes pris d'incoercibles tremblements. Tous les tests de compétence utilisant l'AGILITÉ subissent un modificateur de -2 jusqu'à ce que votre panique s'arrête.",
+        "OBJET LÂCHÉ. Le stress, l'affolement ou la soudaine prise de conscience (vous allez tous mourir de toute façon !) vous fait lâcher une arme ou un autre objet important, choisi par Maman. Votre NIVEAU DE STRESS augmente de 1.",
+        "FIGÉ. La peur ou le stress vous paralyse pendant un Round, et vous perdez votre action lente suivante. Votre NIVEAU DE STRESS et celui de tous les PJ amicaux situés à COURTE portée de vous augmentent de 1.",
+        "TOUS AUX ABRIS ! Vous devez utiliser votre prochaine action pour vous éloigner du danger et trouver un endroit sûr si possible. Vous avez le droit de faire un test de MOBILITÉ pour battre en retraite (cf. page 93) en cas d’ennemi au CONTACT. Votre NIVEAU DE STRESS baisse de 1, mais celui de tous les PJ amicaux situés à COURTE portée de vous augmente de 1. Au bout d'un Round, vous recommencez à agir normalement.",
+        "HURLEMENT. Vous hurlez à pleins poumons pendant un Round, et perdez votre action lente suivante. Votre NIVEAU DE STRESS baisse de 1, mais tout personnage amical qui vous entend hurler doit immédiatement effectuer un test de Panique.",
+        "FUITE. Vous n'en pouvez plus. Vous devez fuir en lieu sûr et une fois à l'abri, vous n'en bougez plus. Vous n'attaquez personne et ne tentez rien de dangereux. Vous n'avez pas le droit à un test de MOBILITÉ pour battre en retraite (cf. page 93) en cas d’ennemi au CONTACT lorsque vous fuyez. Votre NIVEAU DE STRESS baisse de 1, mais tout personnage amical qui vous voit vous enfuir doit immédiatement faire un test de Panique.",
+        "PSYCHOSE. Vous devez immédiatement attaquer la personne ou la créature la plus proche, amicale ou non. Vous ne vous arrêterez pas tant que vous ou votre cible n'êtes pas Brisé. Tout personnage amical qui assiste à votre crise meurtrière doit immédiatement faire un test de Panique.",
+        "CATATONIE. Vous vous écroulez et vous ne pouvez plus ni bouger ni parler, les yeux perdus dans le vide."
+      ]
+    },
+    {
+      "name": "💀 Blessures Critiques",
+      "entries": [
+        "Essoufflé. Fatale: Non. Limite de temps: -\nEffet: Aucun..\nTemps de guérison: -",
+        "Étourdi. Fatale: Non. Limite de temps: -\nEffet: Aucun..\nTemps de guérison: -",
+        "Douleur atroce. Fatale: Non. Limite de temps: -\nEffet: Le NIVEAU DE STRESS augmente de 1..\nTemps de guérison: -",
+        "Cheville foulée. Fatale: Non. Limite de temps: -\nEffet: MOBILITÉ -2 et ne peut plus courir avant d'avoir bénéficié d'un test de SOINS MÉDICAUX..\nTemps de guérison: -",
+        "Sang dans les yeux. Fatale: Non. Limite de temps: -\nEffet: OBSERVATION et COMBAT À DISTANCE -2 avant d'avoir bénéficié d'un test de SOINS MÉDICAUX..\nTemps de guérison: -",
+        "Commotion cérébrale. Fatale: Non. Limite de temps: -\nEffet: MOBILITÉ -2..\nTemps de guérison: D6 jours",
+        "Oreille coupée. Fatale: Non. Limite de temps: -\nEffet: OBSERVATION -2..\nTemps de guérison: D6 jours",
+        "Orteils cassés. Fatale: Non. Limite de temps: -\nEffet: Courir devient une action lente..\nTemps de guérison: D6 jours",
+        "Main cassée. Fatale: Non. Limite de temps: -\nEffet: Impossible d'utiliser cette main..\nTemps de guérison: D6 jours",
+        "Dents cassées. Fatale: Non. Limite de temps: -\nEffet: MANIPULATION -2..\nTemps de guérison: D6 jours",
+        "Cuisse transpercée. Fatale: Non. Limite de temps: -\nEffet: Courir devient une action lente..\nTemps de guérison: 2D6 jours",
+        "Entaille à l'épaule. Fatale: Non. Limite de temps: -\nEffet: Impossible d'utiliser ce bras..\nTemps de guérison: D6 jours",
+        "Nez cassé. Fatale: Non. Limite de temps: -\nEffet: MANIPULATION et OBSERVATION -1..\nTemps de guérison: D6 jours",
+        "Coup à l'entrejambe. Fatale: Non. Limite de temps: -\nEffet: 1 point de dégâts à chaque test de MOBILITÉ ou de COMBAT RAPPROCHÉ effectué..\nTemps de guérison: D6",
+        "Côtes cassées. Fatale: Non. Limite de temps: -\nEffet: MOBILITÉ et COMBAT RAPPROCHÉ -2..\nTemps de guérison: 2D6 jours",
+        "Œil crevé. Fatale: Non. Limite de temps: -\nEffet: COMBAT À DISTANCE et OBSERVATION -2..\nTemps de guérison: 2D6 jours",
+        "Genou cassé. Fatale: Non. Limite de temps: -\nEffet: Impossible de courir, ne peut que ramper..\nTemps de guérison: 2D6 jours",
+        "Bras cassé. Fatale: Non. Limite de temps: -\nEffet: Impossible d'utiliser ce bras..\nTemps de guérison: 2D6 jours",
+        "Jambe cassée. Fatale: Non. Limite de temps: -\nEffet: Impossible de courir, ne peut que ramper..\nTemps de guérison: 2D6 jours",
+        "Pied écrasé. Fatale: Non. Limite de temps: -\nEffet: Impossible de courir, ne peut que ramper..\nTemps de guérison: 3D6 jours",
+        "Coude fracassé. Fatale: Non. Limite de temps: -\nEffet: Impossible d'utiliser ce bras..\nTemps de guérison: 3D6 jours",
+        "Poumon perforé. Fatale: Oui. Limite de temps: 1 Jour\nEffet: ENDURANCE et MOBILITÉ -2..\nTemps de guérison: D6 jours",
+        "Hémorragie interne. Fatale: Oui. Limite de temps: 1 Quart\nEffet: 1 point de dégâts à chaque test de MOBILITÉ ou de COMBAT RAPPROCHÉ effectué..\nTemps de guérison: 2D6 jours",
+        "Intestins percés. Fatale: Oui. Limite de temps: 1 Quart\nEffet: Maladie de Virulence 6 (cf. page 109)..\nTemps de guérison: 2D6 jours",
+        "Rein écrasé. Fatale: Oui. Limite de temps: 1 Jour\nEffet: Impossible de courir, ne peut que ramper, MOBILITÉ -2..\nTemps de guérison: 2D6 jours",
+        "Artère du bras ouverte. Fatale: Oui, -1. Limite de temps: 1 Tour\nEffet: Impossible d'utiliser ce bras..\nTemps de guérison: D6 jours",
+        "Artère de la jambe ouverte. Fatale: Oui, -1. Limite de temps: 1 Tour\nEffet: Courir devient une action lente..\nTemps de guérison: D6 jours",
+        "Bras sectionné. Fatale: Oui, -1. Limite de temps: 1 Quart\nEffet: Impossible d'utiliser ce bras..\nTemps de guérison: Permanent",
+        "Jambe sectionnée. Fatale: Oui, -1. Limite de temps: 1 Quart\nEffet: Impossible de courir, ne peut que ramper..\nTemps de guérison: Permanent",
+        "Colonne vertébrale fracturée. Fatale: Non. Limite de temps: -\nEffet: Paralysé sous le cou. Sans SOINS MÉDICAUX à temps, l'effet devient permanent..\nTemps de guérison: 3D6 jours",
+        "Jugulaire ouverte. Fatale: Oui, -1. Limite de temps: 1 Round\nEffet: ENDURANCE -1..\nTemps de guérison: 2D6 jours",
+        "Aorte ouverte. Fatale: Oui, -2. Limite de temps: 1 Round\nEffet: ENDURANCE -2..\nTemps de guérison: 3D6 jours",
+        "Éventré. Fatale: Oui. Limite de temps: -\nEffet: Mort instantanée..\nTemps de guérison: -",
+        "Crâne écrasé. Fatale: Oui. Limite de temps: -\nEffet: Votre histoire s'arrête ici..\nTemps de guérison: -",
+        "Cœur perforé. Fatale: Oui. Limite de temps: -\nEffet: Vous mourez immédiatement..\nTemps de guérison: -",
+        "Cœur empalé. Fatale: Oui. Limite de temps: -\nEffet: Votre cœur produit son dernier battement..\nTemps de guérison: -"
+      ]
+    },
+    {
+      "name": "💀 Blessures Critiques (Synthétiques)",
+      "entries": [
+        "RUPTURE DE LA POMPE À FLUIDE. L'androïde perd sa prochaine action lente.",
+        "SERVOS DE LA JAMBE DÉTRUITS. Les deux jambes sont paralysées. L'androïde doit rester à terre et ne peut que ramper.",
+        "SERVOS DU BRAS DÉTRUITS. Un des bras est paralysé. L'androïde ne peut utiliser que des équipements à une main.",
+        "DISLOCATION DE LA TÊTE. Le cou artificiel de l'androïde est fracturé, sa tête se retrouvant dans un angle étrange. Toutes ses actions rapides deviennent des actions lentes.",
+        "GRAVE RUPTURE DU CHÂSSIS. Les organes internes se déversent et l'androïde est complètement immobilisé.",
+        "ARRÊT DU SYSTÈME. L'androïde est réduit en pièces ou écrasé. Les systèmes principaux sont gravement endommagés et un test de COMTECH est désormais nécessaire pour communiquer avec lui."
+      ]
+    },
+    {
+      "name": "💀 Traumatisme mental permanent",
+      "entries": [
+        "PHOBIE. Vous êtes terrifié par un élément lié à ce qui a provoqué votre panique, et choisi par Maman. Votre NIVEAU DE STRESS augmente de 1 lorsque vous vous trouvez à COURTE portée de l'objet de votre phobie. Si vous restez proche pendant plus d'un seul Round, faites un test de Panique.",
+        "ALCOOLISME. Si vous ne buvez pas de l'alcool à chaque Quart, votre NIVEAU DE STRESS augmente de 1. Vous ne pouvez pas soulager votre stress (cf. page 104) sans boire d’alcool.",
+        "CAUCHEMARS. Faites un test d’EMPATHIE quand vous dormez. S’il est réussi, vous faites un affreux cauchemar et votre NIVEAU DE STRESS augmente de 1. Vous ne pouvez plus soulager votre stress pendant une journée entière après un tel cauchemar.",
+        "DÉPRESSION. Vous êtes sujet à des crises de dépression et à des sautes d'humeur. Chaque jour, faites un test d'EMPATHIE. En cas d'échec, vous passez une sale journée : votre NIVEAU DE STRESS augmente de 1 et vous ne pouvez plus soulager votre stress jusqu’au lendemain.",
+        "TOXICOMANIE. Si vous n’utilisez pas une forme de drogue douce (cf. page 137) à chaque Quart, votre NIVEAU DE STRESS augmente de 1. Vous ne pouvez pas soulager votre stress (cf. page 104) sans consommer votre drogue de prédilection.",
+        "AMNÉSIE. Votre mémoire est une feuille vierge. Vous ne vous rappelez plus qui vous êtes, vous et les autres personnages. Ce genre d'effet fonctionne mieux lorsque vous l'interprétez."
+      ]
+    },
+    {
+      "name": "💀 Blessures Critiques (Xénomorphe)",
+      "entries": [
+        "INDEMNE. Le Xénomorphe s'écroule, apparemment mort, mais c'est une ruse. Si on l'attaque encore, ou à sa prochaine carte d'initiative, il regagne 1 point de Santé et attaque, mû par un instinct de haine.",
+        "BLESSÉ. Le Xénomorphe vacille et souffre, saignant abondamment. Il subit un malus de -1 à sa Vitesse (pour un minimum de 1, perdant donc sa carte d'initiative la plus basse), mais regagne 1 point de Santé. Lancez un D6 au début de chaque Round. Sur un résultat de 1-3, il tente de s'échapper.",
+        "RÉFLEXE DÉSESPÉRÉ. Le Xénomorphe, grièvement blessé, pousse un cri de douleur. Il effectue immédiatement une action rapide et une action lente, en dehors de l'ordre normal du Round. Lancez un D6 : sur un résultat de 1-3, il tente de s'échapper (et regagne la moitié de sa Santé s'il y parvient). Sur un 4-6, il attaque aussitôt l'adversaire le plus proche. S'il ne réussit pas à infliger de dégâts, il meurt. Si son attaque réussit, il regagne 1 point de Santé.",
+        "DERNIER SOUFFLE. Le Xénomorphe, mortellement blessé, se tord de douleur.\nÀ sa prochaine initiative, il essaie de tuer la victime la plus proche, puis meurt. S'il est blessé entre temps, il meurt instantanément.",
+        "EN PIÈCES. Mort instantanée. Le Xénomorphe est en pièces ou écrasé. Il émet un dernier hurlement. Gravement mutilé, il ne peut être Analysé qu’avec un test d’OBSERVATION -2.",
+        "EN PIÈCES. Mort instantanée. Le Xénomorphe est en pièces ou écrasé. Il émet un dernier hurlement. Gravement mutilé, il ne peut être Analysé qu’avec un test d’OBSERVATION -2."
+      ]
+    },
+    {
+      "name": "👾 2 - Facehugger (attaques)",
+      "entries": [
+        "COURSE ARACHNOÏDE. Le Facehugger a choisi son hôte et sait qu'il vient pour lui ! Il cavale à toute vitesse, bien déterminé, comme une abominable araignée couleur chair. Le NIVEAU DE STRESS de la victime augmente de 1, et elle doit immédiatement effectuer un Test de panique .",
+        "COURSE ARACHNOÏDE. Le Facehugger a choisi son hôte et sait qu'il vient pour lui ! Il cavale à toute vitesse, bien déterminé, comme une abominable araignée couleur chair. Le NIVEAU DE STRESS de la victime augmente de 1, et elle doit immédiatement effectuer un Test de panique .",
+        "COUP DE QUEUE. Le petit monstre se rue sur sa cible qu'il agresse vicieusement au moyen de sa queue. Il attaque avec cinq dés de base, pour des Dégâts de 1. (Le Facehugger royal utilise six dés de base et ses Dégâts sont de 2.) En plus des dégâts subis, le NIVEAU DE STRESS de la victime augmente de 1.",
+        "SAISIE CAUDALE. Le Facehugger bondit et saute sur sa victime par-derrière en la fouettant de sa queue.\n1-2 : la queue s'enroule autour des jambes de la cible, qui s'écroule à terre ; elle doit effectuer un Test de panique. \n3-4 : les bras de la victime sont immobilisés par la queue du monstre ; elle ne peut plus utiliser d'objets tenus à la main et doit effectuer un Test de panique. \n5-6 : le Facehugger enroule sa queue autour du cou de la cible et l'étrangle. La victime subit les effets d'une NOYADE P.110 et doit effectuer un Test de panique . ",
+        "SAISIE FACIALE. Le Facehugger bondit sur sa victime. Faites un test opposant six dés de base au Combat Rapproché de la cible (ceci ne compte pas comme une action pour la victime) : Si le Facehugger l’emporte, la cible subit le BAISER DE LA MORT (ci-dessous) lors de la prochaine initiative du Facehugger. Si la victime l'emporte, elle jette la créature à terre, mais celle-ci n'en a pas terminé : elle attaque la même cible à sa prochaine initiative.",
+        "BAISER DE LA MORT. Le Facehugger se jette sur sa victime, se débarrassant aisément de son casque ou de son respirateur à l'aide de son acide. Faites un test d'attaque avec six dés de base. Si la créature obtient au moins un SUCCÈS, elle se colle au visage de la victime, qui est immédiatement Brisée. La proie éprouve un mélange de sensations horribles et curieusement affectueuses : une caresse douce mais ferme sur la tête, une sensation d'étouffement aussitôt suivie d'une chaude bouffée d'air riche en oxygène, une impression de chute au ralenti... Pourquoi ne pas s'abandonner au sommeil ? |"
+      ]
+    },
+    {
+      "name": "👾 3 - Chestburster (attaques)",
+      "entries": [
+        "ÉVASION. Avec un grognement, le Chestburster s'enfuit, s'écartant de deux zones en une seule action, en direction du conduit de ventilation, de la canalisation ou de l'égout le plus proche si possible. Dès que les PJ le perdent de vue, le combat s'achève et on passe en mode discret, le Chestburster cherchant à se cacher pour se développer.",
+        "ÉVASION. Avec un grognement, le Chestburster s'enfuit, s'écartant de deux zones en une seule action, en direction du conduit de ventilation, de la canalisation ou de l'égout le plus proche si possible. Dès que les PJ le perdent de vue, le combat s'achève et on passe en mode discret, le Chestburster cherchant à se cacher pour se développer.",
+        "ÉVASION. Avec un grognement, le Chestburster s'enfuit, s'écartant de deux zones en une seule action, en direction du conduit de ventilation, de la canalisation ou de l'égout le plus proche si possible. Dès que les PJ le perdent de vue, le combat s'achève et on passe en mode discret, le Chestburster cherchant à se cacher pour se développer.",
+        "HORRIBLE SIFFLEMENT. Le Chestburster saute sur sa victime, dévoile ses dents acérées et pousse un sifflement horrible. La victime doit aussitôt faire un Test de panique.",
+        "MORSURE À LA JAMBE. Avec un grognement, le Chestburster mord la jambe de la victime. Lancez 6 dés de base pour l'attaque, dont les Dégâts sont de 2. Si elle inflige des dégâts, il s'agit automatiquement de la Blessures Critiques n° 53 (même si la victime n'est pas Brisée), déclenchant un Test de panique immédiat.",
+        "MORSURE À LA GORGE. Le Chestburster pousse un hurlement haut perché et mord la victime à la gorge. Lancez 8 dés de base pour l'attaque, dont les Dégâts sont de 1. Si elle inflige des dégâts, il s'agit automatiquement de la Blessures Critiques n° 61 (même si la victime n'est pas Brisée), déclenchant un Test de panique immédiat."
+      ]
+    },
+    {
+      "name": "👾 4 - Éclaireur, Rôdeur, Drone (attaques)",
+      "entries": [
+        "REGARD HYPNOTIQUE. Bien qu'apparemment dépourvu d'yeux, le Xénomorphe scrute les tréfonds de l'âme de sa victime. Celle-ci se retrouve hypnotisée par la redoutable beauté du monstre. Stupéfiée par ce produit étrange de la nature, des mains de Dieu ou de celles du diable, elle voit son NIVEAU DE STRESS augmenter de 1 et doit immédiatement faire un Test de panique.",
+        "JOUER AVEC LA PROIE. Le Xéno attaque, mais pas pour tuer. La cible est jetée à terre et lâche tout ce qu'elle tenait en main, mais sans subir de dégâts. Le Xénomorphe se tient au-dessus d'elle, la défiant de s'enfuir pour que le jeu se poursuive. Le NIVEAU DE STRESS de la victime augmente de 1 et elle doit immédiatement faire un Test de panique.",
+        "ENLÈVEMENT. Le monstre bondit dans les airs et saisit sa victime. Il attaque avec dix dés de base, pour des Dégâts de 1. S'il réussit, il traîne sa proie dans une zone voisine et la lâche. La victime se retrouve à terre, lâche tout objet tenu en main et doit immédiatement faire un Test de panique.",
+        "PRÊT À TUER. Le Xénomorphe saisit sa victime et sa mâchoire interne s'apprête à frapper. Faites une attaque avec dix dés de base. En cas de réussite, la victime est saisie (cf. page 93) et doit réussir un test de Combat Rapproché opposé contre dix dés de base pour se libérer. La victime et tous les personnages amicaux situés dans la même zone doivent effectuer un Test de panique. À moins que la victime ne se libère, le Xénomorphe utilise MORSURE À LA TÊTE contre elle à sa prochaine initiative.",
+        "UN PRISONNIER POUR LA RUCHE. Le Xénomorphe attaque avec sa queue venimeuse, lançant dix dés de base pour des Dégâts de 1. Si l'attaque inflige le moindre dégât, le Xéno se retient afin de n'infliger que 1 point de dégâts en tout, et le venin paralysant fait effet. La victime doit effectuer un test d’ Endurance : le nombre de SUCCÈS obtenu est le nombre de Rounds où elle peut rester debout avant de perdre connaissance pour un Quart. Une injection d'adrénaline (un test de Soins médicaux effectué à l'aide d'un Médikit ) met un terme à la paralysie.",
+        "MORSURE À LA TÊTE. Le Xénomorphe ouvre grand ses mâchoires externes, et ses mâchoires internes apparaissent, claquant d'impatience, avant de jaillir. L'attaque est effectuée avec neuf dés de base et des Dégâts de 2. Si elle occasionne le moindre dégât, elle inflige automatiquement la Blessures Critiques n° 64, tuant net la victime. Toutefois, si Maman le souhaite, la victime peut conserver juste assez d'énergie pour que le Xénomorphe déclenche l'ovomorphose."
+      ]
+    },
+    {
+      "name": "👾 5 - Soldat (attaques)",
+      "entries": [
+        "ESTIMATION DU DANGER. Le Xénomorphe s'interrompt en émettant un sifflement de colère sourd, avec une attitude d'autant plus menaçante. On dirait qu'il réfléchit, ou peut-être qu'il transmet des ordres silencieux à des congénères invisibles. Le NIVEAU DE STRESS de tout personnage à portée MOYENNE augmente de 1.",
+        "UN POUR TOUS. Le Xéno bondit sur le groupe d'ennemis le plus important en poussant un rugissement de défi. Il frappe avec ses bras, ses jambes et sa queue. Toutes les cibles à portée COURTE doivent réussir un test de MOBILITÉ pour éviter d'être renversées, subissant 1 point de dégâts. Toutes les cibles doivent immédiatement effectuer un test de Panique.",
+        "ATTAQUE SANS PITIÉ. Le Xénomorphe se déchaîne à l'aide de ses griffes, de ses crocs et de sa queue pointue contre sa victime. Il attaque avec 12 dés de base, pour des Dégâts de 2, avec l'attribut Perce-armure (Protection réduite de moitié).",
+        "UN PRISONNIER POUR LA RUCHE. Le Xénomorphe attaque avec sa queue venimeuse, lançant douze dés de base pour des Dégâts de 1. Si l'attaque inflige le moindre dégât, le Xéno se retient afin de n'infliger que 1 point de dégâts en tout, et le venin paralysant fait effet. La victime doit effectuer un test d’ENDURANCE : le nombre de SUCCÈS obtenu est le nombre de Rounds où elle peut rester debout avant de perdre connaissance pour un Quart. Une injection d'adrénaline (un test de SOINS MÉDICAUX effectué à l'aide d'un médikit) met un terme à la paralysie.",
+        "MOURIR POUR LA REINE. Le Xénomorphe, cherchant à tout prix à protéger la ruche et la Reine, bondit sur un ennemi en s'éviscérant lui-même. Son sang acide éclabousse tout : toutes les cibles situées à portée COURTE du Xéno subissent immédiatement une attaque d'Éclaboussure d'acide de douze dés de base. Le Xéno meurt dans un couinement pathétique.",
+        "MORSURE À LA TÊTE. Le Xénomorphe ouvre grand ses mâchoires externes, et ses mâchoires internes apparaissent, claquant d'impatience, avant de jaillir. L'attaque est effectuée avec dix dés de base et des Dégâts de 2. Si elle occasionne le moindre dégât, elle inflige automatiquement la blessure critique n° 64, tuant net la victime."
+      ]
+    },
+    {
+      "name": "👾 6 - Prétorien (attaques)",
+      "entries": [
+        "APPEL DE LA GARDE. L'énorme Xénomorphe émet un cri perçant, appelant D6 Sentinelles (pour la Reine) ou Soldats (pour le Prétorien ou le Broyeur) qui accourent à sa défense. Ils atteignent la zone au Round suivant, puis ils tirent leur initiative et peuvent agir.",
+        "CHARGE : réservée au Broyeur (relancez pour le Prétorien et la Reine). La cible doit réussir un test de MOBILITÉ pour éviter d'être écrasée, immédiatement Brisée et victime d'une blessure critique tirée au hasard. Même si elle réussit, elle tombe à terre et son NIVEAU DE STRESS augmente de 1.",
+        "MORSURE BESTIALE. Le Xénomorphe mord sauvagement sa proie, lui arrachant un énorme morceau de chair. L'attaque est effectuée avec dix dés et des Dégâts de 1. Il suffit qu'elle inflige 1 point de dégâts pour provoquer la blessure critique n° 61 même si la victime n'est pas Brisée, lui imposant également un test de Panique.",
+        "COUP ÉCRASANT. Le Xénomorphe se jette de tout son poids sur son infortunée victime, qui doit réussir un test de MOBILITÉ à -2 (ce qui n'est pas considéré comme une action) pour éviter d'être écrasée et de subir immédiatement trois blessures critiques (tirez trois fois sur la table des blessures critiques et appliquez les résultats, que la victime soit Brisée ou non). La victime est jetée à terre et doit immédiatement effectuer un test de Panique.",
+        "EMPALEMENT CAUDAL. Le Xénomorphe empale sa victime avec une force effroyable. Il lance dix dés de base (quatorze pour une Reine) pour l'attaque, avec des Dégâts de 1. L'attaque a l’attribut Perce-armure (réduit de moitié la Protection). Si elle inflige des dégâts, elle déclenche automatiquement la blessure critique n° 66 (même si la victime n'est pas Brisée), tuant aussitôt la proie.",
+        "MORSURE À LA TÊTE. Le Xénomorphe ouvre grand ses mâchoires externes, et ses mâchoires internes apparaissent, claquant d'impatience, avant de jaillir. L'attaque est effectuée avec dix dés de base et des Dégâts de 2. Si elle occasionne le moindre dégât, elle inflige automatiquement la blessure critique n° 64, tuant net la victime."
+      ]
+    }
+  ]
+}
