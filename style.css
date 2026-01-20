@@ -174,3 +174,39 @@ strong.crit {
   color: #eee !important;
 }
 
+/* --- Champ visible du select (quand le menu n'est pas ouvert) --- */
+.choices__inner {
+  background-color: #111 !important; /* fond noir */
+  color: #eee !important;            /* texte clair */
+  border: 1px solid #444 !important; /* bordure visible */
+}
+
+/* Placeholder ou texte par défaut */
+.choices__placeholder {
+  color: #aaa !important;           /* gris clair */
+}
+
+/* Curseur clignotant dans l'input de recherche */
+.choices__input {
+  background-color: #111 !important;
+  color: #eee !important;
+}
+
+/* Menu déroulant */
+.choices__list--dropdown {
+  background-color: #111 !important;
+  color: #eee !important;
+  border: 1px solid #444 !important;
+}
+
+/* Options du menu */
+.choices__list--dropdown .choices__item {
+  background-color: #111 !important;
+  color: #eee !important;
+}
+
+/* Option survolée / focus */
+.choices__list--dropdown .choices__item.is-highlighted {
+  background-color: #333 !important;
+  color: #fff !important;
+}
