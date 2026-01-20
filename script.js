@@ -386,3 +386,24 @@ function displayTableHistory() {
     div.appendChild(p);
   });
 }
+
+
+// --- AJOUTER LE FILTRAGE --- //
+const tableSearch = document.getElementById("table-search");
+
+tableSearch.addEventListener("input", () => {
+  const query = tableSearch.value.toLowerCase();
+
+  // On vide le select
+  tableSelect.innerHTML = '<option value="">— Choisir une table —</option>';
+
+  // On filtre tablesData
+  tablesData.forEach((table, index) => {
+    if (table.name.toLowerCase().includes(query)) {
+      const option = document.createElement("option");
+      option.value = index;        // index dans tablesData
+      option.textContent = table.name;
+      tableSelect.appendChild(option);
+    }
+  });
+});
