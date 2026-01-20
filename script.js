@@ -59,13 +59,14 @@ const tableSelect = document.getElementById("table-select");
 function populateTableSelect() {
   tableSelect.innerHTML = '<option value="">— Choisir une table —</option>';
 
-  Object.keys(tablesData).forEach(tableName => {
+  tablesData.forEach((table, index) => {
     const option = document.createElement("option");
-    option.value = tableName;      // 🔑 clé = nom de table
-    option.textContent = tableName;
+    option.value = index;          // 👈 INDEX NUMÉRIQUE
+    option.textContent = table.name;
     tableSelect.appendChild(option);
   });
 }
+
 
 
 // --- MOTEUR DE DES ---
@@ -237,22 +238,22 @@ document.getElementById("roll-table").addEventListener("click", () => {
     return;
   }
 
-  const tableName = tableSelect.value;
-  const entries = tablesData[tableName];
+  const index = parseInt(tableSelect.value, 10);
+  const table = tablesData[index];
 
-  if (!Array.isArray(entries) || entries.length === 0) {
-    alert("Table vide ou invalide.");
+  if (!table || !Array.isArray(table.entries)) {
+    alert("Table invalide ou sans entrées.");
     return;
   }
 
-  const roll = Math.floor(Math.random() * entries.length);
-  const resultText = entries[roll];
+  const roll = Math.floor(Math.random() * table.entries.length);
+  const resultText = table.entries[roll];
 
   document.getElementById("table-result").innerHTML =
-    `<p>${tableName} [${roll + 1}] → ${resultText}</p>`;
+    `<p>${table.name} [${roll + 1}] → ${resultText}</p>`;
 
   tableHistory.unshift({
-    tableName,
+    tableName: table.name,
     index: roll + 1,
     resultText
   });
@@ -260,6 +261,7 @@ document.getElementById("roll-table").addEventListener("click", () => {
   if (tableHistory.length > 10) tableHistory.pop();
   displayTableHistory();
 });
+
 
 
 
@@ -282,11 +284,11 @@ document.getElementById("roll-table-custom").addEventListener("click", () => {
     return;
   }
 
-  const tableName = tableSelect.value;
-  const entries = tablesData[tableName];
+  const index = parseInt(tableSelect.value, 10);
+  const table = tablesData[index];
 
-  if (!Array.isArray(entries) || entries.length === 0) {
-    alert("Table vide ou invalide.");
+  if (!table || !Array.isArray(table.entries)) {
+    alert("Table invalide ou sans entrées.");
     return;
   }
 
@@ -298,14 +300,14 @@ document.getElementById("roll-table-custom").addEventListener("click", () => {
     rollTotal += Math.floor(Math.random() * y) + 1;
   }
 
-  const entryIndex = Math.min(rollTotal - 1, entries.length - 1);
-  const resultText = entries[entryIndex];
+  const entryIndex = Math.min(rollTotal - 1, table.entries.length - 1);
+  const resultText = table.entries[entryIndex];
 
   document.getElementById("table-result").innerHTML =
-    `<p>${tableName} [${rollTotal}] → ${resultText}</p>`;
+    `<p>${table.name} [${rollTotal}] → ${resultText}</p>`;
 
   tableHistory.unshift({
-    tableName,
+    tableName: table.name,
     index: rollTotal,
     resultText
   });
@@ -313,6 +315,7 @@ document.getElementById("roll-table-custom").addEventListener("click", () => {
   if (tableHistory.length > 10) tableHistory.pop();
   displayTableHistory();
 });
+
 
 
 
