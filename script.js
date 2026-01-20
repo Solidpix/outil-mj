@@ -41,8 +41,10 @@ campaignSelect.addEventListener("change", async () => {
     const response = await fetch(url);
     if (!response.ok) throw new Error("Erreur de chargement");
 
-    tablesData = await response.json();
+    const json = await response.json();
+    tablesData = json.tables; // ⬅️ IMPORTANT
     populateTableSelect();
+
 
   } catch (err) {
     alert("Impossible de charger la campagne.");
@@ -57,10 +59,10 @@ const tableSelect = document.getElementById("table-select");
 function populateTableSelect() {
   tableSelect.innerHTML = '<option value="">— Choisir une table —</option>';
 
-  Object.keys(tablesData).forEach(tableName => {
+  tablesData.forEach((table, index) => {
     const option = document.createElement("option");
-    option.value = tableName;
-    option.textContent = tableName;
+    option.value = index;          // index numérique
+    option.textContent = table.name;
     tableSelect.appendChild(option);
   });
 }
