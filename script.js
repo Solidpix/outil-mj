@@ -57,17 +57,68 @@ campaignSelect.addEventListener("change", async () => {
 // --- REMPLISSAGE DU MENU DES TABLES --- //
 const tableSelect = document.getElementById("table-select");
 
+// --- REMPLISSAGE DU MENU DES TABLES --- //
 function populateTableSelect() {
   tableSelect.innerHTML = '<option value="">— Choisir une table —</option>';
 
+  // tablesData est un tableau
   tablesData.forEach((table, index) => {
     const option = document.createElement("option");
-    option.value = index;              // index interne
-    option.textContent = table.name;   // nom lisible
+    option.value = index;        // index pour accéder à tablesData
+    option.textContent = table.name; // nom affiché
     tableSelect.appendChild(option);
   });
 }
 
+// --- LANCER UN JET SUR UNE TABLE ---
+function rollTable(customDice = false) {
+  if (tableSelect.value === "") {
+    alert("Veuillez sélectionner une table.");
+    return;
+  }
+
+  const tableIndex = parseInt(tableSelect.value, 10);
+  const table = tablesData[tableIndex];
+
+  if (!table || !Array.isArray(table.entries)) {
+    alert("Table invalide ou sans entrées.");
+    return;
+  }
+
+  let rollNumber;
+  if (customDice) {
+    const x = parseInt(document.getElementById("custom-dice-count").value, 10);
+    const y = parseInt(document.getElementById("custom-dice-type").value, 10);
+
+    rollNumber = 0;
+    for (let i = 0; i < x; i++) {
+      rollNumber += Math.floor(Math.random() * y) + 1;
+    }
+
+    // s'assurer que l'index ne dépasse pas la longueur de la table
+    rollNumber = Math.min(rollNumber, table.entries.length);
+  } else {
+    rollNumber = Math.floor(Math.random() * table.entries.length) + 1;
+  }
+
+  const entry = table.entries[rollNumber - 1];
+
+  document.getElementById("table-result").innerHTML =
+    `<p>${table.name} [${rollNumber}] → ${entry}</p>`;
+
+  tableHistory.unshift({
+    tableName: table.name,
+    index: rollNumber,
+    resultText: entry
+  });
+
+  if (tableHistory.length > 10) tableHistory.pop();
+  displayTableHistory();
+}
+
+// --- LISTENERS ---
+document.getElementById("roll-table").addEventListener("click", () => rollTable(false));
+document.getElementById("roll-table-custom").addEventListener("click", () => rollTable(true));
 
 
 // --- MOTEUR DE DES ---
