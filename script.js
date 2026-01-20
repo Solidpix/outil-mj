@@ -1,13 +1,13 @@
 // --- CAMPAGNES DISPONIBLES ---
 const campaigns = {
   "Dragonbane": {
-    url: "https://raw.githubusercontent.com/Solidpix/outil-mj/refs/heads/main/tables/Dragonbane.json"
+    url: "https://raw.githubusercontent.com/Solidpix/outil-mj/main/tables/Dragonbane.json"
   },
   "Alien RPG": {
-    url: "https://raw.githubusercontent.com/Solidpix/outil-mj/refs/heads/main/tables/Alien.json"
+    url: "https://raw.githubusercontent.com/Solidpix/outil-mj/main/tables/Alien.json"
   },
   "Dragonbane - Duo": {
-    url: "https://raw.githubusercontent.com/Solidpix/outil-mj/refs/heads/main/tables/Dragonbane_Duo.json"
+    url: "https://raw.githubusercontent.com/Solidpix/outil-mj/main/tables/Dragonbane_Duo.json"
   }
 };
 
@@ -230,20 +230,18 @@ switchToTables.addEventListener("click", () => {
 let tableHistory = [];
 
 document.getElementById("roll-table").addEventListener("click", () => {
-  const select = document.getElementById("table-select");
-  const index = select.value;
+  const tableName = tableSelect.value;
+  if (!tableName) return alert("Veuillez sélectionner une table.");
 
-  if (index === "") return alert("Veuillez sélectionner une table.");
+  const entries = tablesData[tableName];
+  const roll = Math.floor(Math.random() * entries.length);
+  const resultText = entries[roll];
 
-  const table = tablesData[index];
-  const roll = Math.floor(Math.random() * table.entries.length);
-  const resultText = table.entries[roll];
-
-  const container = document.getElementById("table-result");
-  container.innerHTML = `<p>${table.name} [${roll + 1}] → ${resultText}</p>`;
+  document.getElementById("table-result").innerHTML =
+    `<p>${tableName} [${roll + 1}] → ${resultText}</p>`;
 
   tableHistory.unshift({
-    tableName: table.name,
+    tableName,
     index: roll + 1,
     resultText
   });
@@ -267,12 +265,11 @@ toggleTableHistory.addEventListener("click", () => {
 });
 
 document.getElementById("roll-table-custom").addEventListener("click", () => {
-  const select = document.getElementById("table-select");
-  const index = select.value;
+  const tableName = tableSelect.value;
+  if (!tableName) return alert("Veuillez sélectionner une table.");
 
-  if (index === "") return alert("Veuillez sélectionner une table.");
+  const entries = tablesData[tableName];
 
-  const table = tablesData[index];
   const x = parseInt(document.getElementById("custom-dice-count").value, 10);
   const y = parseInt(document.getElementById("custom-dice-type").value, 10);
 
@@ -281,18 +278,14 @@ document.getElementById("roll-table-custom").addEventListener("click", () => {
     rollTotal += Math.floor(Math.random() * y) + 1;
   }
 
-  const tableIndex =
-    rollTotal > table.entries.length
-      ? table.entries.length - 1
-      : rollTotal - 1;
-
-  const resultText = table.entries[tableIndex];
+  const index = Math.min(rollTotal - 1, entries.length - 1);
+  const resultText = entries[index];
 
   document.getElementById("table-result").innerHTML =
-    `<p>${table.name} [${rollTotal}] → ${resultText}</p>`;
+    `<p>${tableName} [${rollTotal}] → ${resultText}</p>`;
 
   tableHistory.unshift({
-    tableName: table.name,
+    tableName,
     index: rollTotal,
     resultText
   });
@@ -300,6 +293,7 @@ document.getElementById("roll-table-custom").addEventListener("click", () => {
   if (tableHistory.length > 10) tableHistory.pop();
   displayTableHistory();
 });
+
 
 
 function displayTableHistory() {
@@ -315,39 +309,3 @@ function displayTableHistory() {
     div.appendChild(p);
   });
 }
-
-/* Chargement JSON depuis GITHUB */
-let tablesData = [];
-
-async function loadTablesFromGitHub(url) {
-  try {
-    const response = await fetch(url);
-    if (!response.ok) throw new Error("Erreur de chargement");
-
-    const data = await response.json();
-    tablesData = data.tables;
-
-    populateTablesDropdown();
-  } catch (error) {
-    alert("Impossible de charger les tables JSON.");
-    console.error(error);
-  }
-}
-
-function populateTablesDropdown() {
-  const select = document.getElementById("table-select");
-  select.innerHTML = '<option value="">— Choisir une table —</option>';
-
-  tablesData.forEach((table, index) => {
-    const option = document.createElement("option");
-    option.value = index;
-    option.textContent = table.name;
-    select.appendChild(option);
-  });
-}
-
-window.addEventListener("load", () => {
-  loadTablesFromGitHub(
-    "https://raw.githubusercontent.com/Solidpix/outil-mj/refs/heads/main/tables/Dragonbane_Tables.json"
-  );
-});
