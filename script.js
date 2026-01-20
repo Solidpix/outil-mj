@@ -232,18 +232,21 @@ switchToTables.addEventListener("click", () => {
 let tableHistory = [];
 
 document.getElementById("roll-table").addEventListener("click", () => {
-  const tableName = tableSelect.value;
+  const index = parseInt(tableSelect.value, 10);
+const table = tablesData[index];
+const entries = table.entries;
+
   if (!tableName) return alert("Veuillez sélectionner une table.");
 
-  const entries = tablesData[tableName];
-  const roll = Math.floor(Math.random() * entries.length);
-  const resultText = entries[roll];
+const roll = Math.floor(Math.random() * entries.length);
+const resultText = entries[roll];
 
-  document.getElementById("table-result").innerHTML =
-    `<p>${tableName} [${roll + 1}] → ${resultText}</p>`;
+document.getElementById("table-result").innerHTML =
+  `<p>${table.name} [${roll + 1}] → ${resultText}</p>`;
+
 
   tableHistory.unshift({
-    tableName,
+    tableName: table.name,
     index: roll + 1,
     resultText
   });
@@ -267,10 +270,12 @@ toggleTableHistory.addEventListener("click", () => {
 });
 
 document.getElementById("roll-table-custom").addEventListener("click", () => {
-  const tableName = tableSelect.value;
+  const index = parseInt(tableSelect.value, 10);
+const table = tablesData[index];
+const entries = table.entries;
+
   if (!tableName) return alert("Veuillez sélectionner une table.");
 
-  const entries = tablesData[tableName];
 
   const x = parseInt(document.getElementById("custom-dice-count").value, 10);
   const y = parseInt(document.getElementById("custom-dice-type").value, 10);
@@ -280,14 +285,15 @@ document.getElementById("roll-table-custom").addEventListener("click", () => {
     rollTotal += Math.floor(Math.random() * y) + 1;
   }
 
-  const index = Math.min(rollTotal - 1, entries.length - 1);
-  const resultText = entries[index];
+  const entryIndex = Math.min(rollTotal - 1, entries.length - 1);
+const resultText = entries[entryIndex];
 
-  document.getElementById("table-result").innerHTML =
-    `<p>${tableName} [${rollTotal}] → ${resultText}</p>`;
+document.getElementById("table-result").innerHTML =
+  `<p>${table.name} [${rollTotal}] → ${resultText}</p>`;
+
 
   tableHistory.unshift({
-    tableName,
+    tableName: table.name,
     index: rollTotal,
     resultText
   });
