@@ -175,32 +175,32 @@ strong.crit {
 }
 
 /* --- Champ visible du select (quand le menu n'est pas ouvert) --- */
-/* Champ visible fermé */
+/* Champ Choices fermé */
 .choices__inner {
   background-color: #111 !important; /* fond noir */
-  color: #eee !important;            /* texte clair */
   border: 1px solid #444 !important;
+  color: #fff !important;           /* texte par défaut */
 }
 
-/* Le texte sélectionné quand le menu est fermé */
+/* Texte sélectionné dans le champ fermé */
 .choices__inner .choices__item--selectable {
-  background-color: #111 !important; /* même fond que le container */
-  color: #eee !important;            /* texte clair */
+  color: #fff !important;           /* texte blanc */
+  background-color: transparent !important;
 }
 
-/* Placeholder quand rien n'est choisi */
+/* Placeholder */
 .choices__inner .choices__placeholder {
   color: #aaa !important;
 }
 
-/* Input de recherche */
-.choices__input {
-  background-color: #111 !important;
-  color: #eee !important;
-  caret-color: #eee !important;
+/* Force la couleur du texte du champ fermé pour Chrome/Chromebook */
+.choices__inner input {
+  color: #fff !important;           /* texte blanc */
+  background-color: transparent !important;
+  caret-color: #fff !important;     /* curseur visible si editable */
 }
 
-/* Liste déroulante et options */
+/* Menu déroulant et options */
 .choices__list--dropdown {
   background-color: #111 !important;
   color: #eee !important;
