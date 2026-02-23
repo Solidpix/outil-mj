@@ -81,6 +81,8 @@ function populateTableSelect() {
     itemSelectText: '',   // enlève le texte "Appuyez sur Entrée"
     shouldSort: false
   });
+  tableSelect.addEventListener("change", displayTableDetail);
+
 }
 
 
@@ -399,6 +401,65 @@ function displayTableHistory() {
     p.textContent = `${entry.tableName} [${entry.index}] → ${entry.resultText}`;
     div.appendChild(p);
   });
+}
+
+
+// --- DETAIL TABLE ---
+const toggleTableDetail = document.getElementById("toggle-table-detail");
+
+toggleTableDetail.addEventListener("click", () => {
+  const div = document.getElementById("table-detail");
+  if (div.style.display === "none" || div.style.display === "") {
+    div.style.display = "block";
+    toggleTableDetail.textContent = "▲";
+  } else {
+    div.style.display = "none";
+    toggleTableDetail.textContent = "▼";
+  }
+});
+
+function displayTableDetail() {
+  const detailDiv = document.getElementById("table-detail");
+  detailDiv.innerHTML = "";
+
+  if (tableSelect.value === "") {
+    detailDiv.innerHTML = '<p class="placeholder">Aucune table sélectionnée</p>';
+    return;
+  }
+
+  const index = parseInt(tableSelect.value, 10);
+  const table = tablesData[index];
+
+  if (!table || !Array.isArray(table.entries)) {
+    detailDiv.innerHTML = '<p class="placeholder">Table invalide</p>';
+    return;
+  }
+
+  const tableEl = document.createElement("table");
+  tableEl.classList.add("detail-table");
+
+  const thead = document.createElement("thead");
+  thead.innerHTML = `
+    <tr>
+      <th>#</th>
+      <th>Effet</th>
+    </tr>
+  `;
+  tableEl.appendChild(thead);
+
+  const tbody = document.createElement("tbody");
+
+  table.entries.forEach((entry, i) => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${i + 1}</td>
+      <td>${entry}</td>
+    `;
+    tbody.appendChild(row);
+  });
+
+  tableEl.appendChild(tbody);
+  detailDiv.appendChild(tableEl);
 }
 
 
