@@ -83,6 +83,9 @@ function populateTableSelect() {
   });
   tableSelect.addEventListener("change", displayTableDetail);
 
+displayTableDetail();
+
+    
 }
 
 
@@ -300,37 +303,6 @@ switchToTables.addEventListener("click", () => {
 /* TABLE ALEATOIRE */
 let tableHistory = [];
 
-document.getElementById("roll-table").addEventListener("click", () => {
-  if (tableSelect.value === "") {
-    alert("Veuillez sélectionner une table.");
-    return;
-  }
-
-  const index = parseInt(tableSelect.value, 10);
-  const table = tablesData[index];
-
-  if (!table || !Array.isArray(table.entries)) {
-    alert("Table invalide ou sans entrées.");
-    return;
-  }
-
-  const roll = Math.floor(Math.random() * table.entries.length);
-  const resultText = table.entries[roll];
-
-  document.getElementById("table-result").innerHTML =
-    `<p>${table.name} [${roll + 1}] → ${resultText}</p>`;
-
-  tableHistory.unshift({
-    tableName: table.name,
-    index: roll + 1,
-    resultText
-  });
-
-  if (tableHistory.length > 10) tableHistory.pop();
-  displayTableHistory();
-});
-
-
 
 
 const toggleTableHistory = document.getElementById("toggle-table-history");
@@ -345,45 +317,6 @@ toggleTableHistory.addEventListener("click", () => {
   }
 
 });
-
-document.getElementById("roll-table-custom").addEventListener("click", () => {
-  if (tableSelect.value === "") {
-    alert("Veuillez sélectionner une table.");
-    return;
-  }
-
-  const index = parseInt(tableSelect.value, 10);
-  const table = tablesData[index];
-
-  if (!table || !Array.isArray(table.entries)) {
-    alert("Table invalide ou sans entrées.");
-    return;
-  }
-
-  const x = parseInt(document.getElementById("custom-dice-count").value, 10);
-  const y = parseInt(document.getElementById("custom-dice-type").value, 10);
-
-  let rollTotal = 0;
-  for (let i = 0; i < x; i++) {
-    rollTotal += Math.floor(Math.random() * y) + 1;
-  }
-
-  const entryIndex = Math.min(rollTotal - 1, table.entries.length - 1);
-  const resultText = table.entries[entryIndex];
-
-  document.getElementById("table-result").innerHTML =
-    `<p>${table.name} [${rollTotal}] → ${resultText}</p>`;
-
-  tableHistory.unshift({
-    tableName: table.name,
-    index: rollTotal,
-    resultText
-  });
-
-  if (tableHistory.length > 10) tableHistory.pop();
-  displayTableHistory();
-});
-
 
 
 
@@ -469,16 +402,21 @@ const tableSearch = document.getElementById("table-search");
 tableSearch.addEventListener("input", () => {
   const query = tableSearch.value.toLowerCase();
 
-  // On vide le select
-  tableSelect.innerHTML = '<option value="">— Choisir une table —</option>';
+  const filteredTables = tablesData.filter(table =>
+    table.name.toLowerCase().includes(query)
+  );
 
-  // On filtre tablesData
-  tablesData.forEach((table, index) => {
-    if (table.name.toLowerCase().includes(query)) {
-      const option = document.createElement("option");
-      option.value = index;        // index dans tablesData
-      option.textContent = table.name;
-      tableSelect.appendChild(option);
-    }
-  });
+  if (tableSelectChoices) {
+    tableSelectChoices.clearChoices();
+    tableSelectChoices.setChoices(
+      filteredTables.map((table, index) => ({
+        value: tablesData.indexOf(table),
+        label: table.name
+      })),
+      'value',
+      'label',
+      true
+    );
+  }
 });
+
