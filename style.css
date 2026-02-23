@@ -217,3 +217,34 @@ strong.crit {
   color: #fff !important;
 }
 
+/* Tableau détail des tables */
+.detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.detail-table th {
+  text-align: left;
+  padding: 0.4rem;
+  border-bottom: 1px solid #444;
+}
+
+.detail-table td {
+  padding: 0.4rem;
+  vertical-align: top;
+}
+
+/* Alternance légère */
+.detail-table tbody tr:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+/* Colonne numéro plus étroite */
+.detail-table td:first-child,
+.detail-table th:first-child {
+  width: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+
