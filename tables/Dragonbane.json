@@ -59,6 +59,78 @@
       ]
     },
     {
+      "name": "😈 Démon Attaque C.à.C",
+      "entries": [
+        "Vous laissez tomber votre arme à vos pieds. La ramasser compte comme une action.",
+        "Vous vous exposez à l’ennemi, qui bénéficie d’une attaque gratuite (page 43). Vous ne pouvez ni l’esquiver ni la parer.",
+        "Votre arme s’enfonce si profondément dans un objet qu’elle reste coincée. Pour la dégager, il faut réussir un jet de FOR (qui compte comme une action).",
+        "Vous lancez accidentellement votre arme à 1D3+3 mètres de distance. Pour la ramasser, vous devez vous déplacer puis accomplir une action.",
+        "Vous cognez votre arme contre un objet dur et l’endommagez. Vous subirez un fléau chaque fois que vous l’utiliserez jusqu’à ce qu’un artisan la répare.",
+        "Vous vous frappez sans le faire exprès. Lancez les dégâts comme à l’accoutumée, mais sans les bonus éventuels."
+      ]
+    },
+    {
+      "name": "😈 Démon Attaque Distance",
+      "entries": [
+        "Vous laissez tomber l’arme à vos pieds. La ramasser compte comme une action.",
+        "Vous vous retrouvez à court de flèches et vous devez en trouver d’autres avant de pouvoir vous servir à nouveau de votre arme. Relancez pour les frondes ou les armes de jet.",
+        "Vous touchez un objet important ou de valeur à proximité. Le meneur décide de ce que c’est.",
+        "Vous cassez votre arme. Si vous l’utilisez, vous subissez un fléau jusqu’à ce que vous l’ayez fait réparer.",
+        "Vous touchez un personnage joueur ou un PNJ ami désigné au hasard. Lancez les dégâts comme à l’accoutumée, y compris le bonus aux dégâts.",
+        "Vous vous touchez sans le faire exprès. Lancez les dégâts comme à l’accoutumée, mais sans les bonus éventuels."
+      ]
+    },
+    {
+      "name": "😈 Démon - Incident magique",
+      "entries": [
+        "Les pouvoirs magiques vous laissent Étourdi.",
+        "L’incantation vous laisse soudain Épuisé.",
+        "Les énergies pèsent lourd sur votre corps et vous rendent Malade.",
+        "Vous perdez le contrôle du sort, ce qui vous rend vraiment Furieux.",
+        "Le sort provoque en vous des visions démoniaques qui vous laissent Effrayé.",
+        "Vous voyez le monde au-delà du voile et vous vous rendez compte de votre insignifiance. Vous vous sentez Découragé.",
+        "La magie ravage votre corps et vous inflige 1D6 points de dégâts par niveau de puissance.",
+        "Le sort épuise votre volonté et vous fait perdre 1D6 PV par niveau de puissance.",
+        "Le sort provoque une maladie magique d’une virulence de 3D6. Vous et toutes les personnes avec lesquelles vous entrez en contact au cours du prochain intervalle vous retrouvez exposés à la maladie.",
+        "Un de vos sorts, déterminé aléatoirement, s’active à la place de celui que vous avez lancé, avec la même cible et le même niveau de puissance.",
+        "Vous vomissez une grenouille dès que vous racontez un mensonge. Lancez 1D4 tous les matins. Sur un 1, l’effet disparaît, tout comme avec le sort DISSIPATION.",
+        "L’or et l’argent que vous touchez tombent en poussière. Lancez 1D4 tous les matins. Sur un 1, l’effet disparaît, tout comme avec le sort DISSIPATION.",
+        "Le sort vous aveugle et vous agissez comme si vous vous trouviez dans l’obscurité totale (page 52). Lancez 1D4 tous les matins. Sur un 1, vous vous rétablissez, tout comme avec le sort DISSIPATION.",
+        "Vous êtes frappé d’amnésie, et vous oubliez qui vous êtes et qui sont les autres personnages joueurs. Vous devez interpréter l’effet. Lancez 1D4 tous les matins. Sur un 1, vous retrouvez la mémoire.",
+        "Le sort affecte également un ami ou une autre victime involontaire. Un sort de guérison ou d’assistance affecte un ennemi.",
+        "La magie se retourne contre vous. Un sort offensif vous affecte à la place de votre cible, tandis qu’un sort de protection ou de soins inflige des dégâts à la place.",
+        "Vous vous transformez en animal. Lancez 1D6. 1 : chat, 2 : renard, 3 : chèvre, 4 : loup, 5 : cerf, 6 : ours. \nVous obtenez des caractéristiques en fonction du tableau en page 99 et vous ne pouvez pas parler, mais vous conservez votre acuité mentale. Lancez 1D4 chaque matin. Sur un 1, vous reprenez votre forme initiale.",
+        "Vous rajeunissez d’une tranche d’âge (par exemple, d’Adulte à Jeune). Vos caractéristiques et les valeurs dérivées changent selon la table en page 24, mais vos niveaux de compétence restent les mêmes. Si vous étiez déjà Jeune, vous devenez un enfant (FOR et CON -2, minimum 3). L’effet est permanent et vous vieillissez normalement à partir de votre nouvelle tranche d’âge.",
+        "Vous vieillissez d’une tranche d’âge, par exemple d’Adulte à Âgé. Vos caractéristiques et les valeurs dérivées changent selon la table en page 24, mais vos niveaux de compétence restent les mêmes. Si vous étiez déjà Âgé, vous devenez très fragile (FOR et CON -2). L’effet est permanent et vous vieillissez normalement à partir de votre nouvelle tranche d’âge.",
+        "Votre magie attire un démon (page 85) venu d’une autre dimension. La créature apparaît au cours de l’intervalle suivant, et elle attaque ou provoque des problèmes. Les détails sont laissés à l’appréciation du meneur."
+      ]
+    },
+    {
+      "name": "🩸 0 PS - Blessure grave",
+      "entries": [
+        "Nez cassé. Un fléau sur tous les jets d’INTUITION. Temps de guérison: 1D6 jours.",
+        "Nez cassé. Un fléau sur tous les jets d’INTUITION. Temps de guérison: 1D6 jours.",
+        "Balafre. Un fléau sur tous les jets de REPRÉSENTATION et de PERSUASION. Temps de guérison: 2D6 jours.",
+        "Balafre. Un fléau sur tous les jets de REPRÉSENTATION et de PERSUASION. Temps de guérison: 2D6 jours.",
+        "Dents cassées. Vos compétences REPRÉSENTATION et PERSUASION perdent 2 niveaux permanents (minimum 3).",
+        "Dents cassées. Vos compétences REPRÉSENTATION et PERSUASION perdent 2 niveaux permanents (minimum 3).",
+        "Côtes cassées. Un fléau sur toutes les compétences basées sur la FOR ou l’AGI. Temps de guérison: 1D6 jours.",
+        "Côtes cassées. Un fléau sur toutes les compétences basées sur la FOR ou l’AGI. Temps de guérison: 1D6 jours.",
+        "Commotion cérébrale. Un fléau sur toutes les compétences basées sur l’INT. Temps de guérison: 1D6 jours.",
+        "Commotion cérébrale. Un fléau sur toutes les compétences basées sur l’INT. Temps de guérison: 1D6 jours.",
+        "Blessures profondes. Un fléau sur toutes les compétences basées sur la FOR ou l’AGI, et chaque jet effectué avec l’une de ces compétences inflige 1D6 points de dégâts. Temps de guérison: 2D6 jours.",
+        "Blessures profondes. Un fléau sur toutes les compétences basées sur la FOR ou l’AGI, et chaque jet effectué avec l’une de ces compétences inflige 1D6 points de dégâts. Temps de guérison: 2D6 jours.",
+        "Jambe cassée. Votre vitesse de déplacement diminue de moitié. Temps de guérison: 3D6 jours.",
+        "Bras cassé. Vous ne pouvez pas manier d’arme à deux mains ni utiliser un style qui fait appel à vos deux mains à la fois. Vous subissez un fléau sur toutes les autres actions qui mobilisent normalement les deux bras, comme l’escalade. Temps de guérison: 3D6 jours.",
+        "Orteil sectionné. Votre vitesse de déplacement diminue en permanence de 2 (minimum 4).",
+        "Doigt coupé. Toutes vos compétences d’arme perdent 1 niveau permanent (minimum 3).",
+        "Œil crevé. Votre compétence PERCEPTION perd 2 niveaux permanents (minimum 3).",
+        "Cauchemars. Faites un jet afin de résister à la terreur (page 52) pour chaque intervalle que vous passez à dormir. En cas d’échec, cette période de sommeil n’est pas prise en compte. Temps de guérison: 2D6 jours.",
+        "Changement de personnalité. Une nouvelle faiblesse générée aléatoirement (règle optionnelle, page 26).",
+        "Amnésie. Vous ne vous souvenez ni de votre identité ni de celle des autres personnages. Le joueur doit interpréter l’effet. Temps de guérison: 1D6 jours."
+      ]
+    },
+    {
       "name": "📆 Event - Château du Chevalier Brigand",
       "entries": [
         "Gobelins : deux gobelins apparaissent soudain et après un moment de confusion, ils dégainent leurs épées courtes, poussent un cri et attaquent.",
